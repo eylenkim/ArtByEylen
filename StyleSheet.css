@@ -1,0 +1,29 @@
+@import "{{ site.theme }}";
+
+body{
+    background-image: url(images/download.jpeg)
+}
+
+h1{
+    background-color:white;
+   
+   font-family: 'Carter One', cursive;
+    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+p {
+    color:white;
+    background-color: black;
+    padding: 20px;
+ font-family: 'Sarabun', sans-serif;
+    text-align:center;
+    
+}
+
+img {
+    width:353px;
+    height:355px;
+}
