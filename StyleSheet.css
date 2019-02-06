@@ -1,13 +1,14 @@
 @import "{{ site.theme }}";
 
 body{
-    background-image: url(images/download.jpeg)
+    /*background-image: url(images/download.jpeg) */
+    background-color:white;
 }
 
 h1{
-    background-color:white;
+    /*background-color:white; */
    
-   font-family: 'Carter One', cursive;
+   font-family: 'Abril Fatface', cursive;
     margin-top:50px;
     padding-top:20px;
     padding-bottom:20px;
@@ -15,15 +16,20 @@ h1{
 }
 
 p {
+    text-align:center;
+}
+
+h2 {
     color:white;
     background-color: black;
     padding: 20px;
- font-family: 'Sarabun', sans-serif;
+    font-family: 'Sarabun', sans-serif;
     text-align:center;
-    
-}
+    }
 
 img {
-    width:353px;
-    height:355px;
+    width:455px;
+    height:455px;
+     border: 5px solid yellow;
 }
+
