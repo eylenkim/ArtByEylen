@@ -1,8 +1,11 @@
 @import "{{ site.theme }}";
 
 body{
+
     /*background-image: url(images/download.jpeg) */
-    background-color:white;
+    background-color: white;
+
+   /* background-image: url(images/download.jpeg) */
 }
 
 h1{
@@ -10,12 +13,16 @@ h1{
    
    font-family: 'Abril Fatface', cursive;
     margin-top:50px;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top:30px;
+    padding-bottom:10px;
     text-align:center;
 }
 
 p {
+   /* text-align:center;
+    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:20px;*/
     text-align:center;
 }
 
@@ -26,10 +33,15 @@ h2 {
     font-family: 'Sarabun', sans-serif;
     text-align:center;
     }
-
+h3 {
+   /* text-align:center; */
+}
 img {
-    width:455px;
-    height:455px;
-     border: 5px solid yellow;
+    width:355px;
+    height:355px;
+    border-style: solid;
+    border-color: #FFEC8F;
+    border-width: 7px;
+
 }
 
