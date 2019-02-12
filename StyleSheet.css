@@ -10,11 +10,13 @@ body{
 h1{
     /*background-color:white; */
    
-   font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril Fatface', cursive;
     margin-top:50px;
     padding-top:30px;
-    padding-bottom:10px;
+    padding-bottom:23px;
     text-align:center;
+    border-bottom: 5px dotted #555555;
+ 
 }
 
 p {
