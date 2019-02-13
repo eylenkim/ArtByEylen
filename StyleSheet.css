@@ -1,8 +1,13 @@
 /* Overall Background */
-body{
+ /* Hover Button Background Info */
 
-    /*background-image: url(images/download.jpeg) asdf*/
-    background-color: white;
+
+    
+
+body{ 
+
+    /*background-image: url(images/download.jpeg) asdf */
+    background-color: white; 
 
    /* background-image: url(images/download.jpeg) */
 }
@@ -116,8 +121,7 @@ img {
   background-color: #d87843;
 }
 
-/* Hover Button */
- 
+ /*Normal Button */
 .button.inverted {
   font-size: inherit;
   padding: 25px 70px;
@@ -129,11 +133,13 @@ img {
   font-family: "Raleway";
   
 }
- 
+
+
+/* Hover Button */
 .button.inverted:hover {
-  background: white;
+  background: url("photo/stripes.png");
   border: 3px solid yellow;
-  color: black;
+  color: white;
 }
 
 /* =Section general styling*/
@@ -164,7 +170,7 @@ section {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  opacity: .30;
+  opacity: .5;
 }
  
 .help:before {
