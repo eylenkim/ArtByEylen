@@ -118,7 +118,7 @@ img {
   transform: translateX(-50%);
 }
 .separator.orange:before {
-  background-color: #d87843;
+  background-color: yellow;
 }
 
  /*Normal Button */
