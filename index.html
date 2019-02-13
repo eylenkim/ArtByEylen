@@ -3,49 +3,251 @@
 //https://www.w3schools.com/css/tryit.asp?filename=trycss_color_background
 //https://eylenkim.github.io/ArtByEylen/
 //https://help.github.com/categories/github-pages-basics/
-
+https://www.figma.com/file/Ysk8fAdapSp0zYq9dxVuph1s/Untitled?node-id=8%3A2
 https://www.w3schools.com/css/tryit.asp?filename=trycss_color_background
+http://tutsplus.github.io/casablanca-tutsplus/Part%203%20-%20Javascript/index.html
+https://webdesign.tutsplus.com/series/from-psd-to-html-with-the-skeleton-boilerplate--cms-862
+
 --https://eylenkim.github.io/ArtByEylen/
 -->
-<html
-    <head> 
+<html>
+<head> 
+    <!-- ♡ Page Stuff + CSS ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
-        <meta charset="utf-8"   />
+        <meta charset="utf-8"/>
+        <meta charset="utf-8">
+        <title>Art By Eylen</title>
+        <meta name="description" content="Eylen's Art Space + Shop">
+         <meta name="author" content="Eylen Kim">
+
+
         <link href="StyleSheet.css" rel=stylesheet type="text/css">
         <link href="skeleton.css" rel=stylesheet type="text/css">
-    </head>
-<div class="container">
+         <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
+        <link href="otherCss/font-awesome.css"rel="stylesheet" type="text/css" >
+         <link href="otherCss/jquery.fancybox.css"rel="stylesheet" type="text/css">
+        <link  href="otherCss/otherstyle.css"rel="stylesheet" type="text/css">
+
+  <!-- ♡ Mobile Meta ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <!-- ♡ Favicon♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+  <link rel="icon" type="image/png" href="photo/IMG_2675.JPG" />
+
+    <!-- ♡ Javascript ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+  <script type="text/javascript" src="js/jquery.2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/scrollreveal.js"></script>
+  <script type="text/javascript" src="js/singlenav.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
 <body>
+
+    <!-- ♡ Menu // Hamburger Bar ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+ <nav class="navigation">
+    <a href="#" class="menu-icon">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <ul class="main-navigation" role="navigation">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#myWork">My Work</a></li>
+    <li><a href="#commissionExample">Commission Examples</a></li>
+    <li><a href="#about">About Me + This Site</a></li>
+    <li><a href="#contactMe">contactMe</a></li>
+    </ul>
+</nav>
+
+    <!-- ♡ Hero / Head ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+<section id="hero" class="hero u-full-width">
+   <div class="container">
     <div class="row">
-        <div class="six columns offset-by-three">
-	         
-            <a href="C:\Users\eylen.kim\Documents\GitHub\ArtByEylen\index.html" style="text-decoration: none"><h1 style="color:#555555">Art By Eylen</h1></a>
-        </div>
 
-     </div>
-</div>
+      <div class="twelve columns">
+         <h1 class="separator" style="color:#555555 href="C:\Users\eylen.kim\Documents\GitHub\ArtByEylen\index.html" style="text-decoration: none">Art By Eylen</h1>
+      </div>
 
-<!------------------------------------------------------------------------>
+      <div class="eight columns offset-by-two">
+         <p style="color:#808080">Hello spawns of planet Earth! <br>
+         <p1 style="color:#909090">Welcome to my side hustle.</p>
+      </div>
 
-<div class="eight columns offset-by-two">
-	<p style="color:#808080">Hello spawns of planet Earth! <br>
-    <p1 style="color:#909090">Welcome to my side hustle.</p>
-</div>
-
-
-<div class="row">
-    <div class="four columns offset-by-two"> 
-        <h3 style="color:#555555">Photography ~~~ </h3>
-        <a href="Photography/photography.html">
-        <img src="photo/IMG_3228.PNG" alt="photography"></a>
     </div>
+   </div>
+</section>
 
-    <div class="four columns offset-by-one">
-        <h3 style="color:#555555">Art ~~~ </h3>
-        <a href="Art/art.html">
-        <img src ="photo/IMG_74601.JPG" alt="art">
+    <!-- ♡ Shop ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<section id="shop" class="shop u-full-width featured-bg-image">
+  <h4 class="centered">
+    <button class="button inverted">enter Shop</button>
+  </h4>
+</section>
+
+
+    <!-- ♡ My Work ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<section data-sr id="myWork" class="work u-full-width">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="separator">My Work</h3>
+      </div>
     </div>
-</div>
+    <div class="row">
+      <ul class="work-filters u-full-width">
+        <li class="active">
+          <a href="#" data-filter="*">All</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".branding">Branding</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".web-design">Web design</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".mobile">Mobile</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".ui">UI</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".illustrations">Illustrations</a>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <ul class="work-items isotope js-isotope u-cf">
+        <li class="four columns isotope-item design ui">
+          <img src="images/portfolio/work_1.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Branding</h3>
+              <p class="separator orange">MTV AMA logo</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item branding web-design">
+          <img src="images/portfolio/work_2.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Web Design</h3>
+              <p class="separator orange">Dribbble redesign</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item mobile ui branding">
+          <img src="images/portfolio/work_3.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Mobile UI</h3>
+              <p class="separator orange">Google Mail</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item mobile illustrations">
+          <img src="images/portfolio/work_4.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Illustrations</h3>
+              <p class="separator orange">Flat icons</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item illustrations branding">
+          <img src="images/portfolio/work_5.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Web design</h3>
+              <p class="separator orange">Inbox by google</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item ui web-design illustration">
+          <img src="images/portfolio/work_6.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>UI</h3>
+              <p class="separator orange">Skeleton skin got a new UI</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <!-- ♡ About Me ♡
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<section data-sr id="about" class="about u-full-width">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="separator">About Me</h3>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h4>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="people-list">
+        <li class="three columns people-list-item">
+          <img src="photo/IMG_2378.jpg">
+          <div class="people-hover">
+            <a href="#"><i class="fa fa-external-link"></i></a>
+            <div class="people-detail">
+              <h3>Eylen Kim</h3>
+              <p>That's Me</p>
+            </div>
+          </div>
+        </li>
+        <li class="three columns people-list-item">
+          <img src="images/people_2.jpg">
+          <div class="people-hover">
+            <a href="#"><i class="fa fa-external-link"></i></a>
+            <div class="people-detail">
+              <h3>Wiliam</h3>
+              <p>CTO/Founder</p>
+            </div>
+          </div>
+        </li>
+        <li class="three columns people-list-item">
+          <img src="images/people_3.jpg">
+          <div class="people-hover">
+            <a href="#"><i class="fa fa-external-link"></i></a>
+            <div class="people-detail">
+              <h3>Clare</h3>
+              <p>Designer</p>
+            </div>
+          </div>
+        </li>
+        <li class="three columns people-list-item blank-feature">
+          <div class="vertical-centered">
+            <h3 class="separator">WE ARE HIRING</h3>
+            <button class="button">Apply</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
 </body> 
 </html>
