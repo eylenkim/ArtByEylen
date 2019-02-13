@@ -1,4 +1,4 @@
-
+/* Overall Background */
 body{
 
     /*background-image: url(images/download.jpeg) */
@@ -7,6 +7,7 @@ body{
    /* background-image: url(images/download.jpeg) */
 }
 
+/* Title Font */
 h1{
     /*background-color:white; */
    
@@ -19,7 +20,17 @@ h1{
 
 }
 
+h4 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 28px;
+}
+
+
+
 p {
+
    /* text-align:center;
     margin-top:50px;
     padding-top:20px;
@@ -31,7 +42,7 @@ h2 {
     color:white;
     background-color: black;
     padding: 20px;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Abril Fatface', cursive;
     text-align:center;
     }
 h3 {
@@ -46,3 +57,131 @@ img {
 
 }
 
+/* Personal Flavour */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /*padding-top: 25px; */
+}
+
+.vertical-centered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+/* Separator */
+ 
+.separator {
+
+  margin-bottom: 1.7em;
+  padding-bottom: 1.7em;
+  text-align: center;
+
+}
+
+.separator:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 86px;
+  height: 2px;
+  background-color: #222;
+ 
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.separator.orange:before {
+  background-color: #d87843;
+}
+
+/* Hover Button */
+ 
+.button.inverted {
+  font-size: inherit;
+  padding: 25px 70px;
+  color: white;
+  height: auto;
+  border: 3px solid yellow;
+  text-transform: none;
+  font-size: 26px;
+  font-family: "Raleway";
+  
+}
+ 
+.button.inverted:hover {
+  background: white;
+  border: 3px solid yellow;
+  color: black;
+}
+
+/* =Section general styling*/
+ 
+section {
+  text-align: center;
+  padding: 80px 0;
+}
+ 
+/*
+ 
+  Section with featured background image. Every section which will have this
+  class will get the effect with a background cover.
+ 
+*/
+ 
+.featured-bg-image {
+  position: relative;
+  background-color: #222222;
+  color: white;
+  min-height: 500px;
+}
+ 
+.featured-bg-image:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: .30;
+}
+ 
+.help:before {
+  background: url("../images/help_bg_image.jpg");
+}
+ 
+.shop:before {
+  background: url("photo/IMG_23342.jpg");
+  background-position: 50% 0;
+}
+
+ 
+.clients {
+  background-color: #f4f4f4;
+}
+ 
+.footer {
+  background-color: #222222;
+  color: white;
+}
