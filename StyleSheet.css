@@ -118,7 +118,7 @@ img {
   transform: translateX(-50%);
 }
 .separator.orange:before {
-  background-color: yellow;
+  background-color: #FEEF1A;
 }
 
  /*Normal Button */
@@ -137,7 +137,7 @@ img {
 
 /* Hover Button */
 .button.inverted:hover {
-  background: url("photo/stripes.png");
+  background: url("photo/polka.png");
   border: 3px solid yellow;
   color: white;
 }
