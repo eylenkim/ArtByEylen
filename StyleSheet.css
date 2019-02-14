@@ -257,6 +257,13 @@ section {
   background-color: white;
 }
  
+ /*
+.menu-icon {
+    width:70px;
+    height:50px;
+    background-image:url('images/IMG_2680.JPG');
+} */
+
 .navigation .menu-icon {
   color: white;
   font-size: 30px;
@@ -301,3 +308,62 @@ section {
 .work-filters li.active {
   
     font-family: 'Raleway';
+
+/* Work items */
+ 
+.work-items {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+}
+.work-items li {
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+ 
+  /* important because we need to overwrite the default skeleton */
+  margin: 0!important;
+  width: 33%;
+  border: 10px solid white;
+ 
+  position: relative;
+}
+.work-items li:nth-child(4n) {
+  margin-left: 0;
+}
+.work-items li img{
+  width: auto;
+  height: 100%;
+  display: block;
+}
+/* Work detail */
+ 
+.work-detail {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+ 
+  opacity: 0;
+  background: rgba(0,0,0,.75);
+  color: white;
+ 
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.work-detail h3 {
+  font-size: 16px;
+  letter-spacing: .05em;
+}
+.work-detail p {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ 
+.work-items li:hover .work-detail{
+  opacity: 1;
+  box-shadow: inset 0 0 0 10px #222;
+}
