@@ -367,3 +367,34 @@ section {
   opacity: 1;
   box-shadow: inset 0 0 0 10px #222;
 }
+
+
+/* Commission Examples -- gray */
+ 
+.commission {
+  list-style: none;
+}
+.commission li {
+  display: inline-block;
+  width: 18%;
+  margin-right: 2%;
+}
+.commission li:last-child {
+  margin-right: 0;
+}
+.commission li img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*image resizer */
+img.resize {
+  width: 355px;
+  height:355px;
+ /* max-width:50%;
+  max-height:50%;  */
+}
