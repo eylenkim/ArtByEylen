@@ -391,10 +391,3 @@ section {
   filter: grayscale(100%);
 }
 
-/*image resizer */
-img.resize {
-  width: 355px;
-  height:355px;
- /* max-width:50%;
-  max-height:50%;  */
-}
