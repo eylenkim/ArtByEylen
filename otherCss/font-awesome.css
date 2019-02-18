@@ -731,7 +731,7 @@
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
-  content: "\f0c9";
+content: url("hamburglar.svg");
 }
 .fa-list-ul:before {
   content: "\f0ca";
