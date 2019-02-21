@@ -121,7 +121,7 @@ img {
   background-color: #FEEF1A;
 }
 
- /*Normal Button */
+ /*Normal Button - Shop */
 .button.inverted {
   font-size: inherit;
   padding: 25px 70px;
@@ -134,9 +134,49 @@ img {
   
 }
 
+ /*Normal Button - Portfolio */
+.button2.inverted {
+  font-size: inherit;
+  padding: 25px 70px;
+  color: white;
+  height: auto;
+  border: 3px solid yellow;
+  text-transform: none;
+  font-size: 26px;
+  font-family: "Raleway";
+  
+}
 
-/* Hover Button */
+
+ /*Normal Button - About This Site*/
+.button3.inverted {
+  font-size: inherit;
+  padding: 25px 70px;
+  color: white;
+  height: auto;
+  border: 3px solid yellow;
+  text-transform: none;
+  font-size: 26px;
+  font-family: "Raleway";
+  
+}
+
+/* Hover Button for shop*/
 .button.inverted:hover {
+  background: url("photo/polka.png");
+  border: 3px solid yellow;
+  color: white;
+}
+
+/* Hover Button for portfolio*/
+.button2.inverted:hover {
+  background: url("photo/stripes.png");
+  border: 3px solid yellow;
+  color: white;
+}
+
+/* Hover Button for about this site*/
+.button3.inverted:hover {
   background: url("photo/polka.png");
   border: 3px solid yellow;
   color: white;
@@ -183,6 +223,17 @@ section {
   background-position: 50% 0;
 }
 
+.portfolio:before {
+  background: url("photo/IMG_2379.jpg");
+  /*background: url("photo/IMG_32281.png"); */
+  background-position: 50% 0;
+}
+
+.aboutSite:before {
+  background: url("photo/IMG_2494.jpg");
+  /*background: url("photo/IMG_32281.png"); */
+  background-position: 50% 0;
+}
  
 .clients {
   background-color: #f4f4f4;
