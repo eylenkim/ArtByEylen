@@ -131,6 +131,7 @@ img {
   text-transform: none;
   font-size: 26px;
   font-family: "Raleway";
+  transition: .5s ease;
   
 }
 
@@ -144,6 +145,7 @@ img {
   text-transform: none;
   font-size: 26px;
   font-family: "Raleway";
+  transition: .5s ease;
   
 }
 
@@ -158,27 +160,32 @@ img {
   text-transform: none;
   font-size: 26px;
   font-family: "Raleway";
+  transition: .5s ease;
   
 }
 
 /* Hover Button for shop*/
 .button.inverted:hover {
-  background: url("photo/polka.png");
+  background-color: rgba(0,0,0, .3); 
+transition: .5s ease;
+
   border: 3px solid yellow;
   color: white;
 }
 
 /* Hover Button for portfolio*/
 .button2.inverted:hover {
-  background: url("photo/stripes.png");
+  background-color: rgba(0,0,0, .3);
   border: 3px solid yellow;
+  transition: .5s ease;
   color: white;
 }
 
 /* Hover Button for about this site*/
 .button3.inverted:hover {
-  background: url("photo/polka.png");
+  background-color: rgba(0,0,0, .3);
   border: 3px solid yellow;
+  transition: .5s ease;
   color: white;
 }
 
@@ -223,18 +230,54 @@ section {
   background: url("photo/IMG_23342.jpg");
   /*background: url("photo/IMG_32281.png"); */
   background-position: 50% 0;
+
+  /* The image used */
+  background-image: url("photo/IMG_23342.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .portfolio:before {
   background: url("photo/IMG_2379.jpg");
   /*background: url("photo/IMG_32281.png"); */
   background-position: 50% 0;
+   /* The image used */
+  background-image: url("photo/IMG_2379.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .aboutSite:before {
   background: url("photo/IMG_2494.jpg");
   /*background: url("photo/IMG_32281.png"); */
   background-position: 50% 0;
+     /* The image used */
+  background-image: url("photo/IMG_2494.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
  
 .clients {
