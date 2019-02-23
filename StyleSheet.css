@@ -167,8 +167,7 @@ img {
 /* Hover Button for shop*/
 .button.inverted:hover {
   background-color: rgba(0,0,0, .3); 
-transition: .5s ease;
-
+  transition: .5s ease;
   border: 3px solid yellow;
   color: white;
 }
@@ -236,7 +235,6 @@ section {
 }
 
 .portfolio:before {
-   /* The image used */
   background: url("photo/IMG_2379.jpg");
   background-position: 50% 0;
   min-height: 500px; 
