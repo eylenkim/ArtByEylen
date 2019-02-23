@@ -232,7 +232,7 @@ section {
   background-position: 50% 0;
 
   /* The image used */
-  background-image: url("photo/IMG_23342.jpg");
+
 
   /* Set a specific height */
   min-height: 500px; 
@@ -246,11 +246,11 @@ section {
 }
 
 .portfolio:before {
-  background: url("photo/IMG_2379.jpg");
+
   /*background: url("photo/IMG_32281.png"); */
   background-position: 50% 0;
    /* The image used */
-  background-image: url("photo/IMG_2379.jpg");
+  background: url("photo/IMG_2379.jpg");
 
   /* Set a specific height */
   min-height: 500px; 
@@ -267,7 +267,7 @@ section {
   /*background: url("photo/IMG_32281.png"); */
   background-position: 50% 0;
      /* The image used */
-  background-image: url("photo/IMG_2494.jpg");
+
 
   /* Set a specific height */
   min-height: 500px; 
@@ -280,8 +280,6 @@ section {
 
 }
  
-.clients {
-  background-color: #f4f4f4;
 }
  
 .footer {
