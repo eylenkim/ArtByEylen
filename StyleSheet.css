@@ -222,22 +222,12 @@ section {
   opacity: .5;
 }
  
-.help:before {
-  background: url("../images/help_bg_image.jpg");
-}
  
 .shop:before {
   background: url("photo/IMG_23342.jpg");
-  /*background: url("photo/IMG_32281.png"); */
   background-position: 50% 0;
-
-  /* The image used */
-
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
+  /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -246,16 +236,11 @@ section {
 }
 
 .portfolio:before {
-
-  /*background: url("photo/IMG_32281.png"); */
-  background-position: 50% 0;
    /* The image used */
   background: url("photo/IMG_2379.jpg");
-
-  /* Set a specific height */
+  background-position: 50% 0;
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
+  /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,15 +249,9 @@ section {
 
 .aboutSite:before {
   background: url("photo/IMG_2494.jpg");
-  /*background: url("photo/IMG_32281.png"); */
   background-position: 50% 0;
-     /* The image used */
-
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
+  /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
