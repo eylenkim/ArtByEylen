@@ -223,7 +223,7 @@ section {
  
  
 .shop:before {
-  background: url("photo/IMG_2379.jpg");
+  background: url("photo/IMG_23342.jpg");
   background-position: 50% 0;
   min-height: 500px; 
   /* parallax scrolling effect */
@@ -235,7 +235,7 @@ section {
 }
 
 .portfolio:before {
-  
+  background: url("photo/IMG_2379.jpg");
   background-position: 50% 0;
   min-height: 500px; 
   /* parallax scrolling effect */
