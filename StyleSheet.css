@@ -235,7 +235,7 @@ section {
 }
 
 .portfolio:before {
-  background: url("photo/IMG_2379.jpg");
+  background: url("photo/IMG_2379.JPG");
   background-position: 50% 0;
   min-height: 500px; 
   /* parallax scrolling effect */
@@ -246,7 +246,7 @@ section {
 }
 
 .aboutSite:before {
-  background: url("photo/IMG_2494.jpg");
+  background: url("photo/IMG_2494.JPG");
   background-position: 50% 0;
   min-height: 500px; 
   /* parallax scrolling effect */
