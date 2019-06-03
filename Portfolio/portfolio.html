@@ -71,17 +71,36 @@
   
 <div>
 
+ <script> javascript var $workFilterLinks = $('.work-filters li'),
+      $container = $('.work-items');
+
+  javascript $workFilterLinks.find('a').click(function(){
+
+    $workFilterLinks.removeClass('active');
+    $(this).parent().addClass('active');
+
+return false; });
+
+   $container.isotope({
+      // options
+      filter: $(this).attr('data-filter'),
+      itemSelector: '.isotope-item',
+      animationEngine : "best-available",
+      masonry: {
+        columnWidth: '.isotope-item'
+      }
+    });
+
+    $(this).parent().addClass('active');
+
+    return false;
+  });
+</script>
 
     <!-- ♡ My Work ♡
   ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
 <section data-sr id="myWork" class="myWork u-full-width">
   <div class="container">
-    <div class="row">
-      <div class="twelve columns">
-       
-      </div>
-    </div>
-
 
     <div class="row">
     <ul class="work-filters u-full-width">
@@ -106,7 +125,6 @@
       </ul>
     </div> 
 
-<!--
 
     <div class="row">
       <ul class="work-items isotope js-isotope u-cf">
@@ -163,12 +181,10 @@
 
 
       </ul>
-    </div>
-
-  -->
+    </div> </div>
 
 
-  <!-- Images used to open the lightbox -->
+  <!-- Images used to open the lightbox 
 <div class="row">
   <div class="column">
     <img src="../photo/IMG_2445.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
@@ -238,7 +254,7 @@
 </div>
   </div>
 </section>
-
+-->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
