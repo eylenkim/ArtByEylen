@@ -1,6 +1,6 @@
-   <!DOCTYPE html>
-<html>
-    <head> 
+<!DOCTYPE html>
+<html lang="en">
+<head> 
     <!-- ♡ Page Stuff + CSS ♡
   ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
@@ -33,6 +33,7 @@
 <script type="text/javascript" src="../js/singlenav.js"></script>
 <script type="text/javascript" src="../js/jquery.fancybox.js"></script> 
 <script type="text/javascript" src="../js/scripts.js"></script> 
+<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script> 
 
 </head>
 <body>
@@ -66,41 +67,18 @@
          <h1  style="color:#555555 href="C:\Users\eylen.kim\Documents\GitHub\ArtByEylen\index.html" 
          style="text-decoration: none">Art By Eylen</h1>
       </div>
-
-       
-  
 <div>
 
- <script> javascript var $workFilterLinks = $('.work-filters li'),
-      $container = $('.work-items');
-
-  javascript $workFilterLinks.find('a').click(function(){
-
-    $workFilterLinks.removeClass('active');
-    $(this).parent().addClass('active');
-
-return false; });
-
-   $container.isotope({
-      // options
-      filter: $(this).attr('data-filter'),
-      itemSelector: '.isotope-item',
-      animationEngine : "best-available",
-      masonry: {
-        columnWidth: '.isotope-item'
-      }
-    });
-
-    $(this).parent().addClass('active');
-
-    return false;
-  });
-</script>
 
     <!-- ♡ My Work ♡
   ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
 <section data-sr id="myWork" class="myWork u-full-width">
   <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="separator">My Portfolio</h3>
+      </div>
+    </div>
 
     <div class="row">
     <ul class="work-filters u-full-width">
@@ -181,80 +159,11 @@ return false; });
 
 
       </ul>
-    </div> </div>
-
-
-  <!-- Images used to open the lightbox 
-<div class="row">
-  <div class="column">
-    <img src="../photo/IMG_2445.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="../photo/IMG_2445.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="../photo/IMG_74601.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="../photo/img898.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="../photo/IMG_2445.JPG" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="../photo/IMG_74601.JPG" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="../photo/IMG_3142.JPG" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="../photo/img898.JPG" style="width:100%">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="../photo/IMG_3142.JPG" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="../photo/img898.JPG" onclick="currentSlide(4)" alt="Lights">
-    </div>
-  </div>
-</div>
+    </div> 
   </div>
 </section>
--->
+
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
