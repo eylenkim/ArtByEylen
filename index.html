@@ -269,16 +269,16 @@ function showSlides(n) {
       <h3>Contact Me</h3>
    
     <div class="eight columns offset-by-two contact-us-form">
-      <form>
+      <form action="contact.php" method="post">
         <div class="row">
           <div class="six columns">
-            <input class="u-full-width" type="text" placeholder="Name" id="nameInput">
+            <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="name" required>
           </div>
           <div class="six columns">
-            <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
+            <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="email" required>
           </div>
         </div><br>
-        <textarea class="u-full-width" placeholder="Message" id="messageInput"></textarea><br><br>
+        <textarea class="u-full-width" placeholder="Message" id="messageInput" name="message" required style="height:100px;"></textarea><br><br>
         <input class="button u-pull-right" type="submit" value="Send"><br><br><br>
       </form>
 
