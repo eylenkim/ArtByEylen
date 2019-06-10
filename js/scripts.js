@@ -3,9 +3,9 @@ $(document).ready(function(){
   // =Hero
   // Alway make hero-container height equal to window height
 
-  /*var $heroContainer = $('.hero');
+  var $heroContainer = $('.hero');
 
-  $heroContainer.height(window.innerHeight); */
+  $heroContainer.height(window.innerHeight); 
 
   // When user resize browser window, hero container needs to have the same
   // height as browser window height.
@@ -17,7 +17,7 @@ $(document).ready(function(){
   // =Work
   // Isotope filters
 
-  var $workFilterLinks = $('.work-filters li'),
+ var $workFilterLinks = $('.work-filters li'),
       $container = $('.work-items');
 
   $workFilterLinks.find('a').click(function(){

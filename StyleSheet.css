@@ -564,3 +564,16 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+//media queries
+
+@media (min-width: 400px)  and (max-width: 750px) {
+  .work-items li.isotope-item.columns {
+    width: 100%;
+  }
+
+  @media (min-width: 550px) and (max-width: 750px) {
+
+  .work-items li.isotope-item.columns {
+    width: 50%;
+  }
+}
