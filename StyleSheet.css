@@ -1,6 +1,9 @@
 /* Overall Background */
  /* Hover Button Background Info */
 
+@font-face {
+font-family: 'GT America Bold';
+src: url('otherCss/fonts/GT-America-Bold.otf') format('opentype'); }
 
     
 
@@ -16,7 +19,7 @@ body{
 h1{
     /*background-color:white; */
    
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'GT America Bold';
     margin-top:0px;
     padding-top:0px;
     padding-bottom:23px;
