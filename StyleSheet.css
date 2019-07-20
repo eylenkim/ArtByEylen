@@ -1,69 +1,22 @@
-/* Overall Background */
- /* Hover Button Background Info */
+/* Typography */
 
 @font-face {
-font-family: 'GT America Bold';
-src: url('otherCss/fonts/GT-America-Bold.otf') format('opentype'); }
+  font-family: 'GT-America-Extended-Black';
+  src: url('otherCss/fonts/GT-America-Extended-Black.woff') format('woff'),
+       url('otherCss/fonts/GT-America-Extended-Black.ttf') format('truetype');
+}
 
-    
-
-body{ 
-
-    /*background-image: url(images/download.jpeg) asdf */
-    background-color: white; 
-
-   /* background-image: url(images/download.jpeg) */
+  
+body { 
+    background-color: #1B2835;
 }
 
 /* Title Font */
 h1{
-    /*background-color:white; */
-   
-    font-family: 'GT America Bold';
-    margin-top:0px;
-    padding-top:0px;
-    padding-bottom:23px;
-    text-align:center;
-    border-bottom: 5px dotted #555555;
-
+    font-family: 'GT-America-Extended-Black';
+    color: white;
 }
 
-h4 {
-  font-size: 22px;
-}
-h3 {
-  font-size: 28px;
-}
-
-
-
-p {
-
-   /* text-align:center;
-    margin-top:50px;
-    padding-top:20px;
-    padding-bottom:20px;*/
-    text-align:center;
-}
-
-h2 {
-    color:white;
-    background-color: black;
-    padding: 20px;
-    font-family: 'Abril Fatface', cursive;
-    text-align:center;
-    }
-h3 {
-   /* text-align:center; */
-}
-img {
-    width:355px;
-    height:355px;
-    border-style: solid;
-    border-color: #FFEC8F;
-    border-width: 7px;
-
-}
 
 /* Personal Flavour */
 * {
@@ -96,65 +49,9 @@ img {
   width: 100%;
 }
 
-/* Separator */
- 
-.separator {
-
-  margin-bottom: 0em;
-  padding-bottom: 1.7em;
-  text-align: center;
-
-}
-
-.separator:before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 86px;
-  height: 2px;
-  background-color: #222;
- 
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-.separator.orange:before {
-  background-color: #FEEF1A;
-}
 
  /*Normal Button - Shop */
 .button.inverted {
-  font-size: inherit;
-  padding: 25px 70px;
-  color: white;
-  height: auto;
-  border: 3px solid yellow;
-  text-transform: none;
-  font-size: 26px;
-  font-family: "Raleway";
-  transition: .5s ease;
-  
-}
-
- /*Normal Button - Portfolio */
-.button2.inverted {
-  font-size: inherit;
-  padding: 25px 70px;
-  color: white;
-  height: auto;
-  border: 3px solid yellow;
-  text-transform: none;
-  font-size: 26px;
-  font-family: "Raleway";
-  transition: .5s ease;
-  
-}
-
-
- /*Normal Button - About This Site*/
-.button3.inverted {
   font-size: inherit;
   padding: 25px 70px;
   color: white;
@@ -175,22 +72,6 @@ img {
   color: white;
 }
 
-/* Hover Button for portfolio*/
-.button2.inverted:hover {
-  background-color: rgba(0,0,0, .3);
-  border: 3px solid yellow;
-  transition: .5s ease;
-  color: white;
-}
-
-/* Hover Button for about this site*/
-.button3.inverted:hover {
-  background-color: rgba(0,0,0, .3);
-  border: 3px solid yellow;
-  transition: .5s ease;
-  color: white;
-}
-
 /* =Section general styling*/
  
 section {
@@ -199,32 +80,6 @@ section {
 }
 
 
- 
-/*
- 
-  Section with featured background image. Every section which will have this
-  class will get the effect with a background cover.
- 
-*/
- 
-.featured-bg-image {
-  position: relative;
-  background-color: #222222;
-  color: white;
-  min-height: 500px;
-}
- 
-.featured-bg-image:before {
-  content: '';
-  position: absolute;
-  top: 0; right: 0; left: 0; bottom: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  opacity: .5;
-}
- 
- 
 .shop:before {
   background: url("photo/IMG_23342.jpg");
   background-position: 50% 0;
@@ -237,34 +92,10 @@ section {
 
 }
 
-.portfolio:before {
-  background: url("photo/IMG_2379.JPG");
-  background-position: 50% 0;
-  min-height: 500px; 
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.aboutSite:before {
-  background: url("photo/IMG_2494.JPG");
-  background-position: 50% 0;
-  min-height: 500px; 
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
- 
-}
- 
 .footer {
-  background-color: #222222;
+  background-color: #1B2835;
   color: white;
+  padding-top: 35px;
 }
 
 
@@ -337,7 +168,6 @@ section {
 .menu-icon {
     width:65px;
     height:65px;
-   /* background-image:url('photo/citrus.png'); */
    background-color: rgba(0,0,0, .3);
 } 
 
@@ -365,158 +195,6 @@ section {
 .navigation .menu-icon:hover {
   color: yellow;
   background-color: black
-}
-
-/* Work Filters */
- 
-.work-filters {
-  list-style: none;
-}
-.work-filters li {
-  display: inline-block;
-  margin: 0 .5em;
-  font-size: 18px;
-  text-transform: uppercase;
-  
-    font-family: 'Raleway';
-}
-.work-filters li a {
-  color: inherit;
-  text-decoration: none;
-}
-.work-filters li.active {
-  
-    font-family: 'Raleway';
-
-/* Work items */
- 
-.work-items {
-  list-style: none;
-  width: 100%;
-  display: inline-block;
-}
-.work-items li {
-  position: relative;
-  overflow: hidden;
-  height: 360px;
- 
-  /* important because we need to overwrite the default skeleton */
-  margin: 0!important;
-  width: 33%;
-  border: 10px solid white;
- 
-  position: relative;
-}
-.work-items li:nth-child(4n) {
-  margin-left: 0;
-}
-.work-items li img{
-  width: auto;
-  height: 100%;
-  display: block;
-}
-/* Work detail */
- 
-.work-detail {
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
- 
-  opacity: 0;
-  background: rgba(0,0,0,.75);
-  color: white;
- 
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-.work-detail h3 {
-  font-size: 16px;
-  letter-spacing: .05em;
-}
-.work-detail p {
-  font-size: 20px;
-  text-transform: capitalize;
-  padding-left: 20px;
-  padding-right: 20px;
-}
- 
-.work-items li:hover .work-detail{
-  opacity: 1;
-  box-shadow: inset 0 0 0 10px #222;
-}
-
-
-/* Commission Examples -- gray */
- 
-.commission {
-  list-style: none;
-}
-.commission li {
-  display: inline-block;
-  width: 18%;
-  margin-right: 2%;
-}
-.commission li:last-child {
-  margin-right: 0;
-}
-.commission li img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 /* Number text (1/3 etc) */
@@ -584,3 +262,207 @@ img {vertical-align: middle;}
 .hpot {
   display: none;
 }
+
+
+body.top{
+  background-color: #192735;
+       margin-left: 0px;
+       margin-top: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       height: 100%;
+       width: 100%;
+       overflow-x: hidden;
+       overflow-y: hidden;
+}
+
+body.top:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    content: "";
+    background-image: url(otherCss/noise.gif);
+    opacity: .05;
+    z-index: 100000;
+    pointer-events: none;
+}
+
+/***** loader *****/
+
+
+#loader {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e161f;
+
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#loader.is_loaded {
+  height:0;
+  opacity: 0;
+
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+.loader-eylen{
+  position: relative;
+  top: 55%;
+  text-align: center;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  width:auto;
+  height:auto;
+  z-index: 5;
+  opacity: 0;
+
+
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.loader-eylen img{
+  width:100%;
+  max-width: 310px;
+  height:auto;
+
+}
+
+#loader.is_active .loader-eylen{
+  opacity: 1;
+  top: 50%;
+
+  -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.loader-name h3,.loader-name p{
+    position: absolute;
+    font-size: 6.5vw;
+    opacity: 0;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+
+#loader.is_active .loader-name h3{
+  opacity: 1;
+  top:51%;
+  -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+  -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+}
+
+
+
+.loader-name-outline h3{
+  /*min-height: 150px;*/
+  /*line-height: 100%;*/
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  z-index: 7;
+
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.loader-name-base h3{
+  /*min-height: 150px;*/
+  /*line-height: 100%;*/
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  /*opacity: 0;*/
+  color: rgba(255,255,255,0.9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  -webkit-text-stroke: none;
+  z-index: 4;
+
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    _::-webkit-full-page-media, _:future, :root .loader-name-base h3 {
+        background-image: none;
+    }
+}
+
+#loader p{
+  /*position: absolute;
+  top: 50%;
+  left: 55%;*/
+  margin: -40px 0 0 5.5%;
+  text-align: left;
+  /*transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);*/
+  color: white;
+  font-family: 'GT-America-Extended-Black';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1vw;
+  letter-spacing: 0.5px;
+  z-index: 6;
+  opacity: 0;
+}
+
+#loader.is_active p{
+  /*top:55%;*/
+  margin-top: 1vw;
+  opacity: 1;
+  -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+  -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+}
+
+
+/* Noise */
+.noise{
+/*  position: relative;*/
+  background-image: url(otherCss/noise.gif);
+  opacity: .05;
+  height: 100%;
+  overflow: scroll;
+}
+
+.bounce{
+  animation: fuwafuwa 3s linear infinite;
+  transform-origin: 50% 50%;
+  margin: 1rem 0 !important;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(20px) }
+  50% { transform: translateY(0px) }
+  100% { transform: translateY(20px) }
+}
+
