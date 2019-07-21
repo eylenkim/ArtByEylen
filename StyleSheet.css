@@ -442,7 +442,7 @@ section {
   font-weight: normal;
   font-style: normal;
   font-size: 1vw;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   z-index: 6;
   opacity: 0;
 }
@@ -461,7 +461,7 @@ section {
 .noise{
 /*  position: relative;*/
   background-image: url(otherCss/noise.gif);
-  opacity: .05;
+  opacity: .09;
   height: 100%;
   overflow: scroll;
 }
@@ -478,3 +478,55 @@ section {
   100% { transform: translateY(20px) }
 }
 
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 17px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar b {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 35px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'GT-America-Extended-Black';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  color: transparent;
+  -webkit-text-stroke: .5px #fff;
+
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: white;
+}
+
+.navbar img {
+width: 60px;
+    left: 50%;
+    position: absolute;
+    height: auto;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
