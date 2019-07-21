@@ -345,9 +345,10 @@ section {
 
 .loader-eylen img{
   width:100%;
-  max-width: 310px;
+  max-width: 510px;
   height:auto;
 
+ 
 }
 
 #loader.is_active .loader-eylen{
@@ -415,6 +416,11 @@ section {
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.loader-name-base p{
+  padding-left: 70px;
+  padding-top: 40px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
