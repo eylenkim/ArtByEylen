@@ -345,7 +345,7 @@ section {
 
 .loader-eylen img{
   width:100%;
-  max-width: 610px;
+  max-width: 500px;
   height:auto;
 
  
@@ -392,6 +392,7 @@ section {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   z-index: 7;
+  font-size: calc(5em + 1vw);
 
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -412,6 +413,7 @@ section {
   background-image: url(otherCss/noise.gif);
   -webkit-text-stroke: none;
   z-index: 4;
+  font-size: calc(5em + 1vw);
 
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -430,25 +432,20 @@ section {
 }
 
 #loader p{
-  /*position: absolute;
-  top: 50%;
-  left: 55%;*/
   margin: -40px 0 0 5.5%;
   text-align: left;
-  /*transform: translateY(-50%) translateX(-50%);
-  -webkit- transform: translateY(-50%) translateX(-50%);*/
   color: white;
   font-family: 'GT-America-Extended-Black';
   font-weight: normal;
   font-style: normal;
-  font-size: 1vw;
+  font-size: calc(1em + .5vw);
   letter-spacing: 0.8px;
   z-index: 6;
   opacity: 0;
 }
 
 #loader.is_active p{
-  /*top:55%;*/
+
   margin-top: 1vw;
   opacity: 1;
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
