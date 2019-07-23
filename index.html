@@ -15,6 +15,8 @@
 <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
 <link href="otherCss/font-awesome.css"rel="stylesheet" type="text/css" >
 <link href="otherCss/jquery.fancybox.css"rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      
 
  <!-- ♡ Mobile Meta ♡
@@ -72,17 +74,31 @@
 </nav>
 -->
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
-<div class="navbar">
-  <a href="#Portfolio">Portfolio</a>
-  <a href="#shop">Shop</a>
-  <a href="#hero">Home</a>
+<div class="topnav" id="myTopnav">
+   <a>Art By Eylen</a>
+    <a href="#hero">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#Portfolio">Portfolio</a>
+  
+ 
+    <img src="photo/favicon.png">
 
-  <img src="photo/favicon.png">
-
-  <b>Art By Eylen</b>
+ 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-
 
 
 
