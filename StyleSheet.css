@@ -542,14 +542,16 @@ height: auto;
   }
 }
 
-/***************************** Shop **********************************/
+/***************************** Media Query: 850px and over; **********************************/
 
-@media only screen and (min-width: 850px) {
+@media screen and (min-width: 551px) and (max-width: 850px) {
 #shop-pic {
-  width: 100%;
-  height: auto;
-  max-width: 500px;
-  float: left;
+width: 100%;
+    height: auto;
+    max-width: 600px;
+    float: left;
+    position: absolute;
+    left: 7.5%;
 }
 
 #shop-title h2{
@@ -601,8 +603,8 @@ height: auto;
 
 .overlap-center-fit h2{
     position: absolute;
-    top: 50%;
-    left: -18%;
+    top: 53.2%;
+    left: -1.8%;
     transform: translateY(-50%);
     -webkit- transform: translateY(-50%);
     opacity: 0;
@@ -788,14 +790,19 @@ height: auto;
 
 
 
-/***************************** Mobile Media Queries: 800px width and below; **********************************/
 
-@media only screen and (min-width: 550px) {
+
+
+/***************************** **>zMobile Media Queries: 550px width and below; **********************************/
+
+@media only screen and (max-width: 550px) {
 #shop-pic {
-  width: 100%;
-  height: auto;
-  max-width: 500px;
-  float: left;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    float: left;
+    position: absolute;
+    /*left: 7%; */
 }
 
 #shop-title h2{
@@ -1012,18 +1019,14 @@ height: auto;
 }
 
 }
+/***************************** **< Mobile Media Queries:551px width and up; **********************************/
 
-
-/***************************** Mobile Media Queries: 950px width and below; **********************************/
-
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 851px) {
 #shop-pic {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    float: left;
-    position: absolute;
-    left: 7%;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  float: left;
 }
 
 #shop-title h2{
@@ -1076,7 +1079,7 @@ height: auto;
 .overlap-center-fit h2{
     position: absolute;
     top: 50%;
-    /*left: -18%;*/
+    left: -18%;
     transform: translateY(-50%);
     -webkit- transform: translateY(-50%);
     opacity: 0;
@@ -1148,9 +1151,6 @@ height: auto;
 }
 
 
-
-
-
 .overlap-center-img{
   position: absolute;
   top: 50%;
@@ -1185,7 +1185,7 @@ height: auto;
 
 .overlap-center-img.load{
   opacity: 1;
-  /*left:22%;*/
+  left:22%;
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
 }
 
