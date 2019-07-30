@@ -600,7 +600,7 @@ height: auto;
 .overlap-center-fit h2{
     position: absolute;
     top: 52%;
-    left: 13%;
+    left: -18%;
     transform: translateY(-50%);
     -webkit- transform: translateY(-50%);
     opacity: 0;
