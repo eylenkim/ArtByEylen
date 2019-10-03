@@ -16,7 +16,7 @@ body.top{
        height: 100%;
        width: 100%;
        overflow-x: hidden;
-       overflow-y: hidden;
+      
 }
 
 body.top:after {
@@ -773,11 +773,18 @@ width: 100%;
 
 /***************************** Portfolio **********************************/
 
-
+.portfolio{
+  margin-top: 500px;
+  position: relative;
+}
 
 
 /***************************** About Me **********************************/
 
+.about-me{
+  margin-top: 500px;
+  position: relative;
+}
 
 
 /***************************** Contact **********************************/
