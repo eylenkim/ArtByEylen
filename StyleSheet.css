@@ -78,47 +78,11 @@ h1{
   width: 100%;
 }
 
-
- /*Normal Button - Shop */
-.button.inverted {
-  font-size: inherit;
-  padding: 25px 70px;
-  color: white;
-  height: auto;
-  border: 3px solid yellow;
-  text-transform: none;
-  font-size: 26px;
-  font-family: "Raleway";
-  transition: .5s ease;
-  
-}
-
-/* Hover Button for shop*/
-.button.inverted:hover {
-  background-color: rgba(0,0,0, .3); 
-  transition: .5s ease;
-  border: 3px solid yellow;
-  color: white;
-}
-
-/* =Section general styling*/
+/* Section general styling*/
  
 section {
   text-align: center;
   padding: 150px 0 0;
-}
-
-
-.shop:before {
-  background: url("photo/IMG_23342.jpg");
-  background-position: 50% 0;
-  min-height: 500px; 
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
 
 .footer {
@@ -128,8 +92,7 @@ section {
 }
 
 
-/* =Navigation
--------- */
+/* Navigation 
  
 .navigation {
   position: fixed;
@@ -184,8 +147,8 @@ section {
   color: white;
   font-weight: 900;
 }
- 
-/* color for inside the menu */
+ */
+/* color for inside the menu 
 
 .navigation ul li a.current,
 .navigation ul li a:hover {
@@ -214,42 +177,17 @@ section {
   -ms-transition: all .15s ease-in-out;
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-}
+}*/
  
- /* Colored block on the top left corner */
+ /* Colored block on the top left corner 
 .navigation .menu-icon.active {
   background-color: rgba(0,0,0, .3);;
- /* this is the transparent one background-color: rgba(0,0,0, .3); */
 }
 .navigation .menu-icon:hover {
   color: yellow;
   background-color: black
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
+*/
 
 /* Fading animation */
 .fade {
@@ -295,7 +233,6 @@ section {
 
 
 
-
 /***************************** loader **********************************/
 
 
@@ -321,7 +258,6 @@ section {
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 
 
 .loader-eylen{
@@ -478,7 +414,6 @@ section {
 
 /***************************** navigation **********************************/
 
-
 .topnav img {
 width: 60px;
 left: 35%;
@@ -491,7 +426,6 @@ height: auto;
   margin-top: 30px;
   height: 1500px; 
 }
-
 
 
 .topnav a {
@@ -542,26 +476,16 @@ height: auto;
   }
 }
 
-/***************************** Media Query: 850px and over; **********************************/
+/***************************** Media Query: between 551px-850px **********************************/
 
 @media screen and (min-width: 551px) and (max-width: 850px) {
-#shop-pic {
-width: 100%;
-    height: auto;
-    max-width: 600px;
-    float: left;
-    position: absolute;
-    left: 7.5%;
-}
 
-#shop-title h2{
-  position: absolute;
-  top: 50%;
+.first-pic{
+  margin-top: 150px;
 }
-
 
 .section-outline h2{
-    min-height: 150px;
+  min-height: 150px;
   line-height: 100%;
   font-family:'GT-America-Extended-Black';
   font-weight: 800;
@@ -593,13 +517,10 @@ width: 100%;
   min-height: 150px;
   line-height: 100%;
 
-
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-
 
 .overlap-center-fit h2{
     position: absolute;
@@ -621,7 +542,6 @@ width: 100%;
   top:45%;
 }
 
-
 .overlap-center-fit-outline h2{
  min-height: 150px;
   line-height: 100%;
@@ -638,7 +558,6 @@ width: 100%;
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 
 .overlap-center-fit-base h2{
   font-family:'GT-America-Extended-Black';
@@ -668,25 +587,18 @@ width: 100%;
 }
 
 .overlap-center-fit-base.is_active h2{
-
-
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-
-
-
-.overlap-center-img{
-  position: absolute;
+.main-image{
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   width:auto;
-  height:50%;
   z-index: 5;
   opacity: 0;
 
@@ -697,7 +609,7 @@ width: 100%;
 
 }
 
-.overlap-center-img:after {
+.main-image:after {
     position: fixed;
     top: 0;
     left: 0;
@@ -711,80 +623,74 @@ width: 100%;
     pointer-events: none;
 }
 
-.overlap-center-img.load{
+.main-image.load{
   opacity: 1;
-  left:22%;
+  left:15%;
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
+  padding-bottom: 130px;
 }
 
 
-.overlap-center-img img{
+.main-image img{
   min-width:30%;
   height:100%;
 
 }
 
-.overlap-center-img img{
+.main-image img{
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   opacity: 1;
   visibility: visible;
 }
 
-.overlap-center-img-before.is_active img{
+.main-image-before.is_active img{
     opacity: 0;
     visibility: hidden;
-
-    transform: /*skewY(2deg)*/ scale(1.1);
-
-
-    /*-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);*/
-
+    transform:scale(1.1);
 }
 
-.overlap-center-img-after.is_active img{
+.main-image-after.is_active img{
   transform: scale(1.1);
-
 }
 
-
-.overlap-center-img-before img , .overlap-center-img-after img{
+.main-image-before img , .main-image-after img{
   position: absolute;
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   z-index: 5;
 }
-.overlap-center-img-after img{
+.main-image-after img{
   z-index: 4;
 }
 
-}
-
-
-
-/***************************** Portfolio **********************************/
-
-.portfolio{
-  margin-top: 500px;
+ /***************************** Portfolio // Media Query: between 551px-850px **********************************/
+.home-pic {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  float: left;
   position: relative;
+  left: 7.5%;
 }
 
-
-/***************************** About Me **********************************/
-
-.about-me{
-  margin-top: 500px;
-  position: relative;
+#shop-title h2{
+  position: absolute;
+  top: 50%;
 }
+
+/***************************** Portfolio // Media Query: between 551px-850px **********************************/
+
+
+
+/***************************** About Me // Media Query: between 551px-850px **********************************/
+
+
 
 
 /***************************** Contact **********************************/
@@ -798,12 +704,18 @@ width: 100%;
 
 
 
+/* end bracket for media query */
+}
 
 
-/***************************** **>zMobile Media Queries: 550px width and below; **********************************/
+/***************************** ** Mobile Media Queries: 550px width and below; **********************************/
 
 @media only screen and (max-width: 550px) {
-#shop-pic {
+.first-pic{
+  margin-top: 100px;
+}
+
+.home-pic {
     width: 100%;
     height: auto;
     max-width: 600px;
@@ -933,18 +845,13 @@ width: 100%;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-
-
-
-.overlap-center-img{
-  position: absolute;
+.main-image{
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   width:auto;
-  height:50%;
   z-index: 5;
   opacity: 0;
 
@@ -955,7 +862,7 @@ width: 100%;
 
 }
 
-.overlap-center-img:after {
+.main-image:after {
     position: fixed;
     top: 0;
     left: 0;
@@ -969,67 +876,64 @@ width: 100%;
     pointer-events: none;
 }
 
-.overlap-center-img.load{
+.main-image.load{
   opacity: 1;
   /*left:22%;*/
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
+  padding-bottom: 100px;
 }
 
 
-.overlap-center-img img{
+.main-image img{
   min-width:30%;
   height:100%;
 
 }
 
-.overlap-center-img img{
+.main-image img{
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   opacity: 1;
   visibility: visible;
 }
 
-.overlap-center-img-before.is_active img{
+.main-image-before.is_active img{
     opacity: 0;
     visibility: hidden;
-
-    transform: /*skewY(2deg)*/ scale(1.1);
-
-
-    /*-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);*/
-
+    transform: scale(1.1);
 }
 
-.overlap-center-img-after.is_active img{
+.main-image-after.is_active img{
   transform: scale(1.1);
-
 }
 
-
-.overlap-center-img-before img , .overlap-center-img-after img{
+.main-image-before img , .main-image-after img{
   position: absolute;
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   z-index: 5;
 }
-.overlap-center-img-after img{
+.main-image-after img{
   z-index: 4;
 }
 
 }
-/***************************** **< Mobile Media Queries:551px width and up; **********************************/
+
+
+/***************************** **< Mobile Media Queries: 851px width and up; **********************************/
 
 @media only screen and (min-width: 851px) {
-#shop-pic {
+
+.first-pic{
+  margin-top: 250px;
+}
+
+.home-pic {
   width: 100%;
   height: auto;
   max-width: 500px;
@@ -1158,14 +1062,13 @@ width: 100%;
 }
 
 
-.overlap-center-img{
-  position: absolute;
+.main-image{
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   width:auto;
-  height:50%;
   z-index: 5;
   opacity: 0;
 
@@ -1176,7 +1079,7 @@ width: 100%;
 
 }
 
-.overlap-center-img:after {
+.main-image:after {
     position: fixed;
     top: 0;
     left: 0;
@@ -1190,31 +1093,32 @@ width: 100%;
     pointer-events: none;
 }
 
-.overlap-center-img.load{
+.main-image.load{
   opacity: 1;
   left:22%;
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
+  padding-bottom: 150px;
 }
 
 
-.overlap-center-img img{
+.main-image img{
   min-width:30%;
   height:100%;
 
 }
 
-.overlap-center-img img{
+.main-image img{
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   opacity: 1;
   visibility: visible;
 }
 
-.overlap-center-img-before.is_active img{
+.main-image-before.is_active img{
     opacity: 0;
     visibility: hidden;
 
@@ -1229,20 +1133,20 @@ width: 100%;
 
 }
 
-.overlap-center-img-after.is_active img{
+.main-image-after.is_active img{
   transform: scale(1.1);
 
 }
 
 
-.overlap-center-img-before img , .overlap-center-img-after img{
+.main-image-before img , .main-image-after img{
   position: absolute;
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   z-index: 5;
 }
-.overlap-center-img-after img{
+.main-image-after img{
   z-index: 4;
 }
 
