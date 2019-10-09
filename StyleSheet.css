@@ -46,15 +46,6 @@ h1{
     color: white;
 }
 
-
-/* Personal Flavour */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .centered {
   position: absolute;
   top: 50%;
@@ -82,7 +73,7 @@ h1{
  
 section {
   text-align: center;
-  padding: 150px 0 0;
+  padding: 8% 0 0;
 }
 
 .footer {
@@ -795,7 +786,7 @@ height: auto;
 */
 /***************************** **< Mobile Media Queries: 851px width and up; **********************************/
 
-@media only screen and (min-width: 851px) {
+/* @media only screen and (min-width: 851px) { */
 
 .first-pic{
   margin-top: 250px;
@@ -845,13 +836,10 @@ height: auto;
 .overlap-text h2{
     position: absolute;
     top: 50%;
-    left: -18%;
     transform: translateY(-50%);
-    -webkit- transform: translateY(-50%);
-    opacity: 0;
-    letter-spacing: 20px;
     opacity: 1;
-    letter-spacing: 0px;
+    letter-spacing: .1px;
+    text-align: center;
 }
 
 .overlap-text.is_active h2{
@@ -871,10 +859,7 @@ height: auto;
   z-index: 7;
   font-size: calc(5em + 1vw);
   float:left;
-  
-  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 
@@ -887,7 +872,7 @@ height: auto;
   -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
   -webkit-text-stroke: none;
-  z-index: 4;
+  z-index: -4;
   font-size: calc(5em + 1vw);
   float: left;
   min-height: 150px;
@@ -907,18 +892,10 @@ height: auto;
 
 
 .main-image{
-  position: relative;
-  top: 50%;
-  left: 50%;
   transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   z-index: 5;
   opacity: 0;
-
-  width: 100%;
-  height: auto;
-  max-width: 500px;
-  float: left;
 }
 
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -946,7 +923,7 @@ height: auto;
   left:22%;
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
   padding-bottom: 150px;
-  
+
 }
 
 
@@ -979,4 +956,4 @@ height: auto;
   z-index: 4;
 }
 
-}
+/* }
