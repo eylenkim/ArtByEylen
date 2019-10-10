@@ -1,5 +1,5 @@
 <!-- Overall Notes on the website:
-  --Change photo filters so the letters are readible
+  --Change photo filters so the letters are readible, or make letters solid
   --Add Media query for anything less than 549px:
       -Make the font smaller on the home page
       --center 'art by eylen'
@@ -42,9 +42,11 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
-  </head>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <header>
+
+    <!-- Nav Bar -->
     <script>
       function topNavigation() {
         var x = document.getElementById("myTopnav");
@@ -55,6 +57,7 @@
         }
       }
     </script>
+
     <div class="topnav" id="myTopnav">
       <h1>Art By Eylen</h1>
       <a href="#hero">Home</a>
@@ -80,7 +83,7 @@
         </div>
       </div>
       <div class="loader-eylen">
-        <img class="bounce" src="photo/brushstroke.png">
+        <img class="bounce" src="photo/moon.png">
       </div>
     </div>
 
@@ -89,7 +92,7 @@
     <section id="shop">
       <div class="container">
         <div class="row">
-          <a href="Shop/shop.html"><img class="two-thirds column u-pull-right first-pic" src="photo/artbyeylen13.JPG">
+          <a href="Shop/shop.html"><img class="homeReveal two-thirds column u-pull-right first-pic" src="photo/artbyeylen13.JPG">
             <div class="overlap-text">
               <div class="overlap-text-outline">
                 <h2 class="load one-third column">Enter Shop</h2>
@@ -110,7 +113,7 @@
       
       <div class="container">
         <div class="row">
-         <a href="Portfolio/portfolio.html"><img class="two-thirds column u-pull-right" src="photo/artbyeylen11.JPG">
+         <a href="Portfolio/portfolio.html"><img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen11.JPG">
       <div class="overlap-text">
         <div class="overlap-text-outline">
           <h2 class="load one-third column">Portfolio</h2>
@@ -126,8 +129,8 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="about-me">
      <div class="container">
-        <div class="row">
-          <img class="two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
+        <div class="row homeReveal">
+          <img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
 
       <div class="overlap-text">
         <div class="overlap-text-outline">
@@ -140,6 +143,19 @@
     </div></div>
     </section>
 
+<!-- Scroll Reveal -->
+    <script>
+    var slideRight = {
+    distance: '25%',
+    origin: 'right',
+    opacity: .5,
+    delay: 300,
+    reset: false,
+    mobile: true,
+    easing: 'cubic-bezier(.3, 0, .8, .8)',
+    init:function(e){var t,i,o;o=Array.prototype.slice.call(r.config.viewport.querySelectorAll("[data-sr]"))
+    };
+    ScrollReveal().reveal('.homeReveal', slideRight,  { easing: 'ease-in' });</script>
 
 
 <footer>
