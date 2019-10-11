@@ -44,6 +44,9 @@ body.top:after {
 h1{
     font-family: 'GT-America-Extended-Black';
     color: white;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    width: 400px;
 }
 
 .centered {
@@ -222,7 +225,7 @@ section {
   -webkit-text-stroke: 1px #fff;
   z-index: 7;
   font-size: calc(5em + 1vw);
-
+  letter-spacing: -.8rem;
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -243,7 +246,7 @@ section {
   -webkit-text-stroke: none;
   z-index: 4;
   font-size: calc(5em + 1vw);
-
+  letter-spacing: -.8rem;
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);

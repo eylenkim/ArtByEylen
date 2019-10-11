@@ -42,7 +42,6 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
-    <script src="https://unpkg.com/scrollreveal"></script>
 
     <header>
 
@@ -58,12 +57,12 @@
       }
     </script>
 
-    <div class="topnav" id="myTopnav">
-      <h1>Art By Eylen</h1>
+    <div class="topnav sixteen columns" id="myTopnav">
+      <h1 style="width: 300px;" class="four columns offset-by-six">Art By Eylen</h1>
       <a href="#hero">Home</a>
       <a href="#shop">Shop</a>
       <a href="#Portfolio">Portfolio</a>
-      <img src="photo/favicon.png">
+     <!-- <img src="photo/favicon.png"> -->
       <a href="javascript:void(0);" class="icon" onclick="topNavigation()">
       <i class="fa fa-bars"></i>
       </a>
@@ -83,13 +82,15 @@
         </div>
       </div>
       <div class="loader-eylen">
-        <img class="bounce" src="photo/moon.png">
-      </div>
+        <img class="bounce" src="photo/bigmoon.png">
+      </div> 
     </div>
+
+
 
     <!-- SHOP
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section id="shop">
+    <section data-sr id="shop">
       <div class="container">
         <div class="row">
           <a href="Shop/shop.html"><img class="homeReveal two-thirds column u-pull-right first-pic" src="photo/artbyeylen13.JPG">
@@ -109,11 +110,11 @@
 
     <!-- PORTFOLIO
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section id="portfolio">
+    <section data-sr id="portfolio">
       
       <div class="container">
         <div class="row">
-         <a href="Portfolio/portfolio.html"><img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen11.JPG">
+         <a href="Portfolio/portfolio.html"><img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen11.JPG"></img></a>
       <div class="overlap-text">
         <div class="overlap-text-outline">
           <h2 class="load one-third column">Portfolio</h2>
@@ -127,7 +128,7 @@
 
     <!-- ABOUT ME
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section id="about-me">
+    <section data-sr id="about-me">
      <div class="container">
         <div class="row homeReveal">
           <img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
@@ -142,20 +143,6 @@
       </div> 
     </div></div>
     </section>
-
-<!-- Scroll Reveal -->
-    <script>
-    var slideRight = {
-    distance: '25%',
-    origin: 'right',
-    opacity: .5,
-    delay: 300,
-    reset: false,
-    mobile: true,
-    easing: 'cubic-bezier(.3, 0, .8, .8)',
-    init:function(e){var t,i,o;o=Array.prototype.slice.call(r.config.viewport.querySelectorAll("[data-sr]"))
-    };
-    ScrollReveal().reveal('.homeReveal', slideRight,  { easing: 'ease-in' });</script>
 
 
 <footer>
