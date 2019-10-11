@@ -76,7 +76,7 @@ h1{
  
 section {
   text-align: center;
-  padding: 8% 0 0;
+  padding: 6% 0 3%;
 }
 
 .footer {
@@ -323,7 +323,10 @@ height: auto;
   height: 1500px; 
 }
 
-
+.topnav{
+  width: 300px; 
+  line-height: 75px;
+}
 .topnav a {
   float: left;
   display: block;

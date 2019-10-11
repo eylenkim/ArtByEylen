@@ -7,157 +7,166 @@
       -make 'art by eylen' centered 
   -- work on the nav bar + logo placement
   --change art by Eylen font???
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+  
+  
+  
+  
+  
+  
     <!-- Page Stuff + CSS 
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
-    <meta charset="utf-8"/>
-    <title>Art By Eylen</title>
-    <meta name="description" content="Eylen's Art Space + Shop">
-    <meta name="author" content="Eylen Kim">
-    <link href="StyleSheet.css" rel=stylesheet type="text/css">
-    <link href="skeleton.css" rel=stylesheet type="text/css">
-    <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
-    <link href="otherCss/font-awesome.css"rel="stylesheet" type="text/css" >
-    <link href="otherCss/jquery.fancybox.css"rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Mobile Meta 
-      ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--  Favicon
-      ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <link rel="icon" type="image/png" href="photo/favicon.png" />
-    <!--  Javascript 
-      ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
-    <script type="text/javascript" src="js/jquery.2.1.3.min.js"></script> 
-    <script type="text/javascript" src="js/scrollreveal.js"></script> 
-    <script type="text/javascript" src="js/singlenav.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
-    <script type="text/javascript" src="js/scripts.js"></script> 
-    <script type="text/javascript" src="js/loader.js"></script> 
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
+<meta charset="utf-8"/>
+<title>Art By Eylen</title>
+<meta name="description" content="Art, shop, portfolio, commissions by Eylen Kim">
+<meta name="author" content="Eylen Kim">
+<link href="StyleSheet.css" rel=stylesheet type="text/css">
+<link href="skeleton.css" rel=stylesheet type="text/css">
+<link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
+<link href="otherCss/font-awesome.css"rel="stylesheet" type="text/css" >
 
-    <header>
+<!-- Mobile Meta 
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Nav Bar -->
-    <script>
-      function topNavigation() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+<!--  Favicon
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<link rel="icon" type="image/png" href="photo/favicon.png" />
+
+<!--  Javascript 
+  ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
+<script type="text/javascript" src="js/jquery.2.1.3.min.js"></script> 
+<script type="text/javascript" src="js/scrollreveal.js"></script> 
+<script type="text/javascript" src="js/singlenav.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+<script type="text/javascript" src="js/scripts.js"></script> 
+<script type="text/javascript" src="js/loader.js"></script> 
+
+<header>
+  <div class="container" style="margin: 3em 0 0 6em;">
+    <div class="row">
+      <h1 style="width: auto; text-align: right;" class="one-half column u-pull-left">Art By <span><br></span><span style="z-index: -500"> Eylen</span></h1>
+    </div>
+  </div>
+  <!--
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <div class="container">
+    <div class="row">
+      <h1 style="width: 300px;" class="one-half column u-pull-left">Art By Eylen</h1>
+      <div class="topnav responsive one-half column u-pull-right" style="width: 300px;" id="myTopnav">
+        <a href="#hero">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNavigation()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function topNavigation() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-    </script>
+    }
+  </script> -->
+</header>
 
-    <div class="topnav sixteen columns" id="myTopnav">
-      <h1 style="width: 300px;" class="four columns offset-by-six">Art By Eylen</h1>
-      <a href="#hero">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#Portfolio">Portfolio</a>
-     <!-- <img src="photo/favicon.png"> -->
-      <a href="javascript:void(0);" class="icon" onclick="topNavigation()">
-      <i class="fa fa-bars"></i>
-      </a>
+<!-- Loader -->
+<body class="top">
+  <div id="loader">
+    <div class="loader-name">
+      <div class="loader-name-outline">
+        <h3>Art by Eylen</h3>
+      </div>
+      <div class="loader-name-base">
+        <h3>Art by Eylen</h3>
+        <p>Shop + Portfolio</p>
+      </div>
     </div>
-      </header>
+    <div class="loader-eylen">
+      <img class="bounce" src="photo/bigmoon.png">
+    </div>
+  </div>
 
-  <!-- Loader -->
-  <body class="top">
-    <div id="loader">
-      <div class="loader-name">
-        <div class="loader-name-outline">
-          <h3>Art by Eylen</h3>
+  <!-- SHOP
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section data-sr id="shop">
+    <div class="container">
+      <div class="row">
+        <a href="Shop/shop.html">
+          <img class="homeReveal two-thirds column u-pull-right first-pic" src="photo/artbyeylen13.JPG">
+          <div class="overlap-text">
+            <div class="overlap-text-outline">
+              <h2 class="load one-third column">Enter Shop</h2>
+            </div>
+            <div class="overlap-text-base">
+              <h2 class="load one-third column">Enter Shop</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section data-sr id="portfolio">
+    <div class="container">
+      <div class="row">
+        <a href="Portfolio/portfolio.html"><img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen11.JPG"></img></a>
+        <div class="overlap-text">
+          <div class="overlap-text-outline">
+            <h2 class="load one-third column">Portfolio</h2>
+          </div>
+          <div class="overlap-text-base">
+            <h2 class="load one-third column">Portfolio</h2>
+          </div>
         </div>
-        <div class="loader-name-base">
-          <h3>Art by Eylen</h3>
-          <p>Shop + Portfolio</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section data-sr id="about-me">
+    <div class="container">
+      <div class="row homeReveal">
+        <img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
+        <div class="overlap-text">
+          <div class="overlap-text-outline">
+            <h2 class="load one-third column">About Me</h2>
+          </div>
+          <div class="overlap-text-base">
+            <h2 class="load one-third column">About Me</h2>
+          </div>
         </div>
       </div>
-      <div class="loader-eylen">
-        <img class="bounce" src="photo/bigmoon.png">
-      </div> 
     </div>
+  </section>
 
+  <footer>
+    Art By Eylen
+  </footer>
 
-
-    <!-- SHOP
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section data-sr id="shop">
-      <div class="container">
-        <div class="row">
-          <a href="Shop/shop.html"><img class="homeReveal two-thirds column u-pull-right first-pic" src="photo/artbyeylen13.JPG">
-            <div class="overlap-text">
-              <div class="overlap-text-outline">
-                <h2 class="load one-third column">Enter Shop</h2>
-              </div>
-              <div class="overlap-text-base">
-               <h2 class="load one-third column">Enter Shop</h2>
-              </div>
-            </div></a>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- PORTFOLIO
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section data-sr id="portfolio">
-      
-      <div class="container">
-        <div class="row">
-         <a href="Portfolio/portfolio.html"><img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen11.JPG"></img></a>
-      <div class="overlap-text">
-        <div class="overlap-text-outline">
-          <h2 class="load one-third column">Portfolio</h2>
-        </div>
-        <div class="overlap-text-base">
-          <h2 class="load one-third column">Portfolio</h2>
-        </div>
-      </div> </a>
-          </div></div>
-    </section>
-
-    <!-- ABOUT ME
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section data-sr id="about-me">
-     <div class="container">
-        <div class="row homeReveal">
-          <img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
-
-      <div class="overlap-text">
-        <div class="overlap-text-outline">
-          <h2 class="load one-third column">About Me</h2>
-        </div>
-        <div class="overlap-text-base">
-          <h2 class="load one-third column">About Me</h2>
-        </div>
-      </div> 
-    </div></div>
-    </section>
-
-
-<footer>
-  Art By Eylen
-</footer>
-
-    <!-- GOOGLE ANALYTICS
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'UA-134455979-1');
-    </script>
-  </body>
+  <!-- GOOGLE ANALYTICS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-134455979-1');
+  </script>
+</body>
 </html>
