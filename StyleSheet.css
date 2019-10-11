@@ -855,8 +855,6 @@ height: auto;
 
 
 .overlap-text-outline h2{
- min-height: 150px;
-  line-height: 100%;
   font-family:'GT-America-Extended-Black';
   font-weight: 800;
   font-style: normal;
@@ -864,10 +862,7 @@ height: auto;
   -webkit-text-stroke: 1.4px #fff;
   z-index: 7;
   font-size: calc(5em + 1vw);
-  float:left;
-
 }
-
 
 .overlap-text-base h2{
   font-family:'GT-America-Extended-Black';
@@ -880,10 +875,6 @@ height: auto;
   -webkit-text-stroke: none;
   z-index: -4;
   font-size: calc(5em + 1vw);
-  float: left;
-  min-height: 150px;
-  line-height: 100%;
-
 
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -962,7 +953,10 @@ height: auto;
   z-index: 4;
 }
 
-
+.duo-pic{
+  width: 100%; 
+  height: auto;
+}
 /* image hover zoom */
 img:hover {
   -ms-transform: scale(1.1); /* IE 9 */
