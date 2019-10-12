@@ -44,15 +44,9 @@ body.top:after {
 h1{
     font-family: 'GT-America-Extended-Black';
     color: white;
-}
-
-
-/* Personal Flavour */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    width: 400px;
 }
 
 .centered {
@@ -78,177 +72,17 @@ h1{
   width: 100%;
 }
 
-
- /*Normal Button - Shop */
-.button.inverted {
-  font-size: inherit;
-  padding: 25px 70px;
-  color: white;
-  height: auto;
-  border: 3px solid yellow;
-  text-transform: none;
-  font-size: 26px;
-  font-family: "Raleway";
-  transition: .5s ease;
-  
-}
-
-/* Hover Button for shop*/
-.button.inverted:hover {
-  background-color: rgba(0,0,0, .3); 
-  transition: .5s ease;
-  border: 3px solid yellow;
-  color: white;
-}
-
-/* =Section general styling*/
+/* Section general styling*/
  
 section {
   text-align: center;
-  padding: 150px 0 0;
-}
-
-
-.shop:before {
-  background: url("photo/IMG_23342.jpg");
-  background-position: 50% 0;
-  min-height: 500px; 
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  padding: 6% 0 3%;
 }
 
 .footer {
   background-color: #1B2835;
   color: white;
   padding-top: 35px;
-}
-
-
-/* =Navigation
--------- */
- 
-.navigation {
-  position: fixed;
-  top: 0; left: 0; bottom: 0;
-  height: 100%;
-  z-index: 3;
-  width: 320px;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
- 
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
- 
-.navigation.active {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-}
- 
-.navigation ul {
-  list-style: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  background: #222;
-}
-.navigation ul li {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-.navigation ul li a {
-  display: block;
-  height: 100%;
-  padding: 10px 0;
- 
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 900;
-}
- 
-/* color for inside the menu */
-
-.navigation ul li a.current,
-.navigation ul li a:hover {
-  color: #FFFF00;
-  background-color: transparent;
-}
- 
-
-.menu-icon {
-    width:65px;
-    height:65px;
-   background-color: rgba(0,0,0, .3);
-} 
-
-.navigation .menu-icon {
-  color: yellow;
-  font-size: 30px;
-  line-height: 1em;
- 
-  position: absolute;
-  left: 100%;
-  padding: 15px;
- 
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-}
- 
- /* Colored block on the top left corner */
-.navigation .menu-icon.active {
-  background-color: rgba(0,0,0, .3);;
- /* this is the transparent one background-color: rgba(0,0,0, .3); */
-}
-.navigation .menu-icon:hover {
-  color: yellow;
-  background-color: black
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -295,7 +129,6 @@ section {
 
 
 
-
 /***************************** loader **********************************/
 
 
@@ -321,7 +154,6 @@ section {
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 
 
 .loader-eylen{
@@ -393,7 +225,7 @@ section {
   -webkit-text-stroke: 1px #fff;
   z-index: 7;
   font-size: calc(5em + 1vw);
-
+  letter-spacing: -.8rem;
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -414,7 +246,7 @@ section {
   -webkit-text-stroke: none;
   z-index: 4;
   font-size: calc(5em + 1vw);
-
+  letter-spacing: -.8rem;
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -478,7 +310,6 @@ section {
 
 /***************************** navigation **********************************/
 
-
 .topnav img {
 width: 60px;
 left: 35%;
@@ -492,8 +323,10 @@ height: auto;
   height: 1500px; 
 }
 
-
-
+.topnav{
+  width: 300px; 
+  line-height: 75px;
+}
 .topnav a {
   float: left;
   display: block;
@@ -542,26 +375,16 @@ height: auto;
   }
 }
 
-/***************************** Media Query: 850px and over; **********************************/
+/***************************** Media Query: between 551px-850px **********************************/
 
-@media screen and (min-width: 551px) and (max-width: 850px) {
-#shop-pic {
-width: 100%;
-    height: auto;
-    max-width: 600px;
-    float: left;
-    position: absolute;
-    left: 7.5%;
+/*@media screen and (min-width: 551px) and (max-width: 850px) {
+
+.first-pic{
+  margin-top: 150px;
 }
-
-#shop-title h2{
-  position: absolute;
-  top: 50%;
-}
-
 
 .section-outline h2{
-    min-height: 150px;
+  min-height: 150px;
   line-height: 100%;
   font-family:'GT-America-Extended-Black';
   font-weight: 800;
@@ -583,8 +406,6 @@ width: 100%;
   font-weight: 800;
   font-style: normal;
   color: rgba(255,255,255,0.9);
-  background-clip: text;
-  -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
   -webkit-text-stroke: none;
   z-index: 4;
@@ -593,15 +414,12 @@ width: 100%;
   min-height: 150px;
   line-height: 100%;
 
-
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-
-.overlap-center-fit h2{
+.overlap-text h2{
     position: absolute;
     top: 53.2%;
     left: -1.8%;
@@ -611,18 +429,17 @@ width: 100%;
     letter-spacing: 20px;
 }
 
-.overlap-center-fit h2.load{
+.overlap-text h2.load{
   opacity: 1;
   letter-spacing: 0px;
 }
 
-.overlap-center-fit.is_active h2{
+.overlap-text.is_active h2{
   transform: translateY(-25%) scale(1.15);
   top:45%;
 }
 
-
-.overlap-center-fit-outline h2{
+.overlap-text-outline h2{
  min-height: 150px;
   line-height: 100%;
   font-family:'GT-America-Extended-Black';
@@ -639,8 +456,7 @@ width: 100%;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-.overlap-center-fit-base h2{
+.overlap-text-base h2{
   font-family:'GT-America-Extended-Black';
   font-weight: 800;
   font-style: normal;
@@ -662,31 +478,24 @@ width: 100%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    _::-webkit-full-page-media, _:future, :root .overlap-center-fit-base h2 {
+    _::-webkit-full-page-media, _:future, :root .overlap-text-base h2 {
         background-image: none;
     }
 }
 
-.overlap-center-fit-base.is_active h2{
-
-
+.overlap-text-base.is_active h2{
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-
-
-
-.overlap-center-img{
-  position: absolute;
+.main-image{
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   width:auto;
-  height:50%;
   z-index: 5;
   opacity: 0;
 
@@ -697,7 +506,7 @@ width: 100%;
 
 }
 
-.overlap-center-img:after {
+.main-image:after {
     position: fixed;
     top: 0;
     left: 0;
@@ -711,99 +520,73 @@ width: 100%;
     pointer-events: none;
 }
 
-.overlap-center-img.load{
+.main-image.load{
   opacity: 1;
-  left:22%;
+  left:15%;
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
+  padding-bottom: 130px;
 }
 
 
-.overlap-center-img img{
+.main-image img{
   min-width:30%;
   height:100%;
 
 }
 
-.overlap-center-img img{
+.main-image img{
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   opacity: 1;
   visibility: visible;
 }
 
-.overlap-center-img-before.is_active img{
+.main-image-before.is_active img{
     opacity: 0;
     visibility: hidden;
-
-    transform: /*skewY(2deg)*/ scale(1.1);
-
-
-    /*-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);*/
-
+    transform:scale(1.1);
 }
 
-.overlap-center-img-after.is_active img{
+.main-image-after.is_active img{
   transform: scale(1.1);
-
 }
 
-
-.overlap-center-img-before img , .overlap-center-img-after img{
+.main-image-before img , .main-image-after img{
   position: absolute;
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   z-index: 5;
 }
-.overlap-center-img-after img{
+.main-image-after img{
   z-index: 4;
 }
-
-}
-
-
-
-/***************************** Portfolio **********************************/
-
-.portfolio{
-  margin-top: 500px;
+*/
+ /****Portfolio // Media Query: between 551px-850px *********/
+/*.home-pic {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  float: left;
   position: relative;
+  left: 7.5%;
 }
 
+}
+*/
 
-/***************************** About Me **********************************/
+/***************************** ** Mobile Media Queries: 550px width and below; ********************************/
 
-.about-me{
-  margin-top: 500px;
-  position: relative;
+/*@media only screen and (max-width: 550px) {
+.first-pic{
+  margin-top: 100px;
 }
 
-
-/***************************** Contact **********************************/
-
-
-
-
-/***************************** Footer **********************************/
-
-
-
-
-
-
-
-/***************************** **>zMobile Media Queries: 550px width and below; **********************************/
-
-@media only screen and (max-width: 550px) {
-#shop-pic {
+.home-pic {
     width: 100%;
     height: auto;
     max-width: 600px;
@@ -812,12 +595,7 @@ width: 100%;
     /*left: 7%; */
 }
 
-#shop-title h2{
-  position: absolute;
-  top: 50%;
-}
-
-
+/*
 .section-outline h2{
     min-height: 150px;
   line-height: 100%;
@@ -859,7 +637,7 @@ width: 100%;
 
 
 
-.overlap-center-fit h2{
+.overlap-text h2{
     position: absolute;
     top: 50%;
     /*left: -18%;*/
@@ -869,18 +647,18 @@ width: 100%;
     letter-spacing: 20px;
 }
 
-.overlap-center-fit h2.load{
+/*.overlap-text h2.load{
   opacity: 1;
   letter-spacing: 0px;
 }
 
-.overlap-center-fit.is_active h2{
+.overlap-text.is_active h2{
   transform: translateY(-25%) scale(1.15);
   top:45%;
 }
 
 
-.overlap-center-fit-outline h2{
+.overlap-text-outline h2{
  min-height: 150px;
   line-height: 100%;
   font-family:'GT-America-Extended-Black';
@@ -898,7 +676,7 @@ width: 100%;
 }
 
 
-.overlap-center-fit-base h2{
+.overlap-text-base h2{
   font-family:'GT-America-Extended-Black';
   font-weight: 800;
   font-style: normal;
@@ -920,12 +698,12 @@ width: 100%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    _::-webkit-full-page-media, _:future, :root .overlap-center-fit-base h2 {
+    _::-webkit-full-page-media, _:future, :root .overlap-text-base h2 {
         background-image: none;
     }
 }
 
-.overlap-center-fit-base.is_active h2{
+.overlap-text-base.is_active h2{
 
 
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -933,18 +711,13 @@ width: 100%;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-
-
-
-.overlap-center-img{
-  position: absolute;
+.main-image{
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   width:auto;
-  height:50%;
   z-index: 5;
   opacity: 0;
 
@@ -955,7 +728,7 @@ width: 100%;
 
 }
 
-.overlap-center-img:after {
+.main-image:after {
     position: fixed;
     top: 0;
     left: 0;
@@ -969,78 +742,61 @@ width: 100%;
     pointer-events: none;
 }
 
-.overlap-center-img.load{
+.main-image.load{
   opacity: 1;
   /*left:22%;*/
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
+  padding-bottom: 100px;
 }
 
-
-.overlap-center-img img{
+/*
+.main-image img{
   min-width:30%;
   height:100%;
 
 }
 
-.overlap-center-img img{
+.main-image img{
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   opacity: 1;
   visibility: visible;
 }
 
-.overlap-center-img-before.is_active img{
+.main-image-before.is_active img{
     opacity: 0;
     visibility: hidden;
-
-    transform: /*skewY(2deg)*/ scale(1.1);
-
-
-    /*-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);*/
-
+    transform: scale(1.1);
 }
 
-.overlap-center-img-after.is_active img{
+.main-image-after.is_active img{
   transform: scale(1.1);
-
 }
 
-
-.overlap-center-img-before img , .overlap-center-img-after img{
+.main-image-before img , .main-image-after img{
   position: absolute;
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   z-index: 5;
 }
-.overlap-center-img-after img{
+.main-image-after img{
   z-index: 4;
 }
 
 }
-/***************************** **< Mobile Media Queries:551px width and up; **********************************/
+*/
+/***************************** **< Mobile Media Queries: 851px width and up; **********************************/
 
-@media only screen and (min-width: 851px) {
-#shop-pic {
-  width: 100%;
-  height: auto;
-  max-width: 500px;
-  float: left;
+/* @media only screen and (min-width: 851px) { */
+
+.first-pic{
+  margin-top: 250px;
 }
-
-#shop-title h2{
-  position: absolute;
-  top: 50%;
-}
-
 
 .section-outline h2{
     min-height: 150px;
@@ -1083,46 +839,32 @@ width: 100%;
 
 
 
-.overlap-center-fit h2{
+.overlap-text h2{
     position: absolute;
     top: 50%;
-    left: -18%;
     transform: translateY(-50%);
-    -webkit- transform: translateY(-50%);
-    opacity: 0;
-    letter-spacing: 20px;
+    opacity: 1;
+    letter-spacing: .1px;
+    text-align: left;
 }
 
-.overlap-center-fit h2.load{
-  opacity: 1;
-  letter-spacing: 0px;
-}
-
-.overlap-center-fit.is_active h2{
+.overlap-text.is_active h2{
   transform: translateY(-25%) scale(1.15);
   top:45%;
 }
 
 
-.overlap-center-fit-outline h2{
- min-height: 150px;
-  line-height: 100%;
+.overlap-text-outline h2{
   font-family:'GT-America-Extended-Black';
   font-weight: 800;
   font-style: normal;
   color: transparent;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1.4px #fff;
   z-index: 7;
   font-size: calc(5em + 1vw);
-  float:left;
-
-  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-.overlap-center-fit-base h2{
+.overlap-text-base h2{
   font-family:'GT-America-Extended-Black';
   font-weight: 800;
   font-style: normal;
@@ -1131,12 +873,8 @@ width: 100%;
   -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
   -webkit-text-stroke: none;
-  z-index: 4;
+  z-index: -4;
   font-size: calc(5em + 1vw);
-  float: left;
-  min-height: 150px;
-  line-height: 100%;
-
 
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1144,31 +882,18 @@ width: 100%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    _::-webkit-full-page-media, _:future, :root .overlap-center-fit-base h2 {
+    _::-webkit-full-page-media, _:future, :root .overlap-text-base h2 {
         background-image: none;
     }
 }
 
-.overlap-center-fit-base.is_active h2{
 
-
-  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-
-.overlap-center-img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.main-image{
   transform: translateY(-50%) translateX(-50%) skewX(-10deg);
   -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
-  width:auto;
-  height:50%;
   z-index: 5;
   opacity: 0;
-
+}
 
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1176,7 +901,7 @@ width: 100%;
 
 }
 
-.overlap-center-img:after {
+.main-image:after {
     position: fixed;
     top: 0;
     left: 0;
@@ -1190,60 +915,58 @@ width: 100%;
     pointer-events: none;
 }
 
-.overlap-center-img.load{
+.main-image.load{
   opacity: 1;
   left:22%;
   transform: translateY(-50%) translateX(-50%) skewX(0deg);
+  padding-bottom: 150px;
+
 }
 
 
-.overlap-center-img img{
+.main-image img{
   min-width:30%;
   height:100%;
 
 }
 
-.overlap-center-img img{
+.main-image img{
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   opacity: 1;
   visibility: visible;
 }
 
-.overlap-center-img-before.is_active img{
-    opacity: 0;
-    visibility: hidden;
 
-    transform: /*skewY(2deg)*/ scale(1.1);
-
-
-    /*-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);*/
-
-}
-
-.overlap-center-img-after.is_active img{
-  transform: scale(1.1);
-
-}
-
-
-.overlap-center-img-before img , .overlap-center-img-after img{
+.main-image-before img , .main-image-after img{
   position: absolute;
 }
 
-.overlap-center-img-before img{
+.main-image-before img{
   z-index: 5;
 }
-.overlap-center-img-after img{
+.main-image-after img{
   z-index: 4;
 }
 
+.duo-pic{
+  width: 100%; 
+  height: auto;
 }
+/* image hover zoom */
+img:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+img {
+    transition: transform .3s;
+}
+
+
+/* }
