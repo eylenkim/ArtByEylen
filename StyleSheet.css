@@ -442,9 +442,9 @@ height: auto;
   color: transparent;
   -webkit-text-stroke: 1.4px #fff;
   z-index: 7;
-  font-size: calc(3.4em + 1vw);
+  font-size: 5.5vw;
   position: absolute;
-  top: -20px;
+  top: -1.7vw;
 }
 
 .overlap-text-base-shop h2{
@@ -457,13 +457,9 @@ height: auto;
   background-image: url(otherCss/noise.gif);
   -webkit-text-stroke: none;
   z-index: -4;
-  font-size: calc(3.4em + 1vw);
+  font-size: 5.5vw;
   position: absolute;
-  top: -20px;
-
-  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  top: -1.7vw;
 }
 
 .overlap-text-outline-portfolio h2{
@@ -473,9 +469,9 @@ height: auto;
   color: transparent;
   -webkit-text-stroke: 1.4px #fff;
   z-index: 7;
-  font-size: calc(3.4em + 1vw);
+  font-size: 5.5vw;
   position: absolute;
-  top: -20px;
+  top: -1.7vw;
 }
 
 .overlap-text-base-portfolio h2{
@@ -488,13 +484,9 @@ height: auto;
   background-image: url(otherCss/noise.gif);
   -webkit-text-stroke: none;
   z-index: -4;
-  font-size: calc(3.4em + 1vw);
+  font-size: 5.5vw;
   position: absolute;
-  top: -20px;
-  
-  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  top: -1.7vw;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
