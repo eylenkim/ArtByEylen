@@ -452,10 +452,8 @@ height: auto;
   font-weight: 800;
   font-style: normal;
   color: rgba(255,255,255,0.9);
-  background-clip: text;
   -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
-  -webkit-text-stroke: none;
   z-index: -4;
   font-size: 5.5vw;
   position: absolute;
@@ -479,10 +477,8 @@ height: auto;
   font-weight: 800;
   font-style: normal;
   color: rgba(255,255,255,0.9);
-  background-clip: text;
   -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
-  -webkit-text-stroke: none;
   z-index: -4;
   font-size: 5.5vw;
   position: absolute;
@@ -565,6 +561,7 @@ height: auto;
   width: 100%; 
   height: auto;
 }
+
 /* image hover zoom */
 img:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -576,5 +573,69 @@ img {
     transition: transform .3s;
 }
 
+/********* Media Query: Max 549px; **********/
+@media only screen and (max-width: 549px) {
+.duo-pic{
+  width: 100%; 
+  height: auto;
+  padding-top: 50px;
+}
 
-/* }
+.overlap-text-outline-shop h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 1.4px #fff;
+  z-index: 7;
+  font-size: 50px;
+  position: absolute;
+  top: 150px;
+}
+
+.overlap-text-base-shop h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: absolute;
+  top: 150px;
+}
+
+.overlap-text-outline-portfolio h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 1.4px #fff;
+  z-index: 7;
+  font-size: 50px;
+  position: absolute;
+  top: 410px;
+  left: 45px;
+}
+
+.overlap-text-base-portfolio h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: absolute;
+  top: 410px;
+  left: 45px;
+}
+
+section{
+  padding-top: 0px;
+}
+
+
+}
