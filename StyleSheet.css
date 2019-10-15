@@ -573,6 +573,12 @@ img {
     transition: transform .3s;
 }
 
+
+header{
+  padding-top: 3vw;
+  position: relative;
+  left: -70px;
+}
 /********* Media Query: Max 549px; **********/
 @media only screen and (max-width: 549px) {
 .duo-pic{
@@ -637,5 +643,14 @@ section{
   padding-top: 0px;
 }
 
+h1{
+  text-align:center;
+}
+
+header{
+  padding-top: 5vw;
+  position: relative;
+  left: 0px;
+}
 
 }
