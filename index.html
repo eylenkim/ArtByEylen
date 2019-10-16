@@ -100,23 +100,51 @@
       </div>
     </section>
 
-    <!-- ABOUT ME
+
+    <!-- ABOUT ME-->
       –––––––––––––––––––––––––––––––––––––––––––––––––– 
       <section data-sr id="about-me">
       <div class="container">
         <div class="row homeReveal">
-          <img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
+
+          <img class="two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
+
           <div class="overlap-text">
-            <div class="overlap-text-outline">
-              <h2 class="load one-third column">About Me</h2>
-            </div>
             <div class="overlap-text-base">
               <h2 class="load one-third column">About Me</h2>
             </div>
           </div>
+
+          <button class="trigger">About Me</button>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close-button">&Cross;</span>
+                   <h3>Hello, I am Eylen!</h3>
+              </div>
+            </div>
+          <script>
+            var modal = document.querySelector(".modal");
+          var trigger = document.querySelector(".trigger");
+          var closeButton = document.querySelector(".close-button");
+
+          function toggleModal() {
+              modal.classList.toggle("show-modal");
+          }
+
+          function windowOnClick(event) {
+              if (event.target === modal) {
+                  toggleModal();
+              }
+          }
+
+          trigger.addEventListener("click", toggleModal);
+          closeButton.addEventListener("click", toggleModal);
+          window.addEventListener("click", windowOnClick);
+          </script>
+
         </div>
       </div>
-      </section>-->
+      </section>
 
     <footer>
       Art By Eylen
