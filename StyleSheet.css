@@ -603,7 +603,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 1rem 1.5rem;
+    padding: 1rem 3rem;
     border-radius: 0.5rem;
 }
 .close-button {
@@ -614,11 +614,16 @@ header{
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: lightgray;
-    font-size: 30px;
+    font-size: 40px;
+    position: relative;
+    right: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1.4px black;
+
 }
+
 .close-button:hover {
-    background-color: darkgray;
+  color: black;
 }
 .show-modal {
     opacity: 1;
