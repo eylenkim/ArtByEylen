@@ -6,7 +6,8 @@
        url('otherCss/fonts/GT-America-Extended-Black.ttf') format('truetype');
 }
 
-  
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
 body.top{
   background-color: #1B2835;
  margin-left: 0px;
@@ -605,6 +606,7 @@ header{
     background-color: white;
     padding: 1rem 3rem;
     border-radius: 0.5rem;
+    overflow: scroll;
 }
 .close-button {
     float: right;
@@ -640,9 +642,10 @@ header{
 
 h3{
   color: black;
+  font-family: 'Inconsolata', monospace;
 }
 
-/********* Media Query: Max 549px; **********/
+/****************** Media Query: Max 549px; *******************/
 @media only screen and (max-width: 549px) {
 .duo-pic{
   width: 100%; 
