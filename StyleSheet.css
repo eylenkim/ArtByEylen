@@ -745,7 +745,7 @@ header{
 .modal-content p{
    overflow: scroll;
    text-align:left;
-   max-height:470px;
+   max-height:480px;
    width: 235px;
 }
 
