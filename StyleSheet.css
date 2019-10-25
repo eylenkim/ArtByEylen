@@ -651,7 +651,6 @@ display: none;
  }
 
  .about-contact-text{
-  color:white;
   font-size: 1.3vw;
   float: right;
   text-align: right;
@@ -798,8 +797,7 @@ header{
     top: -180px;
  }
 
- #footer-details{
-  color:white; 
+ #footer-details{ 
   font-family: 'Inconsolata', monospace; 
   text-align:center; 
   font-size: 1.6rem;
@@ -818,6 +816,10 @@ header{
   top: 0px;
   left: 0px;
   display: block;
+ }
+
+  .about-contact-text{
+  display:none;
  }
     
 }
