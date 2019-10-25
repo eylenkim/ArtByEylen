@@ -501,6 +501,7 @@ height: auto;
   position: absolute;
   top: 4vw;
   left: 13vw;
+  display: none;
 }
 
 .overlap-text-base-about h2{
@@ -515,6 +516,7 @@ height: auto;
   position: absolute;
   top: 4vw;
   left: 13vw;
+  display:none;
 }
 
 
@@ -544,8 +546,7 @@ img {
 
 header{
   padding-top: 3vw;
-  position: relative;
-  left: -70px;
+
 }
 
 #h1-title-span{
@@ -635,25 +636,32 @@ h3{
   color:white; 
   font-family: 'Inconsolata', monospace; 
   text-align:center; 
-  font-size: 2.6rem;
+  font-size: 2rem;
   margin-bottom: 0px;
  }
 
  #footer-pic{
-  width:80px; 
-  height:80px;
+  width:70px; 
+  height:70px;
   margin-bottom: 15px;
  }
 
  .about-pic {
-  width: 35% !important;
-  height: auto;
-  width: 35% !important;
-  height: auto;
-  position: relative;
-  top: -70px;
-  left: -10%;
+display: none;
  }
+
+ .about-contact-text{
+  color:white;
+  font-size: 1.3vw;
+  float: right;
+  text-align: right;
+  padding-top: 12px;
+ }
+
+ section#about-me{
+  display: none;
+}
+
 
 /****************** Media Query: Max 549px; *******************/
 @media only screen and (max-width: 549px) {
@@ -722,11 +730,21 @@ h3{
   position: relative !important;
   top: -130px !important;
   left: 5px;
+  display: block;
 }
 
 
 section{
   padding-top: 0px;
+}
+
+section#about-me{
+  display:block;
+  height: 100px;
+}
+
+section#footer{
+  padding-top:10px !important;
 }
 
 h1{
@@ -799,6 +817,7 @@ header{
   position: relative;
   top: 0px;
   left: 0px;
+  display: block;
  }
     
 }
