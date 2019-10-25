@@ -491,17 +491,11 @@ height: auto;
 }
 
 .overlap-text-outline-about h2{
-  font-family:'GT-America-Extended-Black';
-  font-weight: 800;
-  font-style: normal;
-  color: transparent;
-  -webkit-text-stroke: 1.4px #fff;
-  z-index: 7;
-  font-size: 4vw;
-  position: absolute;
-  top: 4vw;
-  left: 13vw;
   display: none;
+}
+
+.overlap-text-base-contact h2{
+  display:none;
 }
 
 .overlap-text-base-about h2{
@@ -511,14 +505,13 @@ height: auto;
   color: rgba(255,255,255,0.9);
   -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
-  z-index: -4;
-  font-size: 4vw;
-  position: absolute;
-  top: 4vw;
-  left: 13vw;
-  display:none;
+  z-index: 10;
+  font-size: 50px;
+  position: relative !important;
+  top: -130px !important;
+  left: 5px;
+  display: none;
 }
-
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     _::-webkit-full-page-media, _:future, :root .overlap-text-base h2 {
@@ -655,10 +648,12 @@ display: none;
   float: right;
   text-align: right;
   padding-top: 12px;
+  display:block;
+  color:white;
  }
 
- section#about-me{
-  display: none;
+#contact-section{
+  display:none;
 }
 
 
@@ -732,6 +727,21 @@ display: none;
   display: block;
 }
 
+.overlap-text-base-contact h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: relative !important;
+  top: -70px !important;
+  left: 5px;
+  display: block;
+}
+
 
 section{
   padding-top: 0px;
@@ -739,7 +749,7 @@ section{
 
 section#about-me{
   display:block;
-  height: 100px;
+ 
 }
 
 section#footer{
@@ -821,5 +831,15 @@ header{
   .about-contact-text{
   display:none;
  }
+
+  #about-me{
+  display: block;
+}
+
+#contact-section{
+  display:block;
+  padding-top:0px; 
+  padding-bottom:0px;
+}
     
 }
