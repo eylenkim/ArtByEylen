@@ -39,7 +39,6 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
-    <script type="text/javascript" src="js/dialogBox.js"></script> 
 
     <header>
       <div class="container">
@@ -115,11 +114,8 @@
     <!-- ABOUT ME
       ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
     
-      <div class="container" id="about-me">
-      
-
-         <img class="two-thirds column u-pull-right trigger mobile-about-padding about-pic"  src="photo/IMG_2441.JPG"></img>
-            <div class="modal">
+      <div class="container trigger" id="about-me">
+      <div class="modal">
               <div class="modal-content">
                 <span class="close-button">x</span>
                    <h3>
@@ -130,17 +126,39 @@
               </div>
             </div>
 
+         <img class="two-thirds column u-pull-right mobile-about-padding about-pic"  src="photo/IMG_2441.JPG"></img>
+            
+
 
        <div class="overlap-text">
               <div class="overlap-text-outline-about">
                 <h2 class="load two-thirds column">About Me</h2>
               </div>
               <div class="overlap-text-base-about">
-                <h2 class="load two-thirds column trigger">About Me</h2>
+                <h2 class="load two-thirds column">About Me</h2>
               </div>
             </div>
       </div>
 
+       <script>
+          var modal = document.querySelector(".modal");
+          var trigger = document.querySelector(".trigger");
+          var closeButton = document.querySelector(".close-button"); 
+
+          function toggleModal() {
+              modal.classList.toggle("show-modal");
+          }
+
+          function windowOnClick(event) {
+              if (event.target === modal) {
+                  toggleModal();
+              }
+          }
+
+          trigger.addEventListener("click", toggleModal);
+          closeButton.addEventListener("click", toggleModal);
+          window.addEventListener("click", windowOnClick);
+        </script>
  
 
       <!--   Contact Me  
@@ -213,6 +231,5 @@
       
       gtag('config', 'UA-134455979-1');
     </script>
-
   </body>
 </html>
