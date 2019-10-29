@@ -580,6 +580,7 @@ header{
 .modal-content p{
    overflow: auto;
    text-align:left;
+   color: black;
 }
 
 .close-button {
@@ -785,6 +786,7 @@ header{
    text-align:left;
    max-height:480px;
    width: 235px;
+   color: black;
 }
 
 
@@ -835,7 +837,7 @@ header{
   padding-top: 0px;
   padding-bottom: 0px;
   position: relative;
-  top: -130px;
+  top: -50px;
   background-image: url(photo/blue2.jpg);
   border: white 2px solid;
   width: 90%;

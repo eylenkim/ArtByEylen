@@ -153,6 +153,9 @@
               if (event.target === modal) {
                   toggleModal();
               }
+              else if (event.target === closeButton) {
+                toggleModal();
+              }
           }
 
           trigger.addEventListener("click", toggleModal);
