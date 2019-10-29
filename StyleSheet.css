@@ -566,7 +566,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 1rem 5rem;
+    padding: 1rem 4.8rem;
     border-radius: 0.5rem;
 
 }
