@@ -39,7 +39,7 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
-
+ 
     <header>
       <div class="container">
         <div class="row">
@@ -114,7 +114,37 @@
     <!-- ABOUT ME
       ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
     
-      <div class="container about-trigger" id="about-me">
+      <div class="container trigger" id="about-me">
+           <script>
+                      const modals = Array.from(document.querySelectorAll('.modal'));
+          const triggers = Array.from(document.querySelectorAll('.trigger'));
+          var closeButtons = Array.from(document.querySelectorAll(".close-button")); 
+
+        for (const trigger of triggers) {
+             trigger.addEventListener('click', toggleModal);
+          }
+
+        for (const closebutton of closeButtons) {
+             closebutton.addEventListener("click", toggleModal);
+          }
+
+          function toggleModal(event)
+            event.target.querySelector('.modal').classList.toggle("show-modal");
+          }
+
+  
+          function windowOnClick(event) {
+
+          if (modals.some((modal) => modal.contains(event.target))) {
+            toggleModal();
+            }
+          }
+         
+         window.addEventListener("click", windowOnClick);
+    
+ 
+
+          </script>
       <div class="modal">
               <div class="modal-content">
                 <span class="close-button">x</span>
@@ -127,7 +157,7 @@
             </div>
 
          <img class="two-thirds column u-pull-right mobile-about-padding about-pic"  src="photo/IMG_2441.JPG"></img>
-            
+
 
 
        <div class="overlap-text">
@@ -139,7 +169,7 @@
               </div>
             </div>
       </div>
-<script type="text/javascript" src="js/mobileAboutDialog.js"></script>
+
 
  
 
