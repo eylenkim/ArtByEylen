@@ -39,6 +39,7 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
+    <script type="text/javascript" src="js/dialogBox.js"></script> 
  
     <header>
       <div class="container">
@@ -46,8 +47,23 @@
           <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
 
           <p class="about-contact-text" class="one-half column u-pull-right">
-            <span>About Me</span>
+
+            <span class="trigger">
+              <p>About Me</p>
+                    <div class="modal">
+              <div class="modal-content">
+                <span class="close-button">x</span>
+                   <h3>
+                   Hello,<br>I'm Eylen!</h3>
+                   <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                    <br><br>
+                   In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br></p>
+              </div>
+            </div>
+            </span>
+
               <br>
+
             <span>Contact</span>
           </p>
 
@@ -115,36 +131,6 @@
       ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
     
       <div class="container trigger" id="about-me">
-           <script>
-                      const modals = Array.from(document.querySelectorAll('.modal'));
-          const triggers = Array.from(document.querySelectorAll('.trigger'));
-          var closeButtons = Array.from(document.querySelectorAll(".close-button")); 
-
-        for (const trigger of triggers) {
-             trigger.addEventListener('click', toggleModal);
-          }
-
-        for (const closebutton of closeButtons) {
-             closebutton.addEventListener("click", toggleModal);
-          }
-
-          function toggleModal(event)
-            event.target.querySelector('.modal').classList.toggle("show-modal");
-          }
-
-  
-          function windowOnClick(event) {
-
-          if (modals.some((modal) => modal.contains(event.target))) {
-            toggleModal();
-            }
-          }
-         
-         window.addEventListener("click", windowOnClick);
-    
- 
-
-          </script>
       <div class="modal">
               <div class="modal-content">
                 <span class="close-button">x</span>
@@ -157,7 +143,6 @@
             </div>
 
          <img class="two-thirds column u-pull-right mobile-about-padding about-pic"  src="photo/IMG_2441.JPG"></img>
-
 
 
        <div class="overlap-text">
