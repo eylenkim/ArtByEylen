@@ -1,189 +1,209 @@
-
 <!-- Overall Notes on the website:
-  --Change photo filters so the letters are readible, or make letters solid
-  --Add Media query for anything less than 549px:
-      -Make the font smaller on the home page
-      --center 'art by eylen'
-  --Add media query for in between 550-705
-      -make 'art by eylen' centered 
-  -- work on the nav bar + logo placement
-  
-  
-    <!-- Page Stuff + CSS 
-      ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+   --Change photo filters so the letters are readible, or make letters solid
+   --Add Media query for anything less than 549px:
+       -Make the font smaller on the home page
+       --center 'art by eylen'
+   --Add media query for in between 550-705
+       -make 'art by eylen' centered 
+   -- work on the nav bar + logo placement
+   
+   
+     <!-- Page Stuff + CSS 
+       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
-    <meta charset="utf-8"/>
-    <title>Art By Eylen</title>
-    <meta name="description" content="Art, shop, portfolio, commissions by Eylen Kim">
-    <meta name="author" content="Eylen Kim">
-    <link href="StyleSheet.css" rel=stylesheet type="text/css">
-    <link href="skeleton.css" rel=stylesheet type="text/css">
-    <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
-    <link href="otherCss/font-awesome.css"rel="stylesheet" type="text/css" >
-
-    <!-- Mobile Meta 
-      ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--  Favicon
-      ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <link rel="icon" type="image/png" href="photo/favicon1.png" />
-
-    <!--  Javascript 
-      ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
-    <script type="text/javascript" src="js/jquery.2.1.3.min.js"></script> 
-    <script type="text/javascript" src="js/scrollreveal.js"></script> 
-    <script type="text/javascript" src="js/singlenav.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
-    <script type="text/javascript" src="js/scripts.js"></script> 
-    <script type="text/javascript" src="js/loader.js"></script> 
- 
-    <header>
-      <div class="container">
-        <div class="row">
-          <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
-
-          <p class="about-contact-text" class="one-half column u-pull-right">
-            <span>About Me</span>
-              <br>
-            <span>Contact</span>
-          </p>
-
-        </div>
-      </div>
-    </header>
-
-    <!-- Loader -->
-  <body class="top">
-    <div id="loader">
-      <div class="loader-name">
-        <div class="loader-name-outline">
-          <h3>Art by Eylen</h3>
-        </div>
-        <div class="loader-name-base">
-          <h3>Art by Eylen</h3>
-          <p>Shop + Portfolio</p>
-        </div>
-      </div>
-      <div class="loader-eylen">
-        <img class="bounce" src="photo/bigmoon.png">
-      </div>
-    </div>
-
-    <!-- SHOP + Portfolio
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section>
-      <div class="container">
-        <div class="row">
-
-          <div class="one-half column u-pull-left mobile-section-padding">
-            <a href="Shop/shop.html">
-            <img class="u-max-full-width duo-pic" src="photo/colorblock1.jpg">
-            </a>
-            <div class="overlap-text">
-              <div class="overlap-text-outline-shop">
-                <h2 class="load two-thirds column">Enter Shop</h2>
-              </div>
-              <div class="overlap-text-base-shop">
-                <h2 class="load two-thirds column">Enter Shop</h2>
-              </div>
+   <head>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
+      <meta charset="utf-8"/>
+      <title>Art By Eylen</title>
+      <meta name="description" content="Art, shop, portfolio, commissions by Eylen Kim">
+      <meta name="author" content="Eylen Kim">
+      <link href="StyleSheet.css" rel=stylesheet type="text/css">
+      <link href="skeleton.css" rel=stylesheet type="text/css">
+      <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
+      <link href="otherCss/font-awesome.css"rel="stylesheet" type="text/css" >
+      <!-- Mobile Meta 
+         ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!--  Favicon
+         ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+      <link rel="icon" type="image/png" href="photo/favicon1.png" />
+      <!--  Javascript 
+         ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
+      <script type="text/javascript" src="js/jquery.2.1.3.min.js"></script> 
+      <script type="text/javascript" src="js/scrollreveal.js"></script> 
+      <script type="text/javascript" src="js/singlenav.js"></script>
+      <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+      <script type="text/javascript" src="js/scripts.js"></script> 
+      <script type="text/javascript" src="js/loader.js"></script> 
+      <header>
+         <div class="container">
+            <div class="row">
+               <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
+               <div class="about-contact-text" class="one-half column u-pull-right">
+                  <span class="trigger">
+                     <p id="about-me-desktop">
+                        About Me
+                     </p>
+                     <div class="modal">
+                        <div class="modal-content">
+                           <span class="close-button">x</span>
+                           <h3>
+                              Hello,<br>I'm Eylen!
+                           </h3>
+                           <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                              <br><br>
+                              In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br>
+                           </p>
+                        </div>
+                     </div>
+                  </span>
+                  <br>
+                  <span class="trigger">
+                     <p id="about-me-desktop">
+                        Contact
+                     </p>
+                     <div class="modal">
+                        <div class="modal-content">
+                           <span class="close-button">x</span>
+                           <h3 style="margin-bottom: 0px;">
+                              Contact Me
+                           </h3>
+                           <p>
+                           <div class="contact-us-form">
+                              <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
+                                 <div class="overlap-text">
+                                    <div class="overlap-text-base-contact">
+                                       <h2 class="load two-thirds column">Contact</h2>
+                                    </div>
+                                 </div>
+                                 <div class="row" style="z-index: 9999999;">
+                                    <div class="six columns">
+                                       <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                                    </div>
+                                    <div class="six columns">
+                                       <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                                    </div>
+                                 </div>
+                                 <br>
+                                 <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height:100px; margin-top: 10px;"></textarea>
+                                 <br><br>
+                                 <input class="button u-pull-right" type="submit" value="Send"><br><br><br>
+                              </form>
+                           </div>
+                           </p>
+                        </div>
+                     </div>
+                  </span>
+               </div>
             </div>
-          </div>
-
-          <div class="one-half column u-pull-right mobile-section-padding">
-            <a href="Portfolio/portfolio.html">
-            <img class="u-max-full-width duo-pic" src="photo/colorblock3.jpg">
-            </a>
-            <div class="overlap-text">
-              <div class="overlap-text-outline-portfolio">
-                <h2 class="load two-thirds column">Portfolio</h2>
-              </div>
-              <div class="overlap-text-base-portfolio">
-                <h2 class="load two-thirds column">Portfolio</h2>
-              </div>
+         </div>
+      </header>
+      <!-- Loader -->
+   <body class="top">
+      <div id="loader">
+         <div class="loader-name">
+            <div class="loader-name-outline">
+               <h3>Art by Eylen</h3>
             </div>
-          </div>
-
-        </div>
+            <div class="loader-name-base">
+               <h3>Art by Eylen</h3>
+               <p>Shop + Portfolio</p>
+            </div>
+         </div>
+         <div class="loader-eylen">
+            <img class="bounce" src="photo/bigmoon.png">
+         </div>
       </div>
-    </section>
-
-
-    <!-- ABOUT ME
-      ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
-    
+      <!-- SHOP + Portfolio
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="one-half column u-pull-left mobile-section-padding">
+                  <a href="Shop/shop.html">
+                  <img class="u-max-full-width duo-pic" src="photo/colorblock1.jpg">
+                  </a>
+                  <div class="overlap-text">
+                     <div class="overlap-text-outline-shop">
+                        <h2 class="load two-thirds column">Enter Shop</h2>
+                     </div>
+                     <div class="overlap-text-base-shop">
+                        <h2 class="load two-thirds column">Enter Shop</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="one-half column u-pull-right mobile-section-padding">
+                  <a href="Portfolio/portfolio.html">
+                  <img class="u-max-full-width duo-pic" src="photo/colorblock3.jpg">
+                  </a>
+                  <div class="overlap-text">
+                     <div class="overlap-text-outline-portfolio">
+                        <h2 class="load two-thirds column">Portfolio</h2>
+                     </div>
+                     <div class="overlap-text-base-portfolio">
+                        <h2 class="load two-thirds column">Portfolio</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ABOUT ME
+         ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
       <div class="container trigger" id="about-me">
-           <script>
-                      const modals = Array.from(document.querySelectorAll('.modal'));
-          const triggers = Array.from(document.querySelectorAll('.trigger'));
-          var closeButtons = Array.from(document.querySelectorAll(".close-button")); 
-        for (const trigger of triggers) {
-             trigger.addEventListener('click', toggleModal);
-          }
-        for (const closebutton of closeButtons) {
-             closebutton.addEventListener("click", toggleModal);
-          }
-          function toggleModal(event)
-            event.target.querySelector('.modal').classList.toggle("show-modal");
-          }
-  
-          function windowOnClick(event) {
-          if (modals.some((modal) => modal.contains(event.target))) {
-            toggleModal();
-            }
-          }
-         
-         window.addEventListener("click", windowOnClick);
-    
- 
-          </script>
-      <div class="modal">
-              <div class="modal-content">
-                <span class="close-button">x</span>
-                   <h3>
-                   Hello,<br>I'm Eylen!</h3>
-                   <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
-                    <br><br>
-                   In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br></p>
-              </div>
+         <div class="modal">
+            <div class="modal-content">
+               <span class="close-button">x</span>
+               <h3>
+                  Hello,<br>I'm Eylen!
+               </h3>
+               <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                  <br><br>
+                  In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br>
+               </p>
             </div>
-
-         <img class="two-thirds column u-pull-right mobile-about-padding about-pic"  src="photo/IMG_2441.JPG"></img>
-
-
-
-       <div class="overlap-text">
-              <div class="overlap-text-outline-about">
-                <h2 class="load two-thirds column">About Me</h2>
-              </div>
-              <div class="overlap-text-base-about">
-                <h2 class="load two-thirds column">About Me</h2>
-              </div>
+         </div>
+         <img class="two-thirds column u-pull-right mobile-about-padding about-pic"  src="https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"></img>
+         <div class="overlap-text">
+            <div class="overlap-text-outline-about">
+               <h2 class="load two-thirds column">About Me</h2>
             </div>
+            <div class="overlap-text-base-about">
+               <h2 class="load two-thirds column">About Me</h2>
+            </div>
+         </div>
       </div>
-
-
- 
-
+      <script> const modals = Array.from(document.querySelectorAll('.modal'));
+         const triggers = Array.from(document.querySelectorAll('.trigger'));
+         var closeButton = document.querySelector(".close-button"); 
+         
+         //if a trigger is clicked then...
+         for (const trigger of triggers) {
+           trigger.addEventListener('click', toggleModal);
+         }
+         
+         // .. then toggle it's modal
+         function toggleModal(event) { event.target.closest('.trigger').querySelector('.modal').classList.toggle("show-modal"); }
+         
+           // check if the clicked element is a modal, or in a modal
+         function windowOnClick(event) {
+           if (modals.some((modal) => modal.contains(event.target))) {
+             toggleModal();
+           }
+         }
+      </script>
       <!--   Contact Me  
          ––––––––––––––––––––––––––––––––––––––––––––––––––---->
       <section class="u-full-width" id="contact-section">
          <div class="container">
-            
             <div class="twelve columns contact-us-form">
                <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
-
-              
                   <div class="overlap-text">
-              <div class="overlap-text-base-contact">
-                <h2 class="load two-thirds column">Contact Me</h2>
-              </div>
-            </div>
-      
-
+                     <div class="overlap-text-base-contact">
+                        <h2 class="load two-thirds column">Contact Me</h2>
+                     </div>
+                  </div>
                   <div class="row">
                      <div class="six columns">
                         <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
@@ -200,44 +220,29 @@
             </div>
          </div>
       </section>
-
-
-
-
-
-
-
-
-
-    <footer>
-     <section id="footer">
-         <div class="container">
-            <div class="row">
-              <div class="columns"
-        
-               <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
-             
-                <br>
-         
+      <footer>
+         <section id="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="columns"
+                  <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
+                  <br>
                   <h3 id="footer-details">&copy; 2019 Eylen Kim <br> Art By Eylen
                   </h3>
-              </div>
+               </div>
             </div>
-         </div>
-      </section>
-    </footer>
-
-
-    <!-- GOOGLE ANALYTICS
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'UA-134455979-1');
-    </script>
-  </body>
+            </div>
+         </section>
+      </footer>
+      <!-- GOOGLE ANALYTICS
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-134455979-1');
+      </script>
+   </body>
 </html>
-

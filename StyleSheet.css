@@ -154,6 +154,8 @@ section {
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  display: none;
 }
 
 
@@ -575,12 +577,14 @@ header{
   padding: 15px 35px; 
   font-family:'GT-America-Extended-Black';
   line-height: 40px;
+  text-align: center;
 }
 
 .modal-content p{
    overflow: auto;
    text-align:left;
    color: black;
+   line-height: 1.3em;
 }
 
 .close-button {
@@ -652,10 +656,16 @@ display: none;
   padding-top: 12px;
   display:block;
   color:white;
+  line-height: 5px;
  }
 
 #contact-section{
   display:none;
+}
+
+#about-me-desktop{
+  cursor: pointer; 
+  line-height: 5px;
 }
 
 
@@ -778,21 +788,22 @@ header{
   padding: 15px 35px; 
   font-family:'GT-America-Extended-Black';
   line-height: 35px;
-  text-align:center;
+  text-align: center;
 }
 
 .modal-content p{
    overflow: scroll;
-   text-align:left;
-   max-height:480px;
+   text-align: left;
+   max-height: 480px;
    width: 235px;
    color: black;
+   line-height: 1.5em;
 }
 
 
 .overlap-text.is_active h2{
   transform: translateY(-25%) scale(1.15);
-  top:45%;
+  top: 45%;
 }
 
 #about-me-button {

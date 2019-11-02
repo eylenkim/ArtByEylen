@@ -401,6 +401,8 @@ legend {
 
 textarea {
   overflow: auto;
+  padding-top: 15px;
+  color: black;
 }
 
 /**
