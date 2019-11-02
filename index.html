@@ -1,3 +1,4 @@
+
 <!-- Overall Notes on the website:
   --Change photo filters so the letters are readible, or make letters solid
   --Add Media query for anything less than 549px:
@@ -9,7 +10,7 @@
   
   
     <!-- Page Stuff + CSS 
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,43 +40,15 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <script type="text/javascript" src="js/dialogBox.js"></script> 
  
-=======
-
->>>>>>> parent of b6b2e26... modal
-=======
-
->>>>>>> parent of b6b2e26... modal
-=======
-
->>>>>>> parent of b6b2e26... modal
     <header>
       <div class="container">
         <div class="row">
           <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
 
           <p class="about-contact-text" class="one-half column u-pull-right">
-
-            <span class="trigger">
-              <p>About Me</p>
-                    <div class="modal">
-              <div class="modal-content">
-                <span class="close-button">x</span>
-                   <h3>
-                   Hello,<br>I'm Eylen!</h3>
-                   <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
-                    <br><br>
-                   In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br></p>
-              </div>
-            </div>
-            </span>
-
+            <span>About Me</span>
               <br>
-
             <span>Contact</span>
           </p>
 
@@ -142,19 +115,31 @@
     <!-- ABOUT ME
       ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       <div class="container trigger" id="about-me">
-=======
-      <div class="container about-trigger" id="about-me">
->>>>>>> parent of b6b2e26... modal
-=======
-      <div class="container about-trigger" id="about-me">
->>>>>>> parent of b6b2e26... modal
-=======
-      <div class="container about-trigger" id="about-me">
->>>>>>> parent of b6b2e26... modal
+           <script>
+                      const modals = Array.from(document.querySelectorAll('.modal'));
+          const triggers = Array.from(document.querySelectorAll('.trigger'));
+          var closeButtons = Array.from(document.querySelectorAll(".close-button")); 
+        for (const trigger of triggers) {
+             trigger.addEventListener('click', toggleModal);
+          }
+        for (const closebutton of closeButtons) {
+             closebutton.addEventListener("click", toggleModal);
+          }
+          function toggleModal(event)
+            event.target.querySelector('.modal').classList.toggle("show-modal");
+          }
+  
+          function windowOnClick(event) {
+          if (modals.some((modal) => modal.contains(event.target))) {
+            toggleModal();
+            }
+          }
+         
+         window.addEventListener("click", windowOnClick);
+    
+ 
+          </script>
       <div class="modal">
               <div class="modal-content">
                 <span class="close-button">x</span>
@@ -167,15 +152,8 @@
             </div>
 
          <img class="two-thirds column u-pull-right mobile-about-padding about-pic"  src="photo/IMG_2441.JPG"></img>
-            
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of b6b2e26... modal
-=======
 
->>>>>>> parent of b6b2e26... modal
 
        <div class="overlap-text">
               <div class="overlap-text-outline-about">
@@ -186,57 +164,7 @@
               </div>
             </div>
       </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-    </div>
-  </section>
-
-
-  <!-- ABOUT ME
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <section data-sr id="about-me">
-    <div class="container">
-      <div class="row homeReveal">
-        <img class="homeReveal two-thirds column u-pull-right" src="photo/artbyeylen6.JPG"></img>
-        <div class="overlap-text">
-          <div class="overlap-text-outline">
-            <h2 class="load one-third column">About Me</h2>
-          </div>
-          <div class="overlap-text-base">
-            <h2 class="load one-third column">About Me</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    Art By Eylen
-  </footer>
-
-  <!-- GOOGLE ANALYTICS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'UA-134455979-1');
-  </script>
-</body>
-
-=======
-<script type="text/javascript" src="js/mobileAboutDialog.js"></script>
->>>>>>> parent of b6b2e26... modal
-=======
-<script type="text/javascript" src="js/mobileAboutDialog.js"></script>
->>>>>>> parent of b6b2e26... modal
-=======
-<script type="text/javascript" src="js/mobileAboutDialog.js"></script>
->>>>>>> parent of b6b2e26... modal
 
  
 
@@ -311,5 +239,5 @@
       gtag('config', 'UA-134455979-1');
     </script>
   </body>
-
 </html>
+
