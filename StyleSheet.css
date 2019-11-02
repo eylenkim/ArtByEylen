@@ -6,7 +6,8 @@
        url('otherCss/fonts/GT-America-Extended-Black.ttf') format('truetype');
 }
 
-  
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
 body.top{
   background-color: #1B2835;
  margin-left: 0px;
@@ -442,9 +443,10 @@ height: auto;
   color: transparent;
   -webkit-text-stroke: 1.4px #fff;
   z-index: 7;
-  font-size: 5.5vw;
+  font-size: 5vw;
   position: absolute;
   top: -1.7vw;
+  left: 1.7vw;
 }
 
 .overlap-text-base-shop h2{
@@ -452,14 +454,13 @@ height: auto;
   font-weight: 800;
   font-style: normal;
   color: rgba(255,255,255,0.9);
-  background-clip: text;
   -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
-  -webkit-text-stroke: none;
   z-index: -4;
-  font-size: 5.5vw;
+  font-size: 5vw;
   position: absolute;
   top: -1.7vw;
+  left: 1.7vw;
 }
 
 .overlap-text-outline-portfolio h2{
@@ -469,9 +470,10 @@ height: auto;
   color: transparent;
   -webkit-text-stroke: 1.4px #fff;
   z-index: 7;
-  font-size: 5.5vw;
+  font-size: 5vw;
   position: absolute;
   top: -1.7vw;
+  right: -15.45vw;
 }
 
 .overlap-text-base-portfolio h2{
@@ -479,14 +481,36 @@ height: auto;
   font-weight: 800;
   font-style: normal;
   color: rgba(255,255,255,0.9);
-  background-clip: text;
   -webkit-background-clip: text;
   background-image: url(otherCss/noise.gif);
-  -webkit-text-stroke: none;
   z-index: -4;
-  font-size: 5.5vw;
+  font-size: 5vw;
   position: absolute;
   top: -1.7vw;
+  right: -15.45vw;
+}
+
+.overlap-text-outline-about h2{
+  display: none;
+}
+
+.overlap-text-base-contact h2{
+  display:none;
+}
+
+.overlap-text-base-about h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: relative !important;
+  top: -130px !important;
+  left: 5px;
+  display: none;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -496,75 +520,11 @@ height: auto;
 }
 
 
-.main-image{
-  transform: translateY(-50%) translateX(-50%) skewX(-10deg);
-  -webkit- transform: translateY(-50%) translateX(-50%) skewX(-10deg);
-  z-index: 5;
-  opacity: 0;
-}
-
-  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-
-}
-
-.main-image:after {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    content: "";
-    background-image: url(otherCss/noise.gif);
-    opacity: .05;
-    z-index: 100000;
-    pointer-events: none;
-}
-
-.main-image.load{
-  opacity: 1;
-  left:22%;
-  transform: translateY(-50%) translateX(-50%) skewX(0deg);
-  padding-bottom: 150px;
-
-}
-
-
-.main-image img{
-  min-width:30%;
-  height:100%;
-
-}
-
-.main-image img{
-  -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.main-image-before img{
-  opacity: 1;
-  visibility: visible;
-}
-
-
-.main-image-before img , .main-image-after img{
-  position: absolute;
-}
-
-.main-image-before img{
-  z-index: 5;
-}
-.main-image-after img{
-  z-index: 4;
-}
-
 .duo-pic{
-  width: 100%; 
+  width: 90%; 
   height: auto;
 }
+
 /* image hover zoom */
 img:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -577,4 +537,312 @@ img {
 }
 
 
-/* }
+header{
+  padding-top: 3vw;
+
+}
+
+#h1-title-span{
+  z-index: -500;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 4.8rem;
+    border-radius: 0.5rem;
+
+}
+
+.modal-content h3{
+  padding: 15px 35px; 
+  font-family:'GT-America-Extended-Black';
+  line-height: 40px;
+}
+
+.modal-content p{
+   overflow: auto;
+   text-align:left;
+   color: black;
+}
+
+.close-button {
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    line-height: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 40px;
+    position: relative;
+    right: -35px;
+    top: 5px;
+    color: transparent;
+    -webkit-text-stroke: 1.4px black;
+
+}
+
+.close-button:hover {
+  color: black;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+.trigger:hover{
+  color: white;
+}
+
+h3{
+  color: black;
+  font-family: 'Inconsolata', monospace;
+}
+
+#about-me-button{
+  margin-top: 50px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+ #footer-details{
+  color:white; 
+  font-family: 'Inconsolata', monospace; 
+  text-align:center; 
+  font-size: 2rem;
+  margin-bottom: 0px;
+ }
+
+ #footer-pic{
+  width:70px; 
+  height:70px;
+  margin-bottom: 15px;
+ }
+
+ .about-pic {
+display: none;
+ }
+
+ .about-contact-text{
+  font-size: 1.3vw;
+  float: right;
+  text-align: right;
+  padding-top: 12px;
+  display:block;
+  color:white;
+ }
+
+#contact-section{
+  display:none;
+}
+
+
+/****************** Media Query: Max 549px; *******************/
+@media only screen and (max-width: 549px) {
+.duo-pic{
+  width: 100%; 
+  height: auto;
+  padding-top: 45px;
+}
+
+.overlap-text-outline-shop h2{
+  display: none;
+}
+
+.overlap-text-outline-portfolio h2{
+  display: none;
+}
+
+.overlap-text-outline-about h2{
+  display: none;
+}
+
+.mobile-section-padding{
+  height: 260px;
+}
+
+.mobile-about-padding{
+  padding-top:35px
+}
+
+.overlap-text-base-shop h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: relative !important;
+  top: -130px !important;
+}
+
+.overlap-text-base-portfolio h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: relative !important;
+  top: -130px !important;
+  left: 5px;
+}
+
+.overlap-text-base-about h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: relative !important;
+  top: -130px !important;
+  left: 5px;
+  display: block;
+}
+
+.overlap-text-base-contact h2{
+  font-family:'GT-America-Extended-Black';
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(255,255,255,0.9);
+  -webkit-background-clip: text;
+  background-image: url(otherCss/noise.gif);
+  z-index: 10;
+  font-size: 50px;
+  position: relative !important;
+  top: 65px !important;
+  left: -12px;
+  display: block;
+}
+
+
+section{
+  padding-top: 0px;
+}
+
+section#about-me{
+  display:block;
+ 
+}
+
+section#footer{
+  padding-top:10px !important;
+}
+
+h1{
+  text-align:center;
+}
+
+header{
+  padding-top: 5vw;
+  position: relative;
+  left: 0px;
+}
+
+#h1-title-span{
+  z-index: -500;
+  position: relative;
+  left: -8px;
+}
+
+.modal-content h3{
+  padding: 15px 35px; 
+  font-family:'GT-America-Extended-Black';
+  line-height: 35px;
+  text-align:center;
+}
+
+.modal-content p{
+   overflow: scroll;
+   text-align:left;
+   max-height:480px;
+   width: 235px;
+   color: black;
+}
+
+
+.overlap-text.is_active h2{
+  transform: translateY(-25%) scale(1.15);
+  top:45%;
+}
+
+#about-me-button {
+    margin-top: 50px;
+    transition: 0.3s;
+    font-size: 18px;
+    position: relative;
+    top: -180px;
+ }
+
+ #footer-details{ 
+  font-family: 'Inconsolata', monospace; 
+  text-align:center; 
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+ }
+
+ #footer-pic{
+  width: 60px;
+  height: 60px;
+ }
+
+ .about-pic {
+  width: 100% !important;
+  height: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: block;
+ }
+
+  .about-contact-text{
+  display:none;
+ }
+
+  #about-me{
+  display: block;
+}
+
+#contact-section{
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  top: -50px;
+  background-image: url(photo/blue2.jpg);
+  border: white 2px solid;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+    
+}
