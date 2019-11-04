@@ -652,7 +652,8 @@ header{
   height:100%;
   overflow:auto;
   background-color:rgb(0,0,0);
-  background-color:rgba(0,0,0,0.4)
+  background-color:rgba(0,0,0,0.4);
+  
 }
 
 #contact-form-css {
@@ -902,6 +903,15 @@ header{
   #about-me{
   display: block;
 }
+
+ #about-me-pic-mobile{
+  width: auto;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+ }
 
 #contact-section{
   display: block;
