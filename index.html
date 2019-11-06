@@ -38,10 +38,12 @@
     <header>
       <div class="container">
         <div class="row">
+          <a href="index.html">
           <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
+          </a>
           <div class="about-contact-text" class="one-half column u-pull-right">
             <span class="trigger">
-              <p id="about-me-desktop">
+              <p class="about-me-desktop">
                 About Me
               </p>
               <div class="modal">
@@ -60,7 +62,7 @@
               </div>
             </span>
             <br>
-            <p id="about-me-desktop" onclick="document.getElementById('id01').style.display='block'">
+            <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'">
               Contact
             </p>
             <div class="w3-container">
@@ -101,6 +103,7 @@
             </div>
           </div>
         </div>
+       </div>
     </header>
     <!-- Loader -->
   <body class="top">
@@ -178,7 +181,7 @@
             </div>
          </div>
       </div>
-      <script> const modals = Array.from(document.querySelectorAll('.modal'));
+      <script type="text/javascript"> const modals = Array.from(document.querySelectorAll('.modal'));
          const triggers = Array.from(document.querySelectorAll('.trigger'));
          var closeButton = document.querySelector(".close-button"); 
          

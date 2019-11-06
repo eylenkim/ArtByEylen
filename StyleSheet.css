@@ -637,7 +637,7 @@ header{
 }
 
 
-#about-me-desktop:hover {
+.about-me-desktop:hover {
   color: #f9f933;
 }
 
@@ -724,7 +724,7 @@ display: none;
   display:none;
 }
 
-#about-me-desktop{
+.about-me-desktop{
   cursor: pointer; 
   line-height: .75;
   margin-bottom: 1.2vw;
