@@ -16,9 +16,10 @@
     <!--  Favicon
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
     <link rel="icon" type="image/png" href="../photo/favicon1.png" />
-    <!--  Javascript 
+    <!--  SRC
       ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
-   
+    <link href="../gridder-master/dist/css/jquery.gridder.min.css" rel="stylesheet">
+
 </head>
 
     <header>
@@ -91,9 +92,10 @@
         </div>
     </header>
 <body class="top">
-    <!-- Gridder navigation -->
+<!--
+ Gridder navigation
 <ul class="gridder">
-     <!-- You can load specify which content is loaded by specifying the #ID of the div where the content is  -->
+   
     <li class="gridder-list" data-griddercontent="#content1">
         <img src="../photo/artbyeylen5.JPG" />
     </li>
@@ -115,7 +117,7 @@
 
 </ul>
 
-<!-- Gridder content -->
+
 <div id="content1" class="gridder-content"> Ponte Vedra, Flordia </div>
 <div id="content2" class="gridder-content"> Makeup, in Santa Fe </div>
 <div id="content3" class="gridder-content"> Soviet Love, in MOMA, NYC </div>
@@ -123,41 +125,45 @@
 <div id="content5" class="gridder-content"> Shy, in Bellingham </div>
 <div id="content6" class="gridder-content"> Call Your Mother, in MOMA, NYC</div>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- <link href="../gridder-master/dist/css/jquery.gridder.min.css" rel="stylesheet">
-<script src="../gridder-master/dist/js/jquery.gridder.min.js"></script>
+</div>
+ -->
+<div class="container">
+ <div class="grid">
 
-<script>
-$(function() {
+  <div class="item">
+    <div class="item-content">
+      <img src="../photo/artbyeylen5.JPG" style="height:auto; width: 100%">
+    </div>
+  </div>
 
-    // Call Gridder
-    $('.gridder').gridderExpander({
-        scroll: true,
-        scrollOffset: 30,
-        scrollTo: "panel",                  // panel or listitem
-        animationSpeed: 400,
-        animationEasing: "easeInOutExpo",
-        showNav: true,                      // Show Navigation
-        nextText: "Next",                   // Next button text
-        prevText: "Previous",               // Previous button text
-        closeText: "Close",                 // Close button text
-        onStart: function(){
-            //Gridder Inititialized
-        },
-        onContent: function(){
-            //Gridder Content Loaded
-        },
-        onClosed: function(){
-            //Gridder Closed
-        }
-    });
+  <div class="item">
+    <div class="item-content">
+      <img src="../photo/artbyeylen4.JPG" style="height:auto; width: 100%">
+    </div>
+  </div>
 
-});
-</script>
-</body>
+    <div class="item">
+    <div class="item-content">
+      <img src="../photo/artbyeylen3.JPG" style="height:auto; width: 100%">
+    </div>
+  </div>
 
+  <div class="item">
+    <div class="item-content">
+      <img src="../photo/artbyeylen13.JPG" style="height:auto; width: 100%">
+    </div>
+  </div>
+</div>
+</div>
 
+<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+<script>var grid = new Muuri('.grid', {
+    items: '.item'
+});</script>
 
+<!--Modal - Dialog Boxes -->
 <script type="text/javascript"> const modals = Array.from(document.querySelectorAll('.modal'));
          const triggers = Array.from(document.querySelectorAll('.trigger'));
          var closeButton = document.querySelector(".close-button"); 
@@ -176,6 +182,7 @@ $(function() {
              toggleModal();
            }
          }
-      </script>
+</script>
 
+</body>
 </html>
