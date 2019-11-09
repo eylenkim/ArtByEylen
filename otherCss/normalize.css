@@ -277,6 +277,7 @@ button {
 button,
 select {
   text-transform: none;
+  color: black;
 }
 
 /**

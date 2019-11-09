@@ -21,9 +21,8 @@
     <link href="../gridder-master/dist/css/jquery.gridder.min.css" rel="stylesheet">
 
 </head>
-
     <header>
-            <div class="container">
+      <div class="container">
         <div class="row">
           <a href="../index.html">
           <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
@@ -69,14 +68,14 @@
                       </div>
                       <div class="row" style="z-index: 9999999;">
                         <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" requiprintmaking>
                         </div>
                         <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" requiprintmaking>
                         </div>
                       </div>
                       <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" requiprintmaking style="  height: 100px;
                         margin-top: 10px;
                         line-height: 17px;
                         padding-top: 8px;"></textarea>
@@ -93,62 +92,274 @@
     </header>
 
 <body class="top">
-<div class="container">
+<h1>Portfolio</h1>
 
- <div class="grid">
-  <div class="item">
-    <div class="item-content">
-      <img src="../photo/artbyeylen5.JPG" style="height:auto; width: 100%">
+<section class="grid-wrapper">
+  <div class="filter-controls">
+
+    <div style="display:none;">
+      <div class="control">Search
+      <input class="search-field form-control" type="text" name="search" placeholder="Enter the fruit name">
+    </div><div class="control">Sort
+      <select class="sort-field form-control">
+        <option value="order">None</option>
+        <option value="title">Order by fruit name</option>
+        <option value="color">Order by color name</option>
+      </select>
     </div>
   </div>
 
-  <div class="item">
-    <div class="item-content">
-      <img src="../photo/artbyeylen4.JPG" style="height:auto; width: 100%">
+    <div class="control">Filter By:
+      <select class="filter-field form-control">
+        <option value="">None</option>
+        <option value="printmaking">Printmaking</option>
+        <option value="photography">Photography</option>
+        <option value="acrylic">Acrylic</option>
+      </select>
     </div>
+    
   </div>
 
-  <div class="item">
-    <div class="item-content">
-      <img src="../photo/artbyeylen3.JPG" style="height:auto; width: 100%">
+  <div class="grid">
+    <div class="item blue w2 h2" data-color="photography">
+      <div class="item-content">
+          <div class="custom-content">
+           <img src="../photo/artbyeylen5.JPG" style="height:auto; width: 100%">
+          </div>
+      </div>
+    </div>
+    <div class="item printmaking w2" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+           <img src="../photo/artbyeylen4.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item acrylic w2" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+           <img src="../photo/artbyeylen3.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item printmaking w2 h2" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+           <img src="../photo/artbyeylen13.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item printmaking" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+           <img src="../photo/artbyeylen11.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item blue" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+           <img src="../photo/artbyeylen10.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item printmaking h2" data-color="printmaking">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_74601.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item acrylic h2" data-color="printmaking">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/susieart.jpg" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item acrylic w2" data-color="acrylic">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/angelaart.png" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item photography w2" data-color="acrylic">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_3142.jpg" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item printmaking" data-color="printmaking">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_3267.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item printmaking h2" data-color="printmaking">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_2991.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item printmaking w2" data-color="printmaking">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/patrickart.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item photography w2" data-color="printmaking">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_2680.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item acrylic" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_23341.jpg" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item printmaking w2" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/img074 2.jpg" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item acrylic" data-color="acrylic">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/patleanart.png" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item acrylic w2" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/img789.jpg" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item photography w2" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_2383.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="item photography" data-color="photography">
+      <div class="item-content">
+        <div class="custom-content">
+          <img src="../photo/IMG_2322.JPG" style="height:auto; width: 100%">
+        </div>
+      </div>
     </div>
   </div>
+</select>
 
-  <div class="item">
-    <div class="item-content">
-      <img src="../photo/artbyeylen13.JPG" style="height:auto; width: 100%">
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-content">
-      <img src="../photo/artbyeylen11.JPG" style="height:auto; width: 100%">
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-content">
-      <img src="../photo/artbyeylen10.JPG" style="height:auto; width: 100%">
-    </div>
-  </div>
-
-</div>
-</div>
 
 <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
 <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-<script>var grid = new Muuri('.grid', {
-    items: '.item',
-    sortData: {
-    id: function (item, element) {
-      return parseFloat(element.children[0].textContent);
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+  var grid = null,
+      wrapper = document.querySelector('.grid-wrapper'),
+      searchField = wrapper.querySelector('.search-field'),
+      filterField = wrapper.querySelector('.filter-field'),
+      sortField = wrapper.querySelector('.sort-field'),
+      gridElem = wrapper.querySelector('.grid'),
+      searchAttr = 'data-title',
+      filterAttr = 'data-color',
+      searchFieldValue,
+      filterFieldValue,
+      sortFieldValue,
+      dragOrder = [];
+
+  // Init the grid layout
+  grid = new Muuri(gridElem, {
+    dragEnabled: true
+  });
+  
+  // Set inital search query, active filter, active sort value and active layout.
+  searchFieldValue = searchField.value.toLowerCase();
+  filterFieldValue = filterField.value;
+  sortFieldValue = sortField.value;
+
+  // Search field event binding
+  searchField.addEventListener('keyup', function () {
+    var newSearch = searchField.value.toLowerCase();
+    if (searchFieldValue !== newSearch) {
+      searchFieldValue = newSearch;
+      filter();
     }
+  });
+
+  // Filter field event binding
+  filterField.addEventListener('change', filter);
+  
+  // Sort field event binding
+  sortField.addEventListener('change', sort);
+
+  // Filtering
+  function filter() {
+    filterFieldValue = filterField.value;
+    grid.filter(function (item) {
+      var element = item.getElement(),
+          isSearchMatch = !searchFieldValue ? true : (element.getAttribute(searchAttr) || '').toLowerCase().indexOf(searchFieldValue) > -1,
+          isFilterMatch = !filterFieldValue ? true : (element.getAttribute(filterAttr) || '') === filterFieldValue;
+      return isSearchMatch && isFilterMatch;
+    });
+  }
+  
+  // Sorting
+  function sort() {
+    // Do nothing if sort value did not change.
+    var currentSort = sortField.value;
+    if (sortFieldValue === currentSort) {
+      return;
+    }
+
+    // If we are changing from "order" sorting to something else
+    // let's store the drag order.
+    if (sortFieldValue === 'order') {
+      dragOrder = grid.getItems();
+    }
+
+    // Sort the items.
+    grid.sort(
+      currentSort === 'title' ? compareItemTitle :
+      currentSort === 'color' ? compareItemColor :
+      dragOrder
+    );
+    sortFieldValue = currentSort;
+  }
+  
+  // Compare data-title
+  function compareItemTitle(a, b) {
+    var aVal = a.getElement().getAttribute(searchAttr) || '';
+    var bVal = b.getElement().getAttribute(searchAttr) || '';
+    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+
+  }
+
+  // Compare data-color
+  function compareItemColor(a, b) {
+    var aVal = a.getElement().getAttribute(filterAttr) || '';
+    var bVal = b.getElement().getAttribute(filterAttr) || '';
+    return aVal < bVal ? -1 : aVal > bVal ? 1 : compareItemTitle(a, b);
   }
 });
-var photography = document.querySelector('.photography');
-var blockprint = document.querySelector('.blockprint');
-var acrylic = document.querySelector('.acrylic');
+
 </script>
 
 <!--Modal - Dialog Boxes -->

@@ -539,13 +539,13 @@ height: auto;
 }
 
 /* image hover zoom */
-section img:hover {
+section img.duo-pic:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
 }
 
-img {
+img.duo-pic {
     transition: transform .3s;
 }
 
