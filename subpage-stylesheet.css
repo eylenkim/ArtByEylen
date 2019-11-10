@@ -198,31 +198,8 @@ h1{
   z-index: 1;
   transition:transform .6s ease;
   cursor:move;
-  &.photography{
-    .custom-content{
-      border-color:#0CAAF5;
-      color:#0CAAF5;
-    }
   }
-  &.printmaking{
-    .custom-content{
-      border-color:#F54487;
-      color:#F54487;
-    }
-  }
-  &.acrylic{
-    .custom-content{
-      border-color:#00DE73;
-      color:#00DE73;
-    }
-  }
-  &.w2{
-    width:208px;
-  }
-  &.h2{
-    height:208px;
-  }
-}
+
 .item-content {
   position: relative;
   width: 100%;
@@ -239,7 +216,6 @@ h1{
   border-radius:3px;
 }
 
-// If use dragging
 .item.muuri-item-dragging {
   z-index: 3;
   transition:none;
