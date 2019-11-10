@@ -286,23 +286,9 @@
 
   // Init the grid layout
   grid = new Muuri(gridElem, {
-    dragEnabled: true
+    dragEnabled: false
   });
   
-  // Set inital search query, active filter, active sort value and active layout.
-  searchFieldValue = searchField.value.toLowerCase();
-  filterFieldValue = filterField.value;
-  sortFieldValue = sortField.value;
-
-  // Search field event binding
-  searchField.addEventListener('keyup', function () {
-    var newSearch = searchField.value.toLowerCase();
-    if (searchFieldValue !== newSearch) {
-      searchFieldValue = newSearch;
-      filter();
-    }
-  });
-
   // Filter field event binding
   filterField.addEventListener('change', filter);
   
@@ -320,43 +306,8 @@
     });
   }
   
-  // Sorting
-  function sort() {
-    // Do nothing if sort value did not change.
-    var currentSort = sortField.value;
-    if (sortFieldValue === currentSort) {
-      return;
-    }
-
-    // If we are changing from "order" sorting to something else
-    // let's store the drag order.
-    if (sortFieldValue === 'order') {
-      dragOrder = grid.getItems();
-    }
-
-    // Sort the items.
-    grid.sort(
-      currentSort === 'title' ? compareItemTitle :
-      currentSort === 'color' ? compareItemColor :
-      dragOrder
-    );
-    sortFieldValue = currentSort;
-  }
   
-  // Compare data-title
-  function compareItemTitle(a, b) {
-    var aVal = a.getElement().getAttribute(searchAttr) || '';
-    var bVal = b.getElement().getAttribute(searchAttr) || '';
-    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
 
-  }
-
-  // Compare data-color
-  function compareItemColor(a, b) {
-    var aVal = a.getElement().getAttribute(filterAttr) || '';
-    var bVal = b.getElement().getAttribute(filterAttr) || '';
-    return aVal < bVal ? -1 : aVal > bVal ? 1 : compareItemTitle(a, b);
-  }
 });
 
 </script>
