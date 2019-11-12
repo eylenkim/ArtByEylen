@@ -10,28 +10,27 @@
 
 body.top{
   background-color: #1B2835;
- margin-left: 0px;
-       margin-top: 0px;
-       margin-right: 0px;
-       margin-bottom: 0px;
-       height: 100%;
-       width: 100%;
-       overflow-x: hidden;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
       
 }
 
 body.top:after {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    content: "";
-    background-image: url(otherCss/noise.gif);
-    opacity: .05;
-    z-index: 100000;
-    pointer-events: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ content: "";
+background-image: url(otherCss/noise.gif);
+opacity: .05;
+ z-index: 100000;
+ pointer-events: none;
 }
 
 ::selection {
@@ -111,18 +110,143 @@ section {
 
 
 
-/** MUURI API CSS **/
- // ******************************
-// Normalize (ignore me!)
-// ******************************
+/** Muuri SCSS compiled: **/;
 @import url(//fonts.googleapis.com/css?family=Montserrat:9000);
-$fonts:Arial,"Hiragino Kaku Gothic Pro W3",Meiryo,sans-serif;
-$web_fonts:'Montserrat', sans-serif;
-$bg_color:#fff;
-$font_color:#999;
-$link_color:#999;
-$link_hover_color:#777;
+*:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
+  background-color: #fff;
+  color: #999;
+}
+body a, body a:visited {
+  color: #999;
+  text-decoration: none;
+}
+body a:hover {
+  color: #777;
+}
+h1 {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  color: #53E2E4;
+  margin: 10px auto 30px;
+}
+.filter-controls {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.filter-controls .control {
+  display: inline-block;
+  width: 240px;
+  margin: 0 10px;
+}
+.filter-controls .control * {
+  box-sizing: border-box;
+}
+.filter-controls .control .form-control {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.filter-controls .control .form-control:focus {
+  outline: 0;
+  border-color: #0CAAF5;
+}
+.grid {
+  position: relative;
+  width: 878px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.item {
+  position: absolute;
+  width: 99px;
+  height: 99px;
+  margin: 5px;
+  z-index: 1;
+  transition: transform 0.6s ease;
+  cursor: move;
+}
+.item.blue .custom-content {
+  border-color: #0CAAF5;
+  color: #0CAAF5;
+}
+.item.red .custom-content {
+  border-color: #F54487;
+  color: #F54487;
+}
+.item.green .custom-content {
+  border-color: #00DE73;
+  color: #00DE73;
+}
+.item.w2 {
+  width: 208px;
+}
+.item.h2 {
+  height: 208px;
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.custom-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: #fff;
+  color: #666;
+  border: 2px solid;
+  border-radius: 3px;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+  transition: none;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+@media (max-width: 877px) {
+  .item {
+    width: calc(33.33% - 11px);
+    height: calc(33.33vw - 11px);
+  }
+  .item.w2 {
+    width: calc(33.33% - 11px);
+  }
+  .item.h2 {
+    height: calc(33.33vw - 11px);
+  }
+}
+@media (max-width: 640px) {
+  .item {
+    width: calc(50% - 10px);
+    height: calc(50vw - 10px);
+  }
+  .item.w2 {
+    width: calc(50% - 10px);
+  }
+  .item.h2 {
+    height: calc(50vw - 10px);
+  }
+}
 
+
+/** MUURI API CSS 
 * {
   &:before,
   &:after{
@@ -131,22 +255,6 @@ $link_hover_color:#777;
     margin:0;
   }
 }
-body{
-  font-family:$fonts;
-  background-color:$bg_color;
-  color: $font_color;
-  text-align: center;
-  a, a:visited{
-    color: $link_color;
-    text-decoration:none;
-  }
-  a:hover{
-    color: $link_hover_color;
-  }
-}
-// ******************************
-// End of Normalize
-// ******************************
 
 h1{
   font-size:36px;
