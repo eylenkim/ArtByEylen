@@ -1689,6 +1689,7 @@
     return ret;
   }
 
+
   var translateValue = {};
   var transformStyle$2 = 'transform';
   var transformNone = 'none';
@@ -1734,7 +1735,7 @@
    * @returns {String}
    */
   function getTranslateString(x, y) {
-    return 'translateX(' + x + 'px) translateY(' + y + 'px)';
+    return 'translateX(' + 0 + 'px) translateY(' + 0 + 'px)';
   }
 
   /**
