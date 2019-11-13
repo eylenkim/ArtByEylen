@@ -168,6 +168,15 @@ h1 {
   border-color: #0CAAF5;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .grid {
   position: relative;
   display:flex;
@@ -186,6 +195,7 @@ h1 {
   transition: transform 0.6s ease;
   cursor: pointer;
   margin: 5px;
+
 }
 
 
@@ -208,4 +218,3 @@ img:hover {
 .item-content:hover .img-content-hover {
   display: block;
 }
-

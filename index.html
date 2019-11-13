@@ -36,7 +36,7 @@
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
     <header>
-            <div class="container">
+            <div class="container desktop-reveal">
         <div class="row">
           <a href="index.html">
           <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
@@ -65,7 +65,7 @@
             <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'">
               Contact
             </p>
-            <div class="w3-container">
+            <div class="w3-container desktop-reveal">
               <div id="id01" class="w3-modal">
                 <div class="modal-content-contact">
                   <span class="close-button" onclick="document.getElementById('id01').style.display='none'" >&times;</span>
@@ -122,7 +122,7 @@
       <!-- SHOP + Portfolio
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <section>
-         <div class="container">
+         <div class="container desktop-reveal">
             <div class="row">
                <div class="one-half column u-pull-left mobile-section-padding">
                   <a href="Shop/shop.html">
@@ -155,7 +155,7 @@
       </section>
       <!-- ABOUT ME
          ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
-      <div class="container trigger" id="about-me">
+      <div class="container trigger desktop-reveal" id="about-me">
          <div class="modal">
             <div class="modal-content">
                <span class="close-button">&times;</span>
@@ -202,7 +202,7 @@
       <!--   Contact Me  
          ––––––––––––––––––––––––––––––––––––––––––––––––––---->
       <section class="u-full-width" id="contact-section">
-         <div class="container">
+         <div class="container regular-reveal">
             <div class="twelve columns contact-us-form">
                <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
                   <div class="overlap-text">
@@ -228,7 +228,7 @@
       </section>
       <footer>
          <section id="footer">
-            <div class="container">
+            <div class="container regular-reveal">
                <div class="row">
                   <div class="columns"
                   <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
@@ -240,6 +240,15 @@
             </div>
          </section>
       </footer>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+ScrollReveal().reveal('.desktop-reveal', {delay: 4100, scale: .5, duration: 1500});
+ScrollReveal().reveal('.regular-reveal', {delay: 100, scale: .5, duration: 1500});
+Sc
+</script>
+
       <!-- GOOGLE ANALYTICS
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134455979-1"></script>
