@@ -641,7 +641,7 @@ header{
 
 
 .about-me-desktop:hover {
-  color: #f9f933;
+  color: #f6f933e0
 }
 
 .w3-modal{
@@ -731,6 +731,21 @@ display: none;
   cursor: pointer; 
   line-height: .75;
   margin-bottom: 1.2vw;
+}
+
+@-moz-keyframes easeIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.easin-in {
+  -webkit-animation: easeIn 2s forwards;
+  -moz-animation: easeIn 2s forwards;
+  animation: easeIn 2s forwards;
 }
 
 
@@ -928,6 +943,7 @@ header{
   width: 90%;
   margin-left: 5%;
   border-radius: 5px;
+  z-index: -1;
 }
     
 }

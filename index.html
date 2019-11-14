@@ -35,8 +35,8 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
     <script type="text/javascript" src="js/scripts.js"></script> 
     <script type="text/javascript" src="js/loader.js"></script> 
-    <header>
-            <div class="container desktop-reveal">
+   <header>
+     <div class="container ease-in">
         <div class="row">
           <a href="index.html">
           <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
@@ -65,7 +65,7 @@
             <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'">
               Contact
             </p>
-            <div class="w3-container desktop-reveal">
+            <div class="w3-container">
               <div id="id01" class="w3-modal">
                 <div class="modal-content-contact">
                   <span class="close-button" onclick="document.getElementById('id01').style.display='none'" >&times;</span>
@@ -82,14 +82,14 @@
                       </div>
                       <div class="row" style="z-index: 9999999;">
                         <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" requiprintmaking>
                         </div>
                         <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" requiprintmaking>
                         </div>
                       </div>
                       <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" requiprintmaking style="  height: 100px;
                         margin-top: 10px;
                         line-height: 17px;
                         padding-top: 8px;"></textarea>
@@ -104,8 +104,8 @@
           </div>
         </div>
     </header>
-    <!-- Loader -->
-  <body class="top">
+
+<body class="top">
     <div id="loader">
       <div class="loader-name">
       <div class="loader-name-outline">
@@ -228,9 +228,9 @@
       </section>
       <footer>
          <section id="footer">
-            <div class="container regular-reveal">
+            <div class="container">
                <div class="row">
-                  <div class="columns"
+                  <div class="columns">
                   <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
                   <br>
                   <h3 id="footer-details">&copy; 2019 Eylen Kim <br> Art By Eylen
@@ -244,7 +244,7 @@
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
-ScrollReveal().reveal('.desktop-reveal', {delay: 4100, scale: .5, duration: 1500});
+ScrollReveal().reveal('.desktop-reveal', {delay: 4100, scale: .75, duration: 1800});
 ScrollReveal().reveal('.regular-reveal', {delay: 100, scale: .5, duration: 1500});
 Sc
 </script>
