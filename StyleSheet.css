@@ -715,7 +715,7 @@ h3{
  }
 
  .about-pic {
-display: none;
+display: none;a
  }
 
  .about-contact-text{
@@ -736,6 +736,24 @@ display: none;
   cursor: pointer; 
   line-height: .75;
   margin-bottom: 1.2vw;
+}
+
+.fade-in-index{
+  opacity: 1;
+  animation-name: fadeInOpacityIndex;
+  animation-iteration-count: 1;
+  animation-timing-function: move 4300s ease-in;
+  animation-duration: 2s;
+
+}
+
+@keyframes fadeInOpacityIndex{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 

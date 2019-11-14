@@ -24,7 +24,7 @@
 
 </head>
     <header>
-     <div class="container">
+     <div class="container fade-in">
         <div class="row">
           <a href="../index.html">
           <h1 class="one-third column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
@@ -35,7 +35,7 @@
           </h2>
           <div class="about-contact-text" class="one-third column u-pull-right">
           <a href="../index.html">
-            <p>Home</p>
+            <p class="home-desktop">Home</p>
           </a>
 
 
@@ -297,16 +297,7 @@
     
 </section>
 
-<script src="https://unpkg.com/scrollreveal"></script>
 <script>
-ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: 'cubic-bezier(.5,.01,.11,.9)'});
-</script>
-
-<script src="../js/muuri.js"></script>
-<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-
-<script>
-
   document.addEventListener('DOMContentLoaded', function () {
   var grid = null,
       wrapper = document.querySelector('.grid-wrapper'),
@@ -351,7 +342,13 @@ ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: '
 });
 
 </script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: 'cubic-bezier(.5,.01,.11,.9)'});
+</script>
 
+<script src="../js/muuri.js"></script>
+<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 <!--Modal - Dialog Boxes -->
 <script type="text/javascript"> const modals = Array.from(document.querySelectorAll('.modal'));
          const triggers = Array.from(document.querySelectorAll('.trigger'));
