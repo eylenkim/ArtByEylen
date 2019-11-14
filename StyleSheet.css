@@ -587,6 +587,11 @@ header{
 
 }
 
+
+.modal-content:active {
+    display:block;
+}
+
 .modal-content h3{
   padding: 15px 35px; 
   font-family:'GT-America-Extended-Black';
@@ -731,21 +736,6 @@ display: none;
   cursor: pointer; 
   line-height: .75;
   margin-bottom: 1.2vw;
-}
-
-@-moz-keyframes easeIn {
-  0% {
-    transform: translateX(-900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.easin-in {
-  -webkit-animation: easeIn 2s forwards;
-  -moz-animation: easeIn 2s forwards;
-  animation: easeIn 2s forwards;
 }
 
 

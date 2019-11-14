@@ -229,6 +229,12 @@ img {
   display: none;
 }
 
+#footer{
+  width: 100%;
+  padding: 15% 0 5% 0;
+}
+
+/*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
 #portfolio-title-desktop{
   display: none;
@@ -241,7 +247,5 @@ img {
   text-align: center;
   margin: 4% 0 15% 0;
 }
-
-
 }
 
