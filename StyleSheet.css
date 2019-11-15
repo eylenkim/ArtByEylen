@@ -451,7 +451,7 @@ height: auto;
   font-size: 5vw;
   position: absolute;
   top: -1.7vw;
-  left: 1.7vw;
+  left: 1.9vw;
 }
 
 .overlap-text-base-shop h2{
@@ -465,7 +465,7 @@ height: auto;
   font-size: 5vw;
   position: absolute;
   top: -1.7vw;
-  left: 1.7vw;
+  left: 1.9vw;
 }
 
 .overlap-text-outline-portfolio h2{
@@ -716,7 +716,7 @@ h3{
  }
 
  .about-pic {
-display: none;a
+display: none;
  }
 
  .about-contact-text{
@@ -727,7 +727,9 @@ display: none;a
   display:block;
   color:white;
   line-height: 5px;
+  display:block;
  }
+
 
 #contact-section{
   display:none;
@@ -779,8 +781,6 @@ a {
   -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
-}
-
 }
 
 .overlap-text-outline-shop h2, .overlap-text-outline-portfolio h2, .overlap-text-outline-about h2{
@@ -933,20 +933,10 @@ header{
   display: block;
  }
 
-  .about-contact-text{
-    float: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    font-size: 4vw;
-    width: 100%;
-    position: relative;
-    top: -50px;
- }
+  .about-contact-text #about-me{
+    display: none; 
+  }
 
-  #about-me{
-  display: block;
-}
 
  #about-me-pic-mobile{
   width: auto;

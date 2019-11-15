@@ -289,6 +289,10 @@ img {
   }
 }
 
+.main-navigation{
+  display: none;
+}
+
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
 #portfolio-title-desktop{
@@ -314,5 +318,8 @@ img {
     height: auto !important;
 }
 
+.main-navigation{
+  display: block;
+}
 }
 
