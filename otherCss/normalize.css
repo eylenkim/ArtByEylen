@@ -295,7 +295,7 @@ input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   background-image: url(noise.gif);
-  color: #000000;
+  color: white;
   -webkit-background-clip: text;
 }
 

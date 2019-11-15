@@ -1,11 +1,6 @@
 <!-- Overall Notes on the website:
-  --Change photo filters so the letters are readible, or make letters solid
-  --Add Media query for anything less than 549px:
-      -Make the font smaller on the home page
-      --center 'art by eylen'
-  --Add media query for in between 550-705
-      -make 'art by eylen' centered 
-  -- work on the nav bar + logo placement
+  --add <a href> tags to the words on each header (mobile)
+  --clean up contact portfion (mobile)
   
   
     <!-- Page Stuff + CSS 
@@ -38,9 +33,9 @@
    <header>
      <div class="container header-reveal">
         <div class="row">
-          <a href="index.html">
-          <h1 class="one-half column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
-      </a>
+          
+          <h1 class="one-half column u-pull-left"><a href="index.html">Art By <span><br></span><span id="h1-title-span"> Eylen</a></span></h1>
+         
           <div class="about-contact-text" class="one-half column u-pull-right">
             <span class="trigger">
               <p class="about-me-desktop">
@@ -130,25 +125,28 @@
                   </a>
                   <div class="overlap-text">
                      <div class="overlap-text-outline-shop">
-                        <h2 class="load two-thirds column">Shop</h2>
+                        <h2 class="load two-thirds column"><a href="Shop/shop.html">Shop</a></h2>
                      </div>
+
                      <div class="overlap-text-base-shop">
                         <h2 class="load two-thirds column">Shop</h2>
                      </div>
                   </div>
+                
                </div>
                <div class="one-half column u-pull-right mobile-section-padding">
                   <a href="Portfolio/portfolio.html">
                   <img class="u-max-full-width duo-pic" src="photo/printdraft.jpg">
-                  </a>
+                  
                   <div class="overlap-text">
                      <div class="overlap-text-outline-portfolio">
-                        <h2 class="load two-thirds column">Portfolio</h2>
+                        <h2 class="load two-thirds column"><a href="Shop/shop.html">Portfolio</a></h2>
                      </div>
                      <div class="overlap-text-base-portfolio">
                         <h2 class="load two-thirds column">Portfolio</h2>
                      </div>
                   </div>
+                </a>
                </div>
             </div>
          </div>
@@ -245,7 +243,7 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
 ScrollReveal().reveal('.desktop-reveal', {delay: 4100, scale: .75, duration: 1800});
-ScrollReveal().reveal('.header-reveal', {delay: 4100, scale: 1, duration: 1800});
+ScrollReveal().reveal('.header-reveal', {delay: 4200, scale: 1, duration: 1800});
 ScrollReveal().reveal('.regular-reveal', {delay: 100, scale: .5, duration: 1500});
 Sc
 </script>
