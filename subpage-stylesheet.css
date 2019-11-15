@@ -321,5 +321,9 @@ img {
 .main-navigation{
   display: block;
 }
+
+ .about-contact-text{
+  display: none;
+ }
 }
 

@@ -730,6 +730,17 @@ display: none;
   display:block;
  }
 
+.about-contact-text-mobile{
+  font-size: 1.3vw;
+  float: right;
+  text-align: right;
+  padding-top: 12px;
+  display:block;
+  color:white;
+  line-height: 5px;
+  display:block;
+ }
+
 
 #contact-section{
   display:none;
@@ -933,10 +944,18 @@ header{
   display: block;
  }
 
-  .about-contact-text #about-me{
-    display: none; 
-  }
+  .about-contact-text{
+   display: none;
+ }
 
+   .about-contact-text-mobile{
+    display: none;
+ }
+
+
+  #about-me{
+  display: block;
+}
 
  #about-me-pic-mobile{
   width: auto;
