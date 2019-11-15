@@ -604,7 +604,7 @@ header{
    text-align:left;
    color: black;
    line-height: 1.3em;
-   font-size: .95em;
+   font-size: .75em;
 }
 
 .about-contact-text .contact-us-form {
@@ -766,23 +766,30 @@ a {
 .duo-pic{
   width: 100%; 
   height: auto;
-  padding-top: 45px;
+  padding-top: 45px;       
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.overlap-text-outline-shop h2{
-  display: none;
+.mobile-section-padding duo-pic:hover {
+  -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
-.overlap-text-outline-portfolio h2{
-  display: none;
 }
 
-.overlap-text-outline-about h2{
+.overlap-text-outline-shop h2, .overlap-text-outline-portfolio h2, .overlap-text-outline-about h2{
   display: none;
 }
 
 .mobile-section-padding{
   height: 260px;
+  overflow: hidden;
 }
 
 .mobile-about-padding{
@@ -889,8 +896,8 @@ header{
    width: 235px;
    color: black;
    line-height: 1.5em;
+   font-size: .95em;
 }
-
 
 .overlap-text.is_active h2{
   transform: translateY(-25%) scale(1.15);
@@ -927,7 +934,14 @@ header{
  }
 
   .about-contact-text{
-  display:none;
+    float: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 4vw;
+    width: 100%;
+    position: relative;
+    top: -50px;
  }
 
   #about-me{

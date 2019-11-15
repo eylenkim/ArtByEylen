@@ -302,5 +302,17 @@ img {
   text-align: center;
   margin: 4% 0 15% 0;
 }
+
+.grid {
+    width: 100%;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-count: 1;
+    height: auto !important;
+}
+
 }
 
