@@ -171,6 +171,26 @@ h1 {
 
 
 .grid {
+    width: 100%;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-count: 3;
+    height: auto !important;
+}
+
+.item {
+    height: auto;
+    z-index: 1;
+    cursor: pointer;
+    margin: 5px;
+    overflow: hidden;
+}
+
+/**
+.grid {
   position: relative;
   display:flex;
   justify-content:center;
@@ -180,9 +200,8 @@ h1 {
 }
 
 .item {
-  /*position: absolute; */
   max-width: 400px;
-  width:400%;
+  width: 100%;
   height: auto;
   z-index: 1;
   transition: transform 0.6s ease;
@@ -190,6 +209,8 @@ h1 {
   margin: 5px;
   overflow: hidden;
 }
+
+**/
 
 img {
   max-width:400px !important;
