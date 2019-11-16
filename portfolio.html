@@ -35,9 +35,22 @@
          <i class="fa fa-bars"></i>
          </a>
          <ul class="main-navigation" role="navigation">
-            <li><a href="#hero">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="#portfolio">About Me</a></li>
+            <li><div class="trigger">About Me<div class="modal">
+                <div class="modal-content" style="left:58%">
+                  <span class="close-button">&times;</span>
+                  <h3>
+                    Hello,<br>I'm Eylen!
+                  </h3>
+                  <img id="about-me-pic" src="photo/meee.JPG">
+                  <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                    <br><br>
+                    In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
+                    
+                  </p>
+                </div>
+              </div></div></li>
             <li><a href="#aboutMe">Contact</a></li>
             
          </ul>
@@ -384,7 +397,7 @@ ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: '
 
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+    if ($(this).scrollTop() >= 600) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
     } else {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow

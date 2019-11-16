@@ -38,10 +38,10 @@ body.top:after {
 }
 
 ::selection {
-    background:#df91ad; 
+    background:#f6f9337a;
 }
 ::-moz-selection {
-    background:#df91ad;
+    background:#f6f9337a;
 }
 
 /* Title Font */
@@ -778,7 +778,7 @@ a {
 .duo-pic{
   width: 100%; 
   height: auto;
-  padding-top: 45px;       
+  padding-top: 40px;       
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -798,12 +798,12 @@ a {
 }
 
 .mobile-section-padding{
-  height: 274px;
+  height: 280px;
   overflow: hidden;
 }
 
 .mobile-about-padding{
-  padding-top:35px
+  padding-top:30px
 }
 
 .overlap-text-base-shop h2{

@@ -34,10 +34,10 @@ opacity: .05;
 }
 
 ::selection {
-    background:#df91ad; 
+    background: #f6f9337a;; 
 }
 ::-moz-selection {
-    background:#df91ad;
+    background:#f6f9337a;;
 }
 
 /* Title Font */
@@ -365,14 +365,24 @@ img {
   bottom: 0;
   right: 0;
   margin: 0;
-  background: #222;
+  background-image: url(photo/triangle.png);
+  background-repeat: no-repeat;
+  background-size: 323px 600px;
 }
 
 .navigation ul li {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 4px;
+    position: relative;
+    top: 20px;
+    left: -60px;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+    color: white;
 }
 
 .navigation ul li a {
@@ -382,7 +392,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  font-weight: 900;
+  font-size: 20px;
 }
 
 
@@ -390,7 +400,7 @@ img {
 
 .navigation ul li a.current,
 .navigation ul li a:hover {
-  color: #C0B283;
+  color: #f6f933e0;
   background-color: transparent;
 }
 
