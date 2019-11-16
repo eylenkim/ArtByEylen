@@ -1,20 +1,23 @@
 <!--
     --Create Nav bar for mobile view that include home - shop - about- contact
+    --Add "UP" arrow on mobile whne user scrolls all the way down
 -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
     <meta charset="utf-8"/>
     <title>Art By Eylen | Portfolio</title>
     <meta name="description" content="Browse Eylen's art portfolio to view work created with 35mm photography, blockprinting, and acrylic.">
     <meta name="author" content="Eylen Kim">
+        <!--  SRC
+      ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
     <link href="subpage-stylesheet.css" rel=stylesheet type="text/css">
     <link href="StyleSheet.css" rel=stylesheet type="text/css">
     <link href="skeleton.css" rel=stylesheet type="text/css">
     <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">  
-  
+    <link href="otherCss/font-awesome.css" rel=stylesheet type="text/css">
+
 
     <!-- Mobile Meta 
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
@@ -22,9 +25,6 @@
     <!--  Favicon
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
     <link rel="icon" type="image/png" href="photo/favicon1.png" />
-    <!--  SRC
-      ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
-    <link href="gridder-master/dist/css/jquery.gridder.min.css" rel="stylesheet">
 
 </head>
 
@@ -372,6 +372,7 @@ ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: '
            }
          }
 </script>
-
+    <script type="text/javascript" src="js/scripts.js"></script> 
+    <script type="text/javascript" src="js/singlenav.js"></script>
 </body>
 </html>

@@ -47,7 +47,7 @@ body.top:after {
 /* Title Font */
 h1{
     font-family: 'GT-America-Extended-Black';
-    color: white;
+    color: white !important;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     width: 400px;

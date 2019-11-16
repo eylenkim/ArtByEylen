@@ -325,5 +325,116 @@ img {
  .about-contact-text{
   display: none;
  }
+
+/* =Navigation
+-------- */
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 3;
+  width: 320px;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.navigation.active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.navigation ul {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background: #222;
+}
+
+.navigation ul li {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li a {
+  display: block;
+  height: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+
+/* color for inside the menu */
+
+.navigation ul li a.current,
+.navigation ul li a:hover {
+  color: #C0B283;
+  background-color: transparent;
+}
+
+.menu-icon {
+  width: 65px;
+  height: 65px;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.navigation .menu-icon {
+  color: #F4F4F4;
+  font-size: 30px;
+  line-height: 1em;
+  position: absolute;
+  left: 100%;
+  padding: 15px;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+
+/* Colored block on the top left corner */
+
+.navigation .menu-icon.active {
+  background-color: rgba(0, 0, 0, .3);
+  ;
+  /* this is the transparent one background-color: rgba(0,0,0, .3); */
+}
+
+.navigation .menu-icon:hover {
+  color: yellow;
+  background-color: black
+}
+
+
+
+
+
+
+
+
+ 
 }
 
