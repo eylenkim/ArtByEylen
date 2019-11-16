@@ -1564,3 +1564,11 @@ content: url("hamburglar.svg");
 .fa-bomb:before {
   content: "\f1e2";
 }
+
+
+@media only screen and (min-width: 550px) {
+.fa {
+  display : none;
+  }
+
+}
