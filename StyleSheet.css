@@ -677,7 +677,7 @@ header{
     background-color: white;
     padding: 1rem 4.8rem;
     border-radius: 0.5rem;
-    height: 0%;
+    height: 21vw;
 
 }
 
@@ -983,6 +983,7 @@ header{
   justify-content: center;
   margin-top: -10%;
   height: 50px;
+  padding: 15%;
 }
 
 .modal-content-contact {
@@ -993,7 +994,8 @@ header{
     background-color: white;
     padding: 1rem 4.8rem;
     border-radius: 0.5rem;
-    height: 54%;
+    height: 51%;
 
 }
+
 }
