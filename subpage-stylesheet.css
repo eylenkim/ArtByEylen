@@ -215,18 +215,18 @@ h1 {
 img {
   -o-object-fit: contain;
   object-fit: contain;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  transform: scale(1) !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .item img:hover {
-  -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
+  -webkit-transform: scale(1.03) !important;
+    -ms-transform: scale(1.03) !important;
+    transform: scale(1.03) !important;
 }
 
 .item-content {
@@ -264,12 +264,6 @@ img {
   line-height: 5px;
  }
 
-
-.home-desktop{
-  cursor: pointer; 
-  line-height: .75;
-  margin-bottom: 1.55vw;
-}
 
 .fade-in {
   opacity: 1;
@@ -344,6 +338,24 @@ img {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+img.lazy {
+    display: block;
+    border: 0;
+    opacity: 0;
+    width: 220px;
+    height: 280px;
+}
+img:not(.initial) {
+    transition: opacity 1s;
+}
+img.initial,img.loaded,img.error {
+    opacity: 1;
+}
+
+img:not([src]) {
+    visibility: hidden;
 }
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {

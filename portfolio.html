@@ -29,34 +29,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">
 
-    <style>
-      ul,
-      li {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      a,
-      img {
-        display: block;
-      }
-      img {
-        border: 0;
-        width: 220px;
-        height: 280px;
-      }
-      img:not([src]) {
-        visibility: hidden;
-      }
-      /* Fixes Firefox anomaly during image load */
-      @-moz-document url-prefix() {
-        img:-moz-loading {
-          visibility: hidden;
-        }
-      }
-    </style>
-    
-
     <!-- Mobile Meta 
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -138,7 +110,7 @@
           </h2>
           <div class="about-contact-text" class="one-third column u-pull-right">
           <a href="index.html">
-            <p class="home-desktop">Home</p>
+            <p class="about-me-desktop">Home</p>
           </a>
 
 
@@ -162,7 +134,7 @@
               </div>
             </span>
             <br>
-            <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'">
+            <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'" style="position: relative;top: -3px;">
               Contact
             </p>
             <div class="w3-container">
@@ -234,7 +206,7 @@
     
   </div>
 
-<div id="gallery" class="galler grid" itemscope itemtype="http://schema.org/ImageGallery">
+<div id="gallery" class="gallery grid" itemscope itemtype="http://schema.org/ImageGallery">
 
 <div class="item" data-color="photography">
       <div class="item-content">
@@ -356,7 +328,7 @@
 
 
 
-<!-------------- duplicates --->
+<!-------------- duplicates 
 <div class="item" data-color="printmaking">
       <div class="item-content">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -475,18 +447,7 @@
       </div>
 </div>
 
-<ul>
-        <li>
-          <a href="#/it/donna/mocassini_cod44734002vc.html"
-            ><img
-              alt="Mocassini"
-              class="lazy"
-              data-src="https://via.placeholder.com/440x560?text=Img+40"
-              width="220"
-              height="280"
-          /></a>
-        </li>
-      </ul>
+
 <!--
 
     <div class="item" data-color="printmaking">
@@ -582,8 +543,9 @@
                   <div class="pswp__counter"></div>
                   <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
                   <button class="pswp__button pswp__button--share" title="Share"></button>
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
                   <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                  
                   <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
                   <!-- element will get class pswp__preloader--active when preloader is running -->
                   <div class="pswp__preloader">
@@ -738,7 +700,6 @@ ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: '
       <script type="text/javascript" src="js/scrollreveal.js"></script> 
       <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
       <script type="text/javascript" src="js/scripts.js"></script> 
-      <script type="text/javascript" src="js/lazyload.min.js"></script> 
       <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
  
   <a href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>  
@@ -786,6 +747,8 @@ ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: '
           callback_error: callback_error,
           callback_finish: callback_finish
         });
+
+
       })();
     </script>
 
