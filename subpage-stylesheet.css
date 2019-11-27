@@ -213,9 +213,8 @@ h1 {
 **/
 
 img {
-  max-width:400px !important;
-       -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -297,6 +296,7 @@ img {
  height: 400px !important;
  width: 400px !important;
  overflow: hidden;
+ object-fit: cover;
 }
 .crop img {
  height: auto;

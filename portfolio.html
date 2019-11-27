@@ -16,16 +16,44 @@
     <meta name="description" content="Browse Eylen's art portfolio to view work created with 35mm photography, blockprinting, and acrylic.">
     <meta name="author" content="Eylen Kim">
 
-        <!--  SRC
+        <!--  data-src
       ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
     <link href="subpage-stylesheet.css" rel=stylesheet type="text/css">
     <link href="StyleSheet.css" rel=stylesheet type="text/css">
     <link href="skeleton.css" rel=stylesheet type="text/css">
     <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">  
     <link href="otherCss/font-awesome.css" rel=stylesheet type="text/css">
-    <link href="otherCss/photoswipe.css" rel=stylesheet type="text/css">
-    <link href="otherCss/default-skin.css" rel=stylesheet type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <style>
+      ul,
+      li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      a,
+      img {
+        display: block;
+      }
+      img {
+        border: 0;
+        width: 220px;
+        height: 280px;
+      }
+      img:not([src]) {
+        visibility: hidden;
+      }
+      /* Fixes Firefox anomaly during image load */
+      @-moz-document url-prefix() {
+        img:-moz-loading {
+          visibility: hidden;
+        }
+      }
+    </style>
+    
 
     <!-- Mobile Meta 
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
@@ -53,7 +81,7 @@
                   <h3>
                     Hello,<br>I'm Eylen!
                   </h3>
-                  <img id="about-me-pic" src="photo/meee.JPG">
+                  <img id="about-me-pic" data-src="photo/meee.JPG">
                   <p style="font-size: .75em;height: 44.3%;padding-top: 15px;">This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
                     <br><br>
                     In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
@@ -122,7 +150,7 @@
                   <h3>
                     Hello,<br>I'm Eylen!
                   </h3>
-                  <img id="about-me-pic" src="photo/meee.JPG">
+                  <img id="about-me-pic" data-src="photo/meee.JPG">
                   <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
                     <br><br>
                     In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
@@ -204,146 +232,294 @@
     
   </div>
 
-  <div class="grid">
-    <div class="item" data-color="photography">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/artbyeylen5.JPG" style="height:auto; width: 100%">
-          </div>
-      </div>
-
-    <div class="item" data-color="photography">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/artbyeylen4.JPG" style="height:auto; width: 100%">
-        </div>
-      </div>
-
-    <div class="item" data-color="photography">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/IMG_2322.JPG" style="height:auto; width: 100%">
-        </div>
-      </div>
-
-    <div class="item" data-color="photography">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/artbyeylen3.JPG" style="height:auto; width: 100%">
-        </div>
-      </div>
-
-
+<div id="gallery" class="galler grid" itemscope itemtype="http://schema.org/ImageGallery">
 
 <div class="item" data-color="photography">
       <div class="item-content">
-<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="https://unsplash.it/1200/900/?image=695" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-              <img class="crop" src="https://unsplash.it/400/300/?image=695" itemprop="thumbnail" alt="Image description">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/artbyeylen4.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/artbyeylen4.JPG" itemprop="thumbnail" alt="Image description">
             </a>
-          </figure>
-</div></div>
-
-
-
-
-    <div class="item" data-color="photography">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/artbyeylen13.JPG" style="height:auto; width: 100%">
-        </div>
+        </figure>
       </div>
-
-    <div class="item" data-color="photography">
+</div>
+<div class="item" data-color="photography">
       <div class="item-content">
-          
-           <img class="crop" src="photo/artbyeylen11.JPG" style="height:auto; width: 100%">
-        </div>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_2322.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_2322.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
       </div>
-
-    <div class="item" data-color="photography">
+</div>
+<div class="item" data-color="photography">
       <div class="item-content">
-          
-           <img class="crop" src="photo/artbyeylen10.JPG" style="height:auto; width: 100%">
-        </div>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/artbyeylen3.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/artbyeylen3.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
       </div>
+</div>
+
+<div class="item" data-color="photography">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/artbyeylen13.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/artbyeylen13.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="photography">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/artbyeylen11.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/artbyeylen11.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="photography">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/artbyeylen10.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/artbyeylen10.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_74601.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_74601.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/susieart.jpg" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/susieart.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="acrylic">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/angelaart.png" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/angelaart.png" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="photography">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/img789.jpg" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/img789.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="acrylic">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3142.jpg" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3142.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+
+
+<!-------------- duplicates --->
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+<div class="item" data-color="printmaking">
+      <div class="item-content">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="photo/IMG_3267.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img class="crop lazy" data-src="photo/IMG_3267.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+        </figure>
+      </div>
+</div>
+
+<ul>
+        <li>
+          <a href="#/it/donna/mocassini_cod44734002vc.html"
+            ><img
+              alt="Mocassini"
+              class="lazy"
+              data-src="https://via.placeholder.com/440x560?text=Img+40"
+              width="220"
+              height="280"
+          /></a>
+        </li>
+      </ul>
+<!--
 
     <div class="item" data-color="printmaking">
       <div class="item-content">
           
-           <img class="crop" src="photo/IMG_74601.JPG" style="height:auto; width: 100%">
-        </div>
-      </div>
-
-    <div class="item" data-color="printmaking">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/susieart.jpg" style="height:auto; width: 100%">
+           <img class="crop lazy" data-src="photo/IMG_2991.JPG" style="height:auto; width: 100%">
         </div>
       </div>
   
 
-    <div class="item" data-color="acrylic">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/angelaart.png" style="height:auto; width: 100%">
-        </div>
-      </div>
-
-    <div class="item" data-color="photography">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/img789.jpg" style="height:auto; width: 100%">
-          </div>
-      </div>
-
-     <div class="item" data-color="acrylic">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/IMG_3142.jpg" style="height:auto; width: 100%">
-        </div>
-      </div>
-
     <div class="item" data-color="printmaking">
       <div class="item-content">
           
-           <img class="crop" src="photo/IMG_3267.JPG" style="height:auto; width: 100%">
-        </div>
-      </div>
-
-    <div class="item" data-color="printmaking">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/IMG_2991.JPG" style="height:auto; width: 100%">
-        </div>
-      </div>
-  
-
-    <div class="item" data-color="printmaking">
-      <div class="item-content">
-          
-           <img class="crop" src="photo/patrickart.JPG" style="height:auto; width: 100%">
+           <img class="crop lazy" data-src="photo/patrickart.JPG" style="height:auto; width: 100%">
         </div>
       </div>
 
     <div class="item" data-color="acrylic">
       <div class="item-content">
           
-           <img class="crop" src="photo/IMG_2680.jpg" style="height:auto; width: 100%">
+           <img class="crop lazy" data-src="photo/IMG_2680.jpg" style="height:auto; width: 100%">
         </div>
       </div>
 
     <div class="item" data-color="photography">
       <div class="item-content">
           
-           <img class="crop" src="photo/IMG_23341.jpg" style="height:auto; width: 100%">
+           <img class="crop lazy" data-src="photo/IMG_23341.jpg" style="height:auto; width: 100%">
         </div>
       </div>
 
     <div class="item" data-color="photography">
       <div class="item-content">
           
-           <img class="crop" src="photo/img074 2.jpg" style="height:auto; width: 100%">
+           <img class="crop lazy" data-src="photo/img074 2.jpg" style="height:auto; width: 100%">
         </div>
       </div>
  
@@ -351,17 +527,17 @@
     <div class="item" data-color="acrylic">
       <div class="item-content">
           
-           <img class="crop" src="photo/patleanart.png" style="height:auto; width: 100%">
+           <img class="crop lazy" data-src="photo/patleanart.png" style="height:auto; width: 100%">
         </div>
       </div>   
 
     <div class="item" data-color="photography">
       <div class="item-content">
           
-           <img class="crop" src="photo/IMG_2383.JPG" style="height:auto; width: 100%">
+           <img class="crop lazy" data-src="photo/IMG_2383.JPG" style="height:auto; width: 100%">
         </div>
       </div>
-
+-->
 
  <section id="footer">
             <div class="container">
@@ -376,79 +552,111 @@
             </div>
          </section>
   </div>
-
-</select>   
-        
-    
+</select>       
 </section>
- <!-- Photoswipe 4.0 html code for javascript interface -->
-      
-        <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
 
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
 
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
 
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe. 
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+          <!-- Container that holds slides. 
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+          <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+          </div>
+          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+          <div class="pswp__ui pswp__ui--hidden">
+              <div class="pswp__top-bar">
+                  <!--  Controls are self-explanatory. Order can be changed. -->
+                  <div class="pswp__counter"></div>
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                  <button class="pswp__button pswp__button--share" title="Share"></button>
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                  <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                  <!-- element will get class pswp__preloader--active when preloader is running -->
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
                       </div>
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </div>
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div> 
+              </div>
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+              <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
+  <!-- Import jQuery and PhotoSwipe Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
 
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
+<!----- Image Pop up ----->
+  <script>
+    'use strict';
 
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
+    /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
 
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
+    (function($){
 
-        </div>
+      // Init empty gallery array
+      var container = [];
 
-    </div>
+      // Loop over gallery items and push it to the array
+      $('#gallery').find('figure').each(function(){
+        var $link = $(this).find('a'),
+            item = {
+              src: $link.attr('href'),
+              w: $link.data('width'),
+              h: $link.data('height'),
+              title: $link.data('caption')
+            };
+        container.push(item);
+      });
 
-</div>
+      // Define click event on gallery item
+      $('a').click(function(event){
+
+        // Prevent location change
+        event.preventDefault();
+
+        // Define object and gallery options
+        var $pswp = $('.pswp')[0],
+            options = {
+              index: $(this).parent('figure').index(),
+              bgOpacity: 0.85,
+              showHideOpacity: true
+            };
+
+        // Initialize PhotoSwipe
+        var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+        gallery.init();
+      });
+
+    }(jQuery));
+  </script>
+
+<!----- Muuri Filtering ----->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   var grid = null,
@@ -491,13 +699,16 @@
 });
 
 </script>
+<!--
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
 ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: 'cubic-bezier(.5,.01,.11,.9)'});
 </script>
+-->
 
 <script src="js/muuri.js"></script>
 <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+
 <!--Modal - Dialog Boxes -->
 <script type="text/javascript"> const modals = Array.from(document.querySelectorAll('.modal'));
          const triggers = Array.from(document.querySelectorAll('.trigger'));
@@ -518,19 +729,68 @@ ScrollReveal().reveal('.item', {delay: 80, scale: .75, duration: 1400, easing: '
            }
          }
 </script>
+
+<!----- JS files ----->
       <script type="text/javascript" src="js/scripts.js"></script> 
       <script type="text/javascript" src="js/singlenav.js"></script>
-      <script type="text/javascript" src="js/jquery.2.1.3.min.js"></script> 
       <script type="text/javascript" src="js/scrollreveal.js"></script> 
-      <script type="text/javascript" src="js/singlenav.js"></script>
       <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
       <script type="text/javascript" src="js/scripts.js"></script> 
-      <script src="photo/photoswipe.js"></script> 
-      <script src="photo/photoswipe-ui-default.js"></script> 
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
-    <a href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>  
-  <script>
-// ===== Scroll to Top ==== 
+      <script type="text/javascript" src="js/lazyload.min.js"></script> 
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+ 
+  <a href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>  
+
+
+<!----- Lazy Load ----->
+    <script>
+      (function() {
+        function logElementEvent(eventName, element) {
+          console.log(
+            Date.now(),
+            eventName,
+            element.getAttribute("data-src")
+          );
+        }
+        var callback_enter = function(element) {
+          logElementEvent("🔑 ENTERED", element);
+        };
+        var callback_exit = function(element) {
+          logElementEvent("🚪 EXITED", element);
+        };
+        var callback_reveal = function(element) {
+          logElementEvent("👁️ REVEALED", element);
+        };
+        var callback_loaded = function(element) {
+          logElementEvent("👍 LOADED", element);
+        };
+        var callback_error = function(element) {
+          logElementEvent("💀 ERROR", element);
+          element.src =
+            "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+        };
+        var callback_finish = function() {
+          logElementEvent("✔️ FINISHED", document.documentElement);
+        };
+        ll = new LazyLoad({
+          elements_selector: ".lazy",
+          load_delay: 300,
+          threshold: 0,
+          // Assign the callbacks defined above
+          callback_enter: callback_enter,
+          callback_exit: callback_exit,
+          callback_reveal: callback_reveal,
+          callback_loaded: callback_loaded,
+          callback_error: callback_error,
+          callback_finish: callback_finish
+        });
+      })();
+    </script>
+
+
+
+<!----- Scroll To Top ----->
+<script>
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 600) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -543,302 +803,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
-  </script>
-    <script type="text/javascript">
-       (function() {
+</script>
 
-        var initPhotoSwipeFromDOM = function(gallerySelector) {
-
-            var parseThumbnailElements = function(el) {
-                var thumbElements = el.childNodes,
-                    numNodes = thumbElements.length,
-                    items = [],
-                    el,
-                    childElements,
-                    thumbnailEl,
-                    size,
-                    item;
-
-                for(var i = 0; i < numNodes; i++) {
-                    el = thumbElements[i];
-
-                    // include only element nodes 
-                    if(el.nodeType !== 1) {
-                      continue;
-                    }
-
-                    childElements = el.children;
-
-                    size = el.getAttribute('data-size').split('x');
-
-                    // create slide object
-                    item = {
-                        src: el.getAttribute('href'),
-                        w: parseInt(size[0], 10),
-                        h: parseInt(size[1], 10),
-                        author: el.getAttribute('data-author'),
-                        title: el.getAttribute('data-title')
-                    };
-
-                    item.el = el; // save link to element for getThumbBoundsFn
-
-                    if(childElements.length > 0) {
-                      item.msrc = childElements[0].getAttribute('src'); // thumbnail url
-                      if(childElements.length > 1) {
-                          item.title = childElements[1].innerHTML; // caption (contents of figure)
-                      }
-                    }
-
-
-                    var mediumSrc = el.getAttribute('data-med');
-                    if(mediumSrc) {
-                        size = el.getAttribute('data-med-size').split('x');
-                        // "medium-sized" image
-                        item.m = {
-                            src: mediumSrc,
-                            w: parseInt(size[0], 10),
-                            h: parseInt(size[1], 10)
-                        };
-                    }
-                    // original image
-                    item.o = {
-                        src: item.src,
-                        w: item.w,
-                        h: item.h
-                    };
-
-                    items.push(item);
-                }
-
-                return items;
-            };
-
-            // find nearest parent element
-            var closest = function closest(el, fn) {
-                return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-            };
-
-            var onThumbnailsClick = function(e) {
-                e = e || window.event;
-                e.preventDefault ? e.preventDefault() : e.returnValue = false;
-
-                var eTarget = e.target || e.srcElement;
-
-                var clickedListItem = closest(eTarget, function(el) {
-                    return el.tagName === 'A';
-                });
-
-                if(!clickedListItem) {
-                    return;
-                }
-
-                var clickedGallery = clickedListItem.parentNode;
-
-                var childNodes = clickedListItem.parentNode.childNodes,
-                    numChildNodes = childNodes.length,
-                    nodeIndex = 0,
-                    index;
-
-                for (var i = 0; i < numChildNodes; i++) {
-                    if(childNodes[i].nodeType !== 1) { 
-                        continue; 
-                    }
-
-                    if(childNodes[i] === clickedListItem) {
-                        index = nodeIndex;
-                        break;
-                    }
-                    nodeIndex++;
-                }
-
-                if(index >= 0) {
-                    openPhotoSwipe( index, clickedGallery );
-                }
-                return false;
-            };
-
-            var photoswipeParseHash = function() {
-                var hash = window.location.hash.substring(1),
-                params = {};
-
-                if(hash.length < 5) { // pid=1
-                    return params;
-                }
-
-                var vars = hash.split('&');
-                for (var i = 0; i < vars.length; i++) {
-                    if(!vars[i]) {
-                        continue;
-                    }
-                    var pair = vars[i].split('=');  
-                    if(pair.length < 2) {
-                        continue;
-                    }           
-                    params[pair[0]] = pair[1];
-                }
-
-                if(params.gid) {
-                    params.gid = parseInt(params.gid, 10);
-                }
-
-                return params;
-            };
-
-            var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
-                var pswpElement = document.querySelectorAll('.pswp')[0],
-                    gallery,
-                    options,
-                    items;
-
-                items = parseThumbnailElements(galleryElement);
-
-                // define options (if needed)
-                options = {
-
-                    galleryUID: galleryElement.getAttribute('data-pswp-uid'),
-
-                    getThumbBoundsFn: function(index) {
-                        // See Options->getThumbBoundsFn section of docs for more info
-                        var thumbnail = items[index].el.children[0],
-                            pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-                            rect = thumbnail.getBoundingClientRect(); 
-
-                        return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-                    },
-
-                    addCaptionHTMLFn: function(item, captionEl, isFake) {
-                        if(!item.title) {
-                            captionEl.children[0].innerText = '';
-                            return false;
-                        }
-                        captionEl.children[0].innerHTML = item.title +  '<br/><small>Photo: ' + item.author + '</small>';
-                        return true;
-                    }
-                    
-                };
-
-
-                if(fromURL) {
-                    if(options.galleryPIDs) {
-                        // parse real index when custom PIDs are used 
-                        // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-                        for(var j = 0; j < items.length; j++) {
-                            if(items[j].pid == index) {
-                                options.index = j;
-                                break;
-                            }
-                        }
-                    } else {
-                        options.index = parseInt(index, 10) - 1;
-                    }
-                } else {
-                    options.index = parseInt(index, 10);
-                }
-
-                // exit if index not found
-                if( isNaN(options.index) ) {
-                    return;
-                }
-
-
-
-                var radios = document.getElementsByName('gallery-style');
-                for (var i = 0, length = radios.length; i < length; i++) {
-                    if (radios[i].checked) {
-                        if(radios[i].id == 'radio-all-controls') {
-
-                        } else if(radios[i].id == 'radio-minimal-black') {
-                            options.mainClass = 'pswp--minimal--dark';
-                            options.barsSize = {top:0,bottom:0};
-                            options.captionEl = false;
-                            options.fullscreenEl = false;
-                            options.shareEl = false;
-                            options.bgOpacity = 0.85;
-                            options.tapToClose = true;
-                            options.tapToToggleControls = false;
-                        }
-                        break;
-                    }
-                }
-
-                if(disableAnimation) {
-                    options.showAnimationDuration = 0;
-                }
-
-                // Pass data to PhotoSwipe and initialize it
-                gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-
-                // see: http://photoswipe.com/documentation/responsive-images.html
-                var realViewportWidth,
-                    useLargeImages = false,
-                    firstResize = true,
-                    imageSrcWillChange;
-
-                gallery.listen('beforeResize', function() {
-
-                    var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
-                    dpiRatio = Math.min(dpiRatio, 2.5);
-                    realViewportWidth = gallery.viewportSize.x * dpiRatio;
-
-
-                    if(realViewportWidth >= 1200 || (!gallery.likelyTouchDevice && realViewportWidth > 800) || screen.width > 1200 ) {
-                        if(!useLargeImages) {
-                            useLargeImages = true;
-                            imageSrcWillChange = true;
-                        }
-                        
-                    } else {
-                        if(useLargeImages) {
-                            useLargeImages = false;
-                            imageSrcWillChange = true;
-                        }
-                    }
-
-                    if(imageSrcWillChange && !firstResize) {
-                        gallery.invalidateCurrItems();
-                    }
-
-                    if(firstResize) {
-                        firstResize = false;
-                    }
-
-                    imageSrcWillChange = false;
-
-                });
-
-                gallery.listen('gettingData', function(index, item) {
-                    if( useLargeImages ) {
-                        item.src = item.o.src;
-                        item.w = item.o.w;
-                        item.h = item.o.h;
-                    } else {
-                        item.src = item.m.src;
-                        item.w = item.m.w;
-                        item.h = item.m.h;
-                    }
-                });
-
-                gallery.init();
-            };
-
-            // select all gallery elements
-            var galleryElements = document.querySelectorAll( gallerySelector );
-            for(var i = 0, l = galleryElements.length; i < l; i++) {
-                galleryElements[i].setAttribute('data-pswp-uid', i+1);
-                galleryElements[i].onclick = onThumbnailsClick;
-            }
-
-            // Parse URL and open gallery if it contains #&pid=3&gid=1
-            var hashData = photoswipeParseHash();
-            if(hashData.pid && hashData.gid) {
-                openPhotoSwipe( hashData.pid,  galleryElements[ hashData.gid - 1 ], true, true );
-            }
-        };
-
-        initPhotoSwipeFromDOM('.demo-gallery');
-
-    })();
-
-  </script>
 </body>
 </html>
