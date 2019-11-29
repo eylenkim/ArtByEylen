@@ -574,6 +574,13 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
  width: 100%;
 }
 
+#top > nav > ul > li:nth-child(3) > div,
+#top > nav > ul > li:nth-child(2) > div {
+    padding: 4.5px;
+    font-size: 1em;
+    line-height: 1.8;
+    width: 150px;
+}
 
 
  

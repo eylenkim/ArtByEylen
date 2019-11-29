@@ -1,13 +1,7 @@
 <!--
-    --Add plugin for fullscreen picture preview
+    -- fix other <a> tags // fix navigation
     --fix "exit" for contact pop up (mobile)
     -- center the Contact dialog box on viewport in mobile
-    --fix reveal.js for pictures that dont show up when not scrolled all the way + filtered
-
-    https://codepen.io/eylenkim/pen/VwwNBba
-    --great example: https://codepen.io/Yago_0/pen/KdmdYB
-
-    https://www.andreaverlicchi.eu/lazyload/
 -->
 
 <!DOCTYPE html>
@@ -42,13 +36,14 @@
          ––––––––––––––––––––––––––––––––––––––––––––––––––-->
       <nav class="navigation">
          <a href="#" class="menu-icon">
-         <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i>
          </a>
          <ul class="main-navigation" role="navigation">
           <div id="nav-x" class="menu-icon">&Cross;</div>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="shop.html">Shop</a></li>
-            <li><div class="trigger" style="height: 100%;padding: 10px 0;">About Me
+            <li><div onclick="location.href='index.html';">Home</a></li> 
+            <li><div onclick="location.href='shop.html';">Shop</a></li>
+            <li>
+              <div class="trigger" style="height: 100%;padding: 10px 0;">About Me 
               <div class="modal">
                 <div class="modal-content" style="height: 95%; max-height: 600px;padding: 2rem 4.6rem;">
                   <span class="close-button">&times;</span>
@@ -56,14 +51,14 @@
                     Hello,<br>I'm Eylen!
                   </h3>
                   <img id="about-me-pic" src="photo/meee.JPG">
-                  <p style="font-size: .75em;height: 44.3%;padding-top: 15px;">This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                  <p style="font-size: .75em; height: 44.3%; padding-top: 15px;">This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
                     <br><br>
                     In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
                     
                   </p>
                 </div>
               </div>
-            </div>
+              </div>
             </li>
             <li style="height: 100%;padding: 10px 0;"><div onclick="document.getElementById('id02').style.display='block'">Contact  <div class="w3-container">
               <div id="id02" class="w3-modal-2">
@@ -212,8 +207,6 @@
             <a href="photo/IMG_2322.JPG" data-caption="This is a test i guess" data-width="1200" data-height="900" itemprop="contentUrl">
               <img class="crop lazy" data-src="photo/IMG_2322.JPG" itemprop="thumbnail" alt="Image description">
             </a>
-     
-    
 </div>
 
   <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -692,7 +685,6 @@
       <script type="text/javascript" src="js/singlenav.js"></script>
       <script type="text/javascript" src="js/scrollreveal.js"></script> 
       <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
-      <script type="text/javascript" src="js/scripts.js"></script> 
       <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
  
   <a href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>  
@@ -744,7 +736,6 @@
 
       })();
     </script>
-
 
 
 <!----- Scroll To Top ----->
