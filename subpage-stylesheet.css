@@ -229,13 +229,6 @@ img {
     transform: scale(1.03) !important;
 }
 
-.item-content {
-  cursor: pointer;
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-}
 
 #portfolio-title-desktop{
   color:white;
