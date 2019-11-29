@@ -287,8 +287,8 @@ img {
 }
 
 .crop {
- height: 400px !important;
- width: 400px !important;
+ height: 350px !important;
+ width: 350px !important;
  overflow: hidden;
  object-fit: cover;
 }
