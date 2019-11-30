@@ -43,7 +43,7 @@
             <li><div onclick="location.href='index.html';">Home</a></li> 
             <li><div onclick="location.href='shop.html';">Shop</a></li>
             <li>
-              <div class="trigger" style="height: 100%;padding: 10px 0;">About Me 
+              <div class="trigger" style="height: 100%;padding: 10px 0 10px 10px;">About Me 
               <div class="modal">
                 <div class="modal-content" style="height: 95%; max-height: 600px;padding: 2rem 4.6rem;">
                   <span class="close-button">&times;</span>
@@ -60,35 +60,37 @@
               </div>
               </div>
             </li>
-            <li style="height: 100%;padding: 10px 0;"><div onclick="document.getElementById('id02').style.display='block'">Contact  <div class="w3-container">
-              <div id="id02" class="w3-modal-2">
+            <li style="height: 100%;padding: 20px 0 10px 7px;">
+              <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'" style="position: relative;top: -3px;">Contact
+              </p>
+            <div class="w3-container">
+              <div id="id01" class="w3-modal">
                 <div class="modal-content-contact">
-                  <span class="close-button" onclick="document.getElementById('id02').style.display='none'" >&times;</span>
+                  <span class="close-button" onclick="document.getElementById('id01').style.display='none'" >&times;</span>
                   <h3 style="margin-bottom: 0px;">
                     Contact Me
                   </h3>
                   <p>
                   <div class="contact-us-form">
                     <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
-                      <div class
-                      ="row" style="z-index: 9999999;">
+                      <div class="row" style="z-index: 9999999;">
                         <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required style="font-size: 5vw;">
+                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" requiprintmaking>
                         </div>
                         <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required style="font-size: 5vw;">
+                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" requiprintmaking>
                         </div>
                       </div>
-                      <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;margin-top: 10px;line-height: 17px;padding-top: 8px;font-size: 5vw; position:relative; top:-20px; height:130px"></textarea>
-                      <br>
+                 
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" requiprintmaking style="height: 160px;margin-top: 20px;line-height: 17px;padding-top: 8px;"></textarea>
+                     
                       <input class="button u-pull-right" type="submit" value="Send" style="color: black;"><br><br><br>
                     </form>
                   </div>
                   </p>
                 </div>
               </div>
-            </div></div></li>
+            </div></li>
             
          </ul>
       </nav>
@@ -107,8 +109,6 @@
           <a href="index.html">
             <p class="about-me-desktop">Home</p>
           </a>
-
-
             <span class="trigger">
               <p class="about-me-desktop">
                 About Me
@@ -128,14 +128,14 @@
                 </div>
               </div>
             </span>
-            <br>
-            <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'" style="position: relative;top: -3px;">
+          
+            <p class="about-me-desktop" onclick="document.getElementById('id02').style.display='block'">
               Contact
             </p>
             <div class="w3-container">
-              <div id="id01" class="w3-modal">
+              <div id="id02" class="w3-modal">
                 <div class="modal-content-contact">
-                  <span class="close-button" onclick="document.getElementById('id01').style.display='none'" >&times;</span>
+                  <span class="close-button" onclick="document.getElementById('id02').style.display='none'" >&times;</span>
                   <h3 style="margin-bottom: 0px;">
                     Contact Me
                   </h3>
@@ -149,14 +149,14 @@
                       </div>
                       <div class="row" style="z-index: 9999999;">
                         <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" requiprintmaking>
+                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
                         </div>
                         <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" requiprintmaking>
+                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
                         </div>
                       </div>
                       <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" requiprintmaking style="  height: 100px;
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
                         margin-top: 10px;
                         line-height: 17px;
                         padding-top: 8px;"></textarea>
@@ -566,6 +566,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
 
+
 <!----- Image Pop up ----->
 
   <script>
@@ -680,6 +681,12 @@
          }
 </script>
 
+<script>
+function closeButton() {
+  document.getElementByClass('id02').style.display='none'
+}
+
+</script>
 <!----- JS files ----->
       <script type="text/javascript" src="js/scripts.js"></script> 
       <script type="text/javascript" src="js/singlenav.js"></script>
