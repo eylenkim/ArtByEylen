@@ -370,6 +370,26 @@ img:not([src]) {
   line-height: 40px;
   text-align: center;
 }
+
+.modal-content-contact-portfolio {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 4.8rem;
+    border-radius: 0.5rem;
+    height: 300px;
+
+}
+
+.modal-content-contact-portfolio h3{
+  padding: 15px 35px 0px 35px;
+  font-family:'GT-America-Extended-Black';
+  line-height: 40px;
+  text-align: center;
+}
+
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
 #portfolio-title-desktop{
@@ -448,7 +468,7 @@ img:not([src]) {
 
 #nav-x {
 position: relative;
-    top: -30px;
+    top: -25px;
     left: 75%;
     color: white;
     font-size: 70px;
@@ -622,5 +642,19 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
   color: black;
 }
  
+.modal-content-contact-portfolio {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 4.8rem;
+    border-radius: 0.5rem;
+    height: 20em;
+
+}
+
+
+
 }
 
