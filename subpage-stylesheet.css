@@ -397,6 +397,17 @@ img:not([src]) {
     object-fit: cover;
 }
 
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    z-index: 5;
+}
+
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
 #portfolio-title-desktop{
