@@ -390,6 +390,13 @@ img:not([src]) {
   text-align: center;
 }
 
+.crop-shop{
+    height: 280px !important;
+    width: 280px !important;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
 #portfolio-title-desktop{
