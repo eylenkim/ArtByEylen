@@ -74,6 +74,8 @@
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  overflow: visible;
+  height: 70px;
 }
 .bootstrap-on abbr[title],
 .bootstrap-on abbr[data-original-title] {
@@ -2137,9 +2139,6 @@
 .bootstrap-on .btn-primary {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    bottom: 5px;
-    right: 100px;
     width: 70px;
     height: 25px;
 }
@@ -3953,6 +3952,9 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  margin: 15px;
+  width: 315px;
+  height: 470px;
 }
 .bootstrap-on .card > hr {
   margin-right: 0;

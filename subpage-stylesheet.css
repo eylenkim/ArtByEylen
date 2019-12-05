@@ -391,8 +391,8 @@ img:not([src]) {
 }
 
 .crop-shop{
-    height: 280px !important;
-    width: 280px !important;
+    height: 313px !important;
+    width: 313px !important;
     overflow: hidden;
     object-fit: cover;
 }
