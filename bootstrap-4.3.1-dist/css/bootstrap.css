@@ -3955,6 +3955,7 @@
   margin: 15px;
   width: 315px;
   height: 435px;
+  z-index: 0;
 }
 .bootstrap-on .card > hr {
   margin-right: 0;
@@ -4926,14 +4927,14 @@
 .bootstrap-on .toast-body {
   padding: 0.75rem;
 }
-.bootstrap-on .modal-open {
+.modal-open {
   overflow: hidden;
 }
-.bootstrap-on .modal-open .modal {
+.modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.bootstrap-on .modal {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -4944,13 +4945,13 @@
   overflow: hidden;
   outline: 0;
 }
-.bootstrap-on .modal-dialog {
+.modal-dialog {
   position: relative;
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
 }
-.bootstrap-on .modal.fade .modal-dialog {
+.modal.fade .modal-dialog {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -4958,57 +4959,57 @@
   transform: translate(0, -50px);
 }
 @media (prefers-reduced-motion: reduce) {
-  .bootstrap-on .modal.fade .modal-dialog {
+  .modal.fade .modal-dialog {
     transition: none;
   }
 }
-.bootstrap-on .modal.show .modal-dialog {
+.modal.show .modal-dialog {
   -webkit-transform: none;
   transform: none;
 }
-.bootstrap-on .modal-dialog-scrollable {
+.modal-dialog-scrollable {
   display: -ms-flexbox;
   display: flex;
   max-height: calc(100% - 1rem);
 }
-.bootstrap-on .modal-dialog-scrollable .modal-content {
+.modal-dialog-scrollable .modal-content {
   max-height: calc(100vh - 1rem);
   overflow: hidden;
 }
-.bootstrap-on .modal-dialog-scrollable .modal-header,
-.bootstrap-on .modal-dialog-scrollable .modal-footer {
+.modal-dialog-scrollable .modal-header,
+.modal-dialog-scrollable .modal-footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-.bootstrap-on .modal-dialog-scrollable .modal-body {
+.modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
-.bootstrap-on .modal-dialog-centered {
+.modal-dialog-centered {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   min-height: calc(100% - 1rem);
 }
-.bootstrap-on .modal-dialog-centered::before {
+.modal-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
   content: "";
 }
-.bootstrap-on .modal-dialog-centered.modal-dialog-scrollable {
+.modal-dialog-centered.modal-dialog-scrollable {
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
 }
-.bootstrap-on .modal-dialog-centered.modal-dialog-scrollable .modal-content {
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
   max-height: none;
 }
-.bootstrap-on .modal-dialog-centered.modal-dialog-scrollable::before {
+.modal-dialog-centered.modal-dialog-scrollable::before {
   content: none;
 }
-.bootstrap-on .modal-content {
+.modal-content {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -5022,22 +5023,22 @@
   border-radius: 0.3rem;
   outline: 0;
 }
-.bootstrap-on .modal-backdrop {
+.modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .7);
 }
-.bootstrap-on .modal-backdrop.fade {
+.modal-backdrop.fade {
   opacity: 0;
 }
-.bootstrap-on .modal-backdrop.show {
-  opacity: 0.5;
+.modal-backdrop.show {
+  opacity: 1;
 }
-.bootstrap-on .modal-header {
+.modal-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -5049,7 +5050,7 @@
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
 }
-.bootstrap-on .modal-header .close {
+.modal-header .close {
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
 }
@@ -5057,13 +5058,13 @@
   margin-bottom: 0;
   line-height: 1.5;
 }
-.bootstrap-on .modal-body {
+.modal-body {
   position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1rem;
 }
-.bootstrap-on .modal-footer {
+.modal-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -5075,13 +5076,13 @@
   border-bottom-right-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
 }
-.bootstrap-on .modal-footer > :not(:first-child) {
+.modal-footer > :not(:first-child) {
   margin-left: .25rem;
 }
-.bootstrap-on .modal-footer > :not(:last-child) {
+.modal-footer > :not(:last-child) {
   margin-right: .25rem;
 }
-.bootstrap-on .modal-scrollbar-measure {
+.modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
@@ -5089,34 +5090,34 @@
   overflow: scroll;
 }
 @media (min-width: 576px) {
-  .bootstrap-on .modal-dialog {
+  .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
   }
-  .bootstrap-on .modal-dialog-scrollable {
+  .modal-dialog-scrollable {
     max-height: calc(100% - 3.5rem);
   }
-  .bootstrap-on .modal-dialog-scrollable .modal-content {
+ .modal-dialog-scrollable .modal-content {
     max-height: calc(100vh - 3.5rem);
   }
-  .bootstrap-on .modal-dialog-centered {
+ .modal-dialog-centered {
     min-height: calc(100% - 3.5rem);
   }
-  .bootstrap-on .modal-dialog-centered::before {
+  .modal-dialog-centered::before {
     height: calc(100vh - 3.5rem);
   }
-  .bootstrap-on .modal-sm {
+  .modal-sm {
     max-width: 300px;
   }
 }
 @media (min-width: 992px) {
-  .bootstrap-on .modal-lg,
-  .bootstrap-on .modal-xl {
+  .modal-lg,
+  .modal-xl {
     max-width: 800px;
   }
 }
 @media (min-width: 1200px) {
-  .bootstrap-on .modal-xl {
+  .modal-xl {
     max-width: 1140px;
   }
 }
