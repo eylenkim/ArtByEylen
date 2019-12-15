@@ -109,25 +109,34 @@
           <a href="index.html">
             <p class="about-me-desktop">Home</p>
           </a>
-            <span class="trigger">
-              <p class="about-me-desktop">
+            
+              <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
                 About Me
               </p>
-              <div class="modal">
-                <div class="modal-content">
-                  <span class="close-button">&times;</span>
-                  <h3>
-                    Hello,<br>I'm Eylen!
-                  </h3>
-                  <img id="about-me-pic" src="photo/meee.JPG">
+              <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutMeLabel">About Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <img id="about-me-pic" src="photo/meee.JPG">
                   <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
                     <br><br>
                     In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
                     
                   </p>
-                </div>
-              </div>
-            </span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+             
           
             <p class="about-me-desktop" onclick="document.getElementById('id02').style.display='block'">
               Contact
