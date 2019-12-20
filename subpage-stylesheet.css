@@ -216,18 +216,6 @@ h1 {
 img {
   -o-object-fit: contain;
   object-fit: contain;
-  -webkit-transform: scale(1) !important;
-  -ms-transform: scale(1) !important;
-  transform: scale(1) !important;
-  -webkit-transition: all 0.3s ease-in-out !important;
-  -o-transition: all 0.3s ease-in-out !important;
-  transition: all 0.3s ease-in-out !important;
-}
-
-.item img:hover {
-  -webkit-transform: scale(1.03) !important;
-    -ms-transform: scale(1.03) !important;
-    transform: scale(1.03) !important;
 }
 
 
@@ -409,6 +397,11 @@ img:not([src]) {
     z-index: 5;
 }
 
+@media (min-width: 576px) {
+  .modal-wide{
+    max-width: 850px !important;
+  }
+}
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
 #portfolio-title-desktop{
