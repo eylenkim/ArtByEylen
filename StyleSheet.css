@@ -33,7 +33,7 @@ body.top:after {
     content: "";
     background-image: url(otherCss/noise.gif);
     opacity: .05;
-    z-index: 700;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -885,6 +885,16 @@ header{
   z-index: -500;
   position: relative;
   left: -8px;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%, -0%);
+    background-color: white;
+    padding: 1rem 4.6rem;
+    border-radius: 0.5rem;
+
 }
 
 .modal-content h3{

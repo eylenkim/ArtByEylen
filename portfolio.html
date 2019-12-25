@@ -73,35 +73,43 @@
 
            
             <li style="height: 100%;padding: 20px 0 10px 7px;">
-              <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'" style="position: relative;top: -3px;">Contact
-              </p>
-            <div class="w3-container">
-              <div id="id01" class="w3-modal">
-                <div class="modal-content-contact-portfolio">
-                  <span class="close-button" onclick="document.getElementById('id01').style.display='none'" >&times;</span>
-                  <h3 style="margin-bottom: 0px;">
-                    Contact Me
-                  </h3>
+              <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModalNav">
+              Contact
+            </p>
+            <div class="modal fade" id="ContactModalNav" tabindex="-1" role="dialog" aria-labelledby="ContactLabelNav" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                   <h5 id="ContactLabelNav" style="color:black;">Contact Me</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                   </div>
+                  <div class="modal-body">
                   <p>
-                  <div class="contact-us-form" style="font-size: .7em;">
+                  <div class="contact-us-form">
                     <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
                       <div class="row" style="z-index: 9999999;">
                         <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" requiprintmaking>
+                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
                         </div>
                         <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" requiprintmaking>
+                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
                         </div>
                       </div>
-                 
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" requiprintmaking style="height: 160px;margin-top: 20px;line-height: 17px;padding-top: 8px;"></textarea>
-                     
-                      <input class="button u-pull-right" type="submit" value="Send" style="color: black;"><br><br><br>
+                      <br>
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
+                        margin-top: 10px;
+                        line-height: 17px;
+                        padding-top: 8px;"></textarea>
+                      <br><br>
+                      <input class="button u-pull-right" type="submit" value="Send"><br><br><br>
                     </form>
                   </div>
                   </p>
+                  </div>
                 </div>
-              </div>
+             </div>
             </div></li>
             
          </ul>
@@ -119,8 +127,8 @@
           </h2>
 
           <div class="about-contact-text" class="one-third column u-pull-right">
-          <a href="index.html">
-            <p class="about-me-desktop">Home</p>
+          <a href="shop.html">
+            <p class="about-me-desktop">Shop</p>
           </a>
 
             <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
@@ -192,7 +200,7 @@
                 </div>
              </div>
             </div>
-            
+
           </div>
         </div>
     </header>
