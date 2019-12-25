@@ -33,7 +33,7 @@ body.top:after {
     content: "";
     background-image: url(otherCss/noise.gif);
     opacity: .05;
-    z-index: 1000;
+    z-index: 700;
     pointer-events: none;
 }
 
@@ -574,6 +574,11 @@ header{
 }
 
 
+.modal-title {
+  display: none;
+}
+
+
 .modal-content:active {
     display:block;
 }
@@ -760,6 +765,9 @@ a {
   text-decoration: none;
 }
 
+.modal-resize {
+  max-width: 800px !important;
+}
 /****************** Media Query: Max 549px; *******************/
 @media only screen and (max-width: 549px) {
 .duo-pic{
@@ -983,6 +991,10 @@ header{
     border-radius: 0.5rem;
     height: 51%;
 
+}
+
+.modal-title {
+  display: block;
 }
 
 }
