@@ -574,11 +574,6 @@ header{
 }
 
 
-.modal-title {
-  display: none;
-}
-
-
 .modal-content:active {
     display:block;
 }
@@ -1001,10 +996,6 @@ header{
     border-radius: 0.5rem;
     height: 51%;
 
-}
-
-.modal-title {
-  display: block;
 }
 
 }
