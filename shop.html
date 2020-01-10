@@ -1,7 +1,8 @@
 <!--
-    -- fix other <a> tags // fix navigation
+    -- navigation doesn't work..
     --fix "exit" for contact pop up (mobile)
     -- center the Contact dialog box on viewport in mobile
+    -- fix nav (missing portfolio)
 -->
 
 <!DOCTYPE html>
@@ -106,48 +107,49 @@
             <span>&boxh;&boxh;<br></span>Shop
           </h2>
           <div class="about-contact-text" class="one-third column u-pull-right">
-          <a href="index.html">
-            <p class="about-me-desktop">Home</p>
+          <a href="portfolio.html">
+            <p class="about-me-desktop">Portfolio</p>
           </a>
             
               <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
-                About Me
-              </p>
-              <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="aboutMeLabel">About Me</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-         <img id="about-me-pic" src="photo/meee.JPG">
-                  <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!<br><br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
-                    <br><br>
-                    In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
-                    
-                  </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-             
+                About 
+            </p>
+            <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true" style="z-index: 5000;">
+              <div class="modal-dialog modal-dialog-centered modal-resize" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                   <h5 id="aboutMeLabel" style="color:black;">About</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                   </div>
+                  <div class="modal-body">
+                      <img id="about-me-pic" src="photo/meee.JPG">
+                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                        <br><br> 
+                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                        <br><br>
+                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
+                      </p>
+                  </div>
+                </div>
+             </div>
+          </div>
           
-            <p class="about-me-desktop" onclick="document.getElementById('id02').style.display='block'">
+
+            <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModal">
               Contact
             </p>
-            <div class="w3-container">
-              <div id="id02" class="w3-modal">
-                <div class="modal-content-contact">
-                  <span class="close-button" onclick="document.getElementById('id02').style.display='none'" >&times;</span>
-                  <h3 style="margin-bottom: 0px;">
-                    Contact Me
-                  </h3>
+            <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                   <h5 id="ContactLabel" style="color:black;">Contact Me</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                   </div>
+                  <div class="modal-body">
                   <p>
                   <div class="contact-us-form">
                     <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
@@ -174,19 +176,18 @@
                     </form>
                   </div>
                   </p>
+                  </div>
                 </div>
-              </div>
+             </div>
             </div>
+
           </div>
         </div>
     </header>
 
 <body class="top" id="top">
-
-
 <section class="grid-wrapper">
   <div class="filter-controls">
-
     <div class="control fade-in">Filter By:
       <select class="filter-field form-control">
         <option value="">None</option>
@@ -195,7 +196,6 @@
         <option value="commissions">Commisions</option>
       </select>
     </div>
-    
   </div>
 
 <div class="grid bootstrap-on fade-in" style="flex-direction: row !important;">  
@@ -223,13 +223,13 @@
                           </div>
       <div class="card-body">
         <h5 class="card-title">Cute Earring</h5>
-        <p class="card-text">People WILL declare you a cool artsy hoe once you wear them.</p>
+        <p class="card-text">People WILL declare you artsy once you wear them.</p>
       </div>
     </div>
  
 
-   <div class="card item" data-color="prints"> 
-      <div class="price-tag" data-toggle="modal" data-target="#exampleModal">$10</div>
+   <div class="card item" data-color="prints" data-toggle="modal" data-target="#exampleModal"> 
+      <div class="price-tag">$10</div>
       <img src="photo/earrings/IMG_4215.jpg" class="card-img-top crop-shop" alt="Print">
       <div class="card-body">
         <h5 class="card-title">Questionable Earrings</h5>
@@ -244,7 +244,7 @@
       <img src="photo/earrings/IMG_4211.jpg" class="card-img-top crop-shop" alt="Print">
       <div class="card-body">
         <h5 class="card-title">Half Crescent Earrings</h5>
-        <p class="card-text">People WILL declare you a cool artsy hoe once you wear them.</p>
+        <p class="card-text">People WILL declare you artsy once you wear them.</p>
       </div>
     </div>
 
@@ -260,23 +260,35 @@
 
 </div>
 
-<!-- Modal -->
+<!-- Sample Product Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-wide" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cute Earrings</h5>
+        <h5 class="modal-title" id="exampleModalLabel" style="color:black">Cute Earrings</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-<p>THIS IS THE MODALLLL. YOU WIN</p>
-        <a href="#" class="btn btn-primary">Buy</a>
+       <div style="display: flex;flex-direction: row;">
+          <div>
+            <img src="photo/earrings/IMG_4215.jpg" class="crop-shop" alt="Earrings">
+          </div>
+          <div style="width: 400px;text-align: left; margin-left: 50px;">
+            Lorem Ipsum, these are earrings I made! Made with 100% polymer clay and love! 
+            <br>
+            Made this print for the website but thought it was cool to put on a wall.
+             Made this print for the website but thought it was cool to put on a wall.
+              Made this print for the website but thought it was cool to put on a wall.
+             <br><br>
+             <button class="btn-primary">Buy</button>
+             
+          </div>
+       </div>
+       
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+
     </div>
   </div>
 </div>
@@ -376,8 +388,6 @@ function closeButton() {
       <script type="text/javascript" src="js/singlenav.js"></script>
       <script type="text/javascript" src="js/scrollreveal.js"></script> 
       <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
-
-
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

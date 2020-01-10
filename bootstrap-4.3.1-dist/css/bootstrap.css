@@ -5101,7 +5101,7 @@
     max-height: calc(100vh - 3.5rem);
   }
  .modal-dialog-centered {
-    min-height: calc(100% - 3.5rem);
+    min-height: calc(100% - -40rem);
   }
   .modal-dialog-centered::before {
     height: calc(100vh - 3.5rem);
