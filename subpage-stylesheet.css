@@ -6,7 +6,19 @@
        url('otherCss/fonts/GT-America-Extended-Black.ttf') format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@font-face {
+  font-family: Mabry;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: url(otherCss/fonts/mabry-medium-pro.otf);
+  src: url(otherCss/fonts/mabry-medium-pro.eot);
+  src: url(otherCss/fonts/mabry-medium-pro.eot#iefix) format("embedded-opentype"),
+    url(otherCss/fonts/mabry-medium-pro.woff2) format("woff2"),
+    url(otherCss/fonts/mabry-medium-pro.woff) format("woff"),
+    url(otherCss/fonts/mabry-medium-pro.ttf) format("truetype");
+}
+
 
 body.top{
   background-color: #1B2835;
@@ -505,7 +517,7 @@ display: block;
     font-size: 1.5em;
     line-height: 1.6;
     font-weight: 400;
-    font-family: 'Inconsolata', monospace;
+    font-family: Mabry, Helvetica, Arial, Sans-serif;
     color: white;
     width: 150px;
 }
