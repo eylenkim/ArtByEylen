@@ -1,7 +1,5 @@
 <!--
     -- fix other <a> tags // fix navigation
-    --fix "exit" for contact pop up (mobile)
-    -- center the Contact dialog box on viewport in mobile
     --add shop on the nav bar (desktop)
     --scroll to top malfunctioning on pc chrome
 -->
@@ -46,19 +44,19 @@
             <li><div onclick="location.href='index.html';">Home</a></li> 
             <li><div onclick="location.href='shop.html';">Shop</a></li>
             <li>
-              <div data-toggle="modal" data-target="#aboutMeModalMain" style="height: 100%;padding: 10px 0 10px 10px;" >About Me</div> 
+              <div data-toggle="modal" data-target="#aboutMeModalMain" style="height: 100%;padding: 10px 0 10px 10px;" >About</div> 
             </li>
               <div class="modal fade" id="aboutMeModalMain" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelMain" aria-hidden="true">
                <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                   <h5 class="modal-title" id="aboutMeLabelMain" style="color:black;">About Me</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <h5 class="modal-title" id="aboutMeLabelMain" style="color:black;">About</h5>
+                      <button type="button" class="close closet-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
                   <div class="modal-body">
-                      <img id="about-me-pic" src="photo/meee.JPG">
+                      <img id="about-me-pic" src="photo/itme.JPG">
                        <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
                         <br><br> 
                        The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
@@ -81,7 +79,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                    <h5 id="ContactLabelNav" style="color:black;">Contact Me</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
@@ -139,17 +137,18 @@
                 <div class="modal-content">
                   <div class="modal-header">
                    <h5 id="aboutMeLabel" style="color:black;">About</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
                   <div class="modal-body">
-                      <img id="about-me-pic" src="photo/meee.JPG">
-                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                      <img id="about-me-pic" src="photo/itme.JPG">
+                       <p>I am stoked to share my creations with y'all. This site is my coding passion project and I'm excited to utilize it as an art platform. 
                         <br><br> 
-                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                       Art medias I work with: acrylic painting (canvas & glass), earrings (polymer clay), printmaking, film photography, and music.
                         <br><br>
-                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
+                       In my free time I like petting my cat, tickling some tunes on the bass & electric guitar, coding, playing video games, and doing art stuff.
+                       <br><br>
                       </p>
                   </div>
                 </div>
@@ -165,7 +164,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                    <h5 id="ContactLabel" style="color:black;">Contact Me</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
@@ -227,15 +226,43 @@
       <select class="filter-field form-control">
         <option value="">None</option>
         <option value="printmaking">Printmaking</option>
-        <option value="photography">Photography</option>
         <option value="acrylic">Acrylic</option>
+        <option value="photography">Photography</option>
+        
       </select>
     </div>
     
   </div>
 
 <div id="gallery" class="gallery grid" itemscope itemtype="http://schema.org/ImageGallery">
+<!--Printmaking-->
+  <div class="item" data-color="printmaking" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="photo/printmaking/IMG_74601.JPG" data-caption="Assymetry" data-width="1200" data-height="900" itemprop="contentUrl">
+        <img class="crop lazy" data-src="photo/printmaking/IMG_74601.JPG" itemprop="thumbnail" alt="Image description">
+      </a>
+  </div>
 
+  <div class="item" data-color="printmaking" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="photo/printmaking/susieart.jpg" data-caption="Susie [Printmaking Commission]" data-width="1200" data-height="900" itemprop="contentUrl">
+        <img class="crop lazy" data-src="photo/printmaking/susieart.jpg" itemprop="thumbnail" alt="Image description">
+      </a>
+  </div>
+
+<!-- acrylic -->
+
+  <div class="item" data-color="acrylic" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="photo/acrylic/itsmeee.jpg" data-caption="It's Me" data-width="1200" data-height="900" itemprop="contentUrl">
+        <img class="crop lazy" data-src="photo/acrylic/itsmeee.jpg" itemprop="thumbnail" alt="Image description">
+      </a>
+  </div>
+
+    <div class="item" data-color="acrylic" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="photo/acrylic/angelaart.png" data-caption="Angela [Acrylic Commission]" data-width="1200" data-height="900" itemprop="contentUrl">
+        <img class="crop lazy" data-src="photo/acrylic/angelaart.png" itemprop="thumbnail" alt="Image description">
+      </a>
+  </div>
+
+<!--Photography-->
   <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
       <a href="photo/photography/top/baywatch.jpg" data-caption="Bay Watch [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
         <img class="crop lazy" data-src="photo/photography/top/baywatch.jpg" itemprop="thumbnail" alt="Image description">
@@ -379,12 +406,6 @@
 <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
        <a href="photo/photography/top/russiancourtyard.jpg" data-caption="[Tretyakov, Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
           <img class="crop lazy" data-src="photo/photography/top/russiancourtyard.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/iseeyou.jpg" data-caption="Perfectionist [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/iseeyou.jpg" itemprop="thumbnail" alt="Image description">
         </a>
 </div>
 
