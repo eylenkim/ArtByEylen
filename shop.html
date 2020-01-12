@@ -21,6 +21,8 @@
     <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">  
     <link href="otherCss/font-awesome.css" rel=stylesheet type="text/css">
     <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel=stylesheet type="text/css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">
     
 
 
@@ -41,58 +43,71 @@
          </a>
          <ul class="main-navigation" role="navigation">
           <div id="nav-x" class="menu-icon">&Cross;</div>
-            <li><div href="index.html">Home</a></li> 
-            <li><div href="portfolio.html">Portfolio</a></li>
+            <li><div onclick="location.href='index.html';">Home</a></li> 
+            <li><div onclick="location.href='portfolio.html';">Portfolio</a></li>
             <li>
-              <div class="trigger" style="height: 100%;padding: 10px 0 10px 10px;">About 
-              <div class="modal">
-                <div class="modal-content" style="height: 95%; max-height: 600px;padding: 2rem 4.6rem;">
-                  <span class="close-button">&times;</span>
-                  <h3>
-                    Hello,<br>I'm Eylen!
-                  </h3>
-                  <img id="about-me-pic" src="photo/itme.JPG">
-                  <p style="font-size: .75em; height: 44.3%; padding-top: 15px;">I am stoked to share my creations with y'all. This site is my coding passion project and I'm excited to utilize it as an art platform. 
-                        <br><br> 
-                       Art medias I work with: acrylic painting (canvas & glass), earrings (polymer clay), printmaking, film photography, and music.
-                        <br><br>
-                       In my free time I like petting my cat, tickling some tunes on the bass & electric guitar, coding, playing video games, and doing art stuff.
-                       <br><br>
-                      </p>
-                </div>
-              </div>
-              </div>
+              <div data-toggle="modal" data-target="#aboutMeModalMain" style="height: 100%;padding: 10px 0 10px 10px;" >About</div> 
             </li>
+            <div class="modal fade" id="aboutMeModalMain" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelMain" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="height:630px;">
+                  <div class="modal-header">
+                   <h5 class="modal-title" id="aboutMeLabelMain" style="color:black;">About Me</h5>
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                   </div>
+                  <div class="modal-body">
+                    <img src="photo/confettidrawing.png" id="confetti1">
+                      <img id="about-me-pic" src="photo/itme.JPG">
+                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                        <br><br> 
+                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                        <br><br>
+                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
+                      </p>
+                  </div>
+                </div>
+             </div>
+            </div>
+
+
+           
             <li style="height: 100%;padding: 20px 0 10px 7px;">
-              <p class="about-me-desktop" onclick="document.getElementById('id01').style.display='block'" style="position: relative;top: -3px;">Contact
-              </p>
-            <div class="w3-container">
-              <div id="id01" class="w3-modal">
-                <div class="modal-content-contact-portfolio">
-                  <span class="close-button" onclick="document.getElementById('id01').style.display='none'" >&times;</span>
-                  <h3 style="margin-bottom: 0px;">
-                    Contact Me
-                  </h3>
+              <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModalNav">
+              Contact
+            </p>
+            <div class="modal fade" id="ContactModalNav" tabindex="-1" role="dialog" aria-labelledby="ContactLabelNav" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                   <h5 id="ContactLabelNav" style="color:black;" class="modal-title">Contact Me</h5>
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                   </div>
+                  <div class="modal-body">
                   <p>
-                  <div class="contact-us-form" style="font-size: .7em;">
+                  <div class="contact-us-form">
                     <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
                       <div class="row" style="z-index: 9999999;">
                         <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" requiprintmaking>
+                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
                         </div>
                         <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" requiprintmaking>
+                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
                         </div>
                       </div>
-                 
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" requiprintmaking style="height: 160px;margin-top: 20px;line-height: 17px;padding-top: 8px;"></textarea>
-                     
-                      <input class="button u-pull-right" type="submit" value="Send" style="color: black;"><br><br><br>
+                      <br>
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 17px;padding-top: 10px;"></textarea>
+                      <br><br>
+                      <input class="button u-pull-right subpage" type="submit" value="Send"><br><br><br>
                     </form>
                   </div>
                   </p>
+                  </div>
                 </div>
-              </div>
+             </div>
             </div></li>
             
          </ul>
@@ -120,7 +135,7 @@
               <div class="modal-dialog modal-dialog-centered modal-resize" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                   <h5 id="aboutMeLabel" style="color:black;">About</h5>
+                   <h5 id="aboutMeLabel" style="color:black; margin-top: 15px;">About</h5>
                       <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
@@ -239,6 +254,7 @@
       </div>
     </div>
  
+
 
 
     <div class="card item" data-color="prints">
@@ -394,7 +410,7 @@ function closeButton() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
-  <a href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>  
+  <a href="#top" id="return-to-top"><i class="icon-chevron-up chevron"></i></a>  
 
 
 <!----- Lazy Load ----->

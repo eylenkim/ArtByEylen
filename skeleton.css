@@ -143,6 +143,19 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 549px) {
+  h5.modal-title {
+font-size: 3.8rem;
+    line-height: 1.5;
+    letter-spacing: -.05rem;
+    position: relative;
+    top: 20px;
+
+  }
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -160,8 +173,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
-  h5 { font-size: 3.4rem;
-    margin-bottom: -10px; }
+  h5 { font-size: 3.4rem;}
   h6 { font-size: 1.5rem; }
 }
 
@@ -176,7 +188,11 @@ a {
 a:hover {
   color: #ffffff00; }
 
+a.title{
+  color: #f8f9fa00;
+}
 
+}
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
@@ -370,7 +386,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: -1.5rem; }
 
 
 /* Utilities
@@ -419,7 +435,11 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (max-width: 460px) {
+  a.title{
+  color: #f8f9fae0;
+}
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}

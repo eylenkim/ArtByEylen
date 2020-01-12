@@ -290,14 +290,23 @@ select {
 
 button,
 html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"]{
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   background-image: url(noise.gif);
   color: black;
   -webkit-background-clip: text;
 }
+
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border: 1px black solid;
+    border-radius: 16px;
+    margin-top: 15px;}
 
 @media only screen and (max-width: 549px) {
   button,
@@ -307,11 +316,19 @@ input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   background-image: url(noise.gif);
-  color: white;
+  color: black;
   -webkit-background-clip: text;
+  font-size: 60px !important;
 }
 
+html input[type="submit"] {
+    font-size: 15px !important;
+    color: white;
+    padding: 10px 25px;
+    border: 1px white solid;
+    border-radius: 16px;
 }
+
 /**
  * Re-set default cursor for disabled elements.
  */

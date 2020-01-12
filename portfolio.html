@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">
-        <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel=stylesheet type="text/css">
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel=stylesheet type="text/css">
 
     <!-- Mobile Meta 
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
@@ -46,16 +46,17 @@
             <li>
               <div data-toggle="modal" data-target="#aboutMeModalMain" style="height: 100%;padding: 10px 0 10px 10px;" >About</div> 
             </li>
-              <div class="modal fade" id="aboutMeModalMain" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelMain" aria-hidden="true">
-               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+            <div class="modal fade" id="aboutMeModalMain" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelMain" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="height:630px;">
                   <div class="modal-header">
-                   <h5 class="modal-title" id="aboutMeLabelMain" style="color:black;">About</h5>
-                      <button type="button" class="close closet-style" data-dismiss="modal" aria-label="Close">
+                   <h5 class="modal-title" id="aboutMeLabelMain" style="color:black;">About Me</h5>
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
                   <div class="modal-body">
+                    <img src="photo/confettidrawing.png" id="confetti1">
                       <img id="about-me-pic" src="photo/itme.JPG">
                        <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
                         <br><br> 
@@ -78,7 +79,7 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                   <h5 id="ContactLabelNav" style="color:black;">Contact Me</h5>
+                   <h5 id="ContactLabelNav" style="color:black;" class="modal-title">Contact Me</h5>
                       <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
@@ -96,12 +97,9 @@
                         </div>
                       </div>
                       <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
-                        margin-top: 10px;
-                        line-height: 17px;
-                        padding-top: 8px;"></textarea>
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 17px;padding-top: 10px;"></textarea>
                       <br><br>
-                      <input class="button u-pull-right" type="submit" value="Send"><br><br><br>
+                      <input class="button u-pull-right subpage" type="submit" value="Send"><br><br><br>
                     </form>
                   </div>
                   </p>

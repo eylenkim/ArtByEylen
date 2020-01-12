@@ -3,6 +3,7 @@
   -- center the Contact dialog box on viewport in mobile
   --in mobile, the words "portfolio" "shop" can't be clicked!
   --fix font sizing in contact me input box
+  --adding social media to icons
     
   
     <!-- Page Stuff + CSS 
@@ -47,6 +48,7 @@
                       </button>
                    </div>
                   <div class="modal-body">
+                      <img src="photo/confettidrawing.png" id="confetti1">
                       <img id="about-me-pic" src="photo/itme.JPG">
                        <p>I am stoked to share my creations with y'all. This site is my coding passion project and I'm excited to utilize it as an art platform. 
                         <br><br> 
@@ -137,11 +139,11 @@
                   </a>
                   <div class="overlap-text">
                      <div class="overlap-text-outline-shop">
-                        <h2 class="load two-thirds column"><a href="shop.html">Shop</a></h2>
+                        <h2 class="load two-thirds column"><a class="title" href="shop.html">Shop</a></h2>
                      </div>
 
                      <div class="overlap-text-base-shop">
-                        <h2 class="load two-thirds column">Shop</h2>
+                        <h2 class="load two-thirds column"><a class="title" href="shop.html">Shop</a></h2>
                      </div>
                   </div>
                 
@@ -152,10 +154,10 @@
                   
                   <div class="overlap-text">
                      <div class="overlap-text-outline-portfolio">
-                        <h2 class="load two-thirds column"><a href="shop.html">Portfolio</a></h2>
+                        <h2 class="load two-thirds column"><a class="title" href="shop.html">Portfolio</a></h2>
                      </div>
                      <div class="overlap-text-base-portfolio">
-                        <h2 class="load two-thirds column">Portfolio</h2>
+                        <h2 class="load two-thirds column"><a class="title" href="shop.html">Portfolio</a></h2>
                      </div>
                   </div>
                 </a>
@@ -169,15 +171,16 @@
          ––––––––––––––––––––––––––––––––––––––––––––––––––--> 
             <div class="modal fade" id="aboutMeModalMain" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelMain" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="height: 650px;">
                   <div class="modal-header">
                    <h5 class="modal-title" id="aboutMeLabelMain" style="color:black;">About Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="margin-top: -40px;">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
                   <div class="modal-body">
-                      <img id="about-me-pic" src="photo/meee.JPG">
+                    <img src="photo/confettidrawing.png" id="confetti1">
+                      <img id="about-me-pic" src="photo/itme.JPG">
                        <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
                         <br><br> 
                        The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
@@ -195,7 +198,7 @@
       
 
                <div class="one-half column u-pull-left mobile-section-padding">
-                  <img class="u-max-full-width duo-pic about-mobile" src="photo/printmaking/colorblock3.jpg" style="margin-top: -35px;
+                  <img class="u-max-full-width duo-pic about-mobile" data-toggle="modal" data-target="#aboutMeModalMain" src="photo/printmaking/colorblock3.jpg" style="margin-top: -35px;
     position: relative;top: 8px;">
                 
          <div class="overlap-text" data-toggle="modal" data-target="#aboutMeModalMain">
