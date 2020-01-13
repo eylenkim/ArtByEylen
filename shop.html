@@ -7,24 +7,23 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <title>Art By Eylen | Shop</title>
     <meta name="description" content="Browse Eylen's art portfolio to view work created with 35mm photography, blockprinting, and acrylic.">
     <meta name="author" content="Eylen Kim">
 
-        <!--  data-src
+    <!--  data-src
       ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
     <link href="subpage-stylesheet.css" rel=stylesheet type="text/css">
     <link href="StyleSheet.css" rel=stylesheet type="text/css">
     <link href="skeleton.css" rel=stylesheet type="text/css">
-    <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">  
+    <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
     <link href="otherCss/font-awesome.css" rel=stylesheet type="text/css">
     <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel=stylesheet type="text/css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">
-    
-
 
     <!-- Mobile Meta 
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
@@ -33,458 +32,464 @@
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
     <link rel="icon" type="image/png" href="photo/favicon1.png" />
 
-  </head>
+</head>
 
-      <!--   Menu // Hamburger Bar  
+<!--   Menu // Hamburger Bar  
          ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-      <nav class="navigation">
-         <a href="#" class="menu-icon">
-          <i class="fa fa-bars"></i>
-         </a>
-         <ul class="main-navigation" role="navigation">
-          <div id="nav-x" class="menu-icon">&Cross;</div>
-            <li><div onclick="location.href='index.html';">Home</a></li> 
-            <li><div onclick="location.href='portfolio.html';">Portfolio</a></li>
-              <!--Nav about -->
-            <li>
-              <div data-toggle="modal" data-target="#aboutMeModalNav" style="height: 100%;padding: 10px 0 10px 10px;" >About</div> 
-            </li>
-            <div class="modal fade" id="aboutMeModalNav" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelNav" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
+<nav class="navigation">
+    <a href="#" class="menu-icon">
+        <i class="fa fa-bars"></i>
+    </a>
+    <ul class="main-navigation" role="navigation">
+        <div id="nav-x" class="menu-icon">&Cross;</div>
+        <li>
+            <div onclick="location.href='index.html';">Home</a>
+        </li>
+        <li>
+            <div onclick="location.href='portfolio.html';">Portfolio</a>
+        </li>
+        <!--Nav about -->
+        <li>
+            <div data-toggle="modal" data-target="#aboutMeModalNav" style="height: 100%;padding: 10px 0 10px 10px;">About</div>
+        </li>
+        <div class="modal fade" id="aboutMeModalNav" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelNav" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content" style="height: 600px;">
-                  <div class="modal-header" style="padding-top:20px;">
-                   <h5 class="modal-title" id="aboutMeLabelNav" style="color:black;">About Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="margin-top: -35px;">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                    <img src="photo/confettidrawing.png" id="confetti1">
-                      <img id="about-me-pic" src="photo/itme.JPG">
-                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
-                        <br><br> 
-                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
-                        <br><br>
-                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
-                      </p>
-                  </div>
+                    <div class="modal-header" style="padding-top:20px;">
+                        <h5 class="modal-title" id="aboutMeLabelNav" style="color:black;">About Me</h5>
+                        <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="margin-top: -35px;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="photo/confettidrawing.png" id="confetti1">
+                        <img id="about-me-pic" src="photo/itme.JPG">
+                        <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                            <br>
+                            <br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                            <br>
+                            <br> In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.
+                            <br>
+                            <br>
+                        </p>
+                    </div>
                 </div>
-             </div>
             </div>
+        </div>
 
-
-           <!-- nav contact -->
-            <li style="height: 100%;padding: 20px 0 10px 7px;">
-              <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModalNav">
-              Contact
+        <!-- nav contact -->
+        <li style="height: 100%;padding: 20px 0 10px 7px;">
+            <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModalNav">
+                Contact
             </p>
             <div class="modal fade" id="ContactModalNav" tabindex="-1" role="dialog" aria-labelledby="ContactLabelNav" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content" style="height: 430px;">
-                  <div class="modal-header" style="padding-top: 20px;">
-                   <h5 id="ContactLabelNav" style="color:black;" class="modal-title">Contact Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="    margin-top: -35px;">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                  <p>
-                  <div class="contact-us-form">
-                    <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
-                      <div class="row" style="z-index: 9999999;">
-                        <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" style="height: 430px;">
+                        <div class="modal-header" style="padding-top: 20px;">
+                            <h5 id="ContactLabelNav" style="color:black;" class="modal-title">Contact Me</h5>
+                            <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="    margin-top: -35px;">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                        <div class="modal-body">
+                            <p>
+                                <div class="contact-us-form">
+                                    <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
+                                        <div class="row" style="z-index: 9999999;">
+                                            <div class="six columns">
+                                                <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                                            </div>
+                                            <div class="six columns">
+                                                <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 23px;padding-top: 10px;"></textarea>
+                                        <br>
+                                        <br>
+                                        <input class="button u-pull-right subpage" type="submit" value="Send">
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </form>
+                                </div>
+                            </p>
                         </div>
-                      </div>
-                      <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 23px;padding-top: 10px;"></textarea>
-                      <br><br>
-                      <input class="button u-pull-right subpage" type="submit" value="Send"><br><br><br>
-                    </form>
-                  </div>
-                  </p>
-                  </div>
+                    </div>
                 </div>
-             </div>
-            </div></li>
-            
-         </ul>
-      </nav>
+            </div>
+        </li>
 
-    <header>
-     <div class="container fade-in">
+    </ul>
+</nav>
+
+<header>
+    <div class="container fade-in">
         <div class="row">
-          <!-- art by eylen header-->
-          <a href="index.html">
-          <h1 class="one-third column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
-      </a>
-      <!-- shop header -->
-          <h2 class="one-third column u-pull-left" id="portfolio-title-desktop">|  Shop</h2>
-          <h2 class="one-third column u-pull-left" id="portfolio-title-mobile">
+            <!-- art by eylen header-->
+            <a href="index.html">
+                <h1 class="one-third column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
+            </a>
+            <!-- shop header -->
+            <h2 class="one-third column u-pull-left" id="portfolio-title-desktop">/Shop</h2>
+            <h2 class="one-third column u-pull-left" id="portfolio-title-mobile">
             <span>&boxh;&boxh;<br></span>Shop
           </h2>
 
-          <!-- portfolio header -->
-          <div class="about-contact-text" class="one-third column u-pull-right">
-          <a href="portfolio.html">
-            <p class="about-me-desktop">Portfolio</p>
-          </a>
-            <!-- about header -->
-              <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
-                About 
-            </p>
+            <!-- portfolio header -->
+            <div class="about-contact-text" class="one-third column u-pull-right">
+                <a href="portfolio.html">
+                    <p class="about-me-desktop">Portfolio</p>
+                </a>
+                <!-- about header -->
+                <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
+                    About
+                </p>
 
-            <!-- about modal -->
-      <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-resize" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                   <h5 id="aboutMeLabel" style="color:black;">About</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                    <img src="photo/confettidrawing.png" id="confetti1">
-                      <img id="about-me-pic" src="photo/itme.JPG">
-                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
-                        <br><br> 
-                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
-                        <br><br>
-                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
-                      </p>
-                  </div>
+                <!-- about modal -->
+                <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-resize" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="aboutMeLabel" style="color:black;">About</h5>
+                                <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="photo/confettidrawing.png" id="confetti1">
+                                <img id="about-me-pic" src="photo/itme.JPG">
+                                <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                                    <br>
+                                    <br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                                    <br>
+                                    <br> In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-            </div>
-          
-            <!--contact header -->
-            <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModal">
-              Contact
-            </p>
-            <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                   <h5 id="ContactLabel" style="color:black;">Contact Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                  <p>
-                  <div class="contact-us-form">
-                    <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
-                      <div class="overlap-text">
-                        <div class="overlap-text-base-contact">
-                          <h2 class="load two-thirds column">Contact</h2>
-                        </div>
-                      </div>
-                      <div class="row" style="z-index: 9999999;">
-                        <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
-                        </div>
-                        <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
-                        </div>
-                      </div>
-                      <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
+
+                <!--contact header -->
+                <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModal">
+                    Contact
+                </p>
+                <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="ContactLabel" style="color:black;">Contact Me</h5>
+                                <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <div class="contact-us-form">
+                                        <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
+                                            <div class="overlap-text">
+                                                <div class="overlap-text-base-contact">
+                                                    <h2 class="load two-thirds column">Contact</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="z-index: 9999999;">
+                                                <div class="six columns">
+                                                    <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                                                </div>
+                                                <div class="six columns">
+                                                    <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
                         margin-top: 10px;
                         line-height: 17px;
                         padding-top: 8px;
                         color: black;"></textarea>
-                      <br><br>
-                      <input class="button u-pull-right" type="submit" value="Send"><br><br><br>
-                    </form>
-                  </div>
-                  </p>
-                  </div>
+                                            <br>
+                                            <br>
+                                            <input class="button u-pull-right" type="submit" value="Send">
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </form>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-            </div>
 
-          </div>
+            </div>
         </div>
-    </header>
+</header>
 
 <body class="top" id="top">
-<section class="grid-wrapper">
-  <div class="filter-controls">
-    <div class="control fade-in">Filter By:
-      <select class="filter-field form-control">
-        <option value="">None</option>
-        <option value="prints">Prints</option>
-        <option value="earrings">Earrings</option>
-        <option value="commissions">Commisions</option>
-      </select>
-    </div>
-  </div>
+    <section class="grid-wrapper">
+        <div class="filter-controls">
+            <div class="control fade-in">Filter By:
+                <select class="filter-field form-control">
+                    <option value="">None</option>
+                    <option value="prints">Prints</option>
+                    <option value="earrings">Earrings</option>
+                    <option value="commissions">Commisions</option>
+                </select>
+            </div>
+        </div>
 
-<div class="grid bootstrap-on fade-in" style="flex-direction: row !important;">  
+        <div class="grid bootstrap-on fade-in" style="flex-direction: row !important;">
 
-    <div class="card item" data-color="earrings"> 
-      <div class="price-tag">$10</div>
+            <div class="card item" data-color="earrings">
+                <div class="price-tag">$10</div>
 
-                          <div id="earrings1" class="carousel slide" data-interval="false">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="photo/earrings/IMG_4213.jpg" class="d-block w-100 crop-shp" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="photo/earrings/IMG_4213.jpg" class="d-block w-100 crop-shop" alt="...">
-                              </div>
+                <div id="earrings1" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="photo/earrings/IMG_4213.jpg" class="d-block w-100 crop-shp" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="photo/earrings/IMG_4213.jpg" class="d-block w-100 crop-shop" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#earrings1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#earrings1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cute Earring</h5>
+                    <p class="card-text">People WILL declare you artsy once you wear them.</p>
+                </div>
+            </div>
+
+            <div class="card item" data-color="prints" data-toggle="modal" data-target="#exampleModal">
+                <div class="price-tag">$10</div>
+                <img src="photo/earrings/IMG_4215.jpg" class="card-img-top crop-shop" alt="Print">
+                <div class="card-body">
+                    <h5 class="card-title">Questionable Earrings</h5>
+                    <p class="card-text">Made this print for the website but thought it was cool to put on a wall. </p>
+                </div>
+            </div>
+
+            <div class="card item" data-color="prints">
+                <div class="price-tag">$10</div>
+                <img src="photo/earrings/IMG_4211.jpg" class="card-img-top crop-shop" alt="Print">
+                <div class="card-body">
+                    <h5 class="card-title">Half Crescent Earrings</h5>
+                    <p class="card-text">People WILL declare you artsy once you wear them.</p>
+                </div>
+            </div>
+
+            <div class="card item" data-color="prints">
+                <div class="price-tag">$35</div>
+                <img src="photo/printmaking/maddycarve2.JPG" class="card-img-top crop-shop" alt="Floral Print">
+                <div class="card-body">
+                    <h5 class="card-title">Custom Portrait Print</h5>
+                    <p class="card-text">Custom hand-carved rubber + prints. Cost varies depending on size, detail, and # of portraits.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sample Product Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-wide" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color:black">Cute Earrings</h5>
+                        <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="display: flex;flex-direction: row;">
+                            <div>
+                                <img src="photo/earrings/IMG_4215.jpg" class="crop-shop" alt="Earrings">
                             </div>
-                            <a class="carousel-control-prev" href="#earrings1" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#earrings1" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
-      <div class="card-body">
-        <h5 class="card-title">Cute Earring</h5>
-        <p class="card-text">People WILL declare you artsy once you wear them.</p>
-      </div>
-    </div>
- 
+                            <div style="width: 400px;text-align: left; margin-left: 50px;">
+                                Lorem Ipsum, these are earrings I made! Made with 100% polymer clay and love!
+                                <br> Made this print for the website but thought it was cool to put on a wall. Made this print for the website but thought it was cool to put on a wall. Made this print for the website but thought it was cool to put on a wall.
+                                <br>
+                                <br>
+                                <button class="btn-primary">Buy</button>
 
-   <div class="card item" data-color="prints" data-toggle="modal" data-target="#exampleModal"> 
-      <div class="price-tag">$10</div>
-      <img src="photo/earrings/IMG_4215.jpg" class="card-img-top crop-shop" alt="Print">
-      <div class="card-body">
-        <h5 class="card-title">Questionable Earrings</h5>
-        <p class="card-text">Made this print for the website but thought it was cool to put on a wall. </p>
-      </div>
-    </div>
- 
+                            </div>
+                        </div>
 
+                    </div>
 
+                </div>
+            </div>
+        </div>
 
-    <div class="card item" data-color="prints">
-     <div class="price-tag">$10</div>
-      <img src="photo/earrings/IMG_4211.jpg" class="card-img-top crop-shop" alt="Print">
-      <div class="card-body">
-        <h5 class="card-title">Half Crescent Earrings</h5>
-        <p class="card-text">People WILL declare you artsy once you wear them.</p>
-      </div>
-    </div>
-
-
-    <div class="card item" data-color="prints">
-     <div class="price-tag">$35</div>
-      <img src="photo/printmaking/maddycarve2.JPG" class="card-img-top crop-shop" alt="Floral Print">
-      <div class="card-body">
-        <h5 class="card-title">Custom Portrait Print</h5>
-        <p class="card-text">Custom hand-carved rubber + prints. Cost varies depending on size, detail, and # of portraits.</p>
-      </div>
-    </div>
-
-</div>
-
-<!-- Sample Product Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-wide" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" style="color:black">Cute Earrings</h5>
-        <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <div style="display: flex;flex-direction: row;">
-          <div>
-            <img src="photo/earrings/IMG_4215.jpg" class="crop-shop" alt="Earrings">
-          </div>
-          <div style="width: 400px;text-align: left; margin-left: 50px;">
-            Lorem Ipsum, these are earrings I made! Made with 100% polymer clay and love! 
-            <br>
-            Made this print for the website but thought it was cool to put on a wall.
-             Made this print for the website but thought it was cool to put on a wall.
-              Made this print for the website but thought it was cool to put on a wall.
-             <br><br>
-             <button class="btn-primary">Buy</button>
-             
-          </div>
-       </div>
-       
-      </div>
-
-    </div>
-  </div>
-</div>
-
-            <div class="container" id="footer">
-               <div class="row">
-                  <div class="columns">
-                  <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
-                  <br>
-                  <h3 id="footer-details">&copy; 2019 Eylen Kim <br> Art By Eylen
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="columns">
+                    <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
+                    <br>
+                    <h3 id="footer-details">&copy; 2019 Eylen Kim <br> Art By Eylen
                   </h3>
-               </div>
+                </div>
             </div>
-            </div>
- </div> 
-</select>       
-</section>
+        </div>
+        </div>
+        </select>
+    </section>
 
-
-
-<!----- Muuri Filtering ----->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-  var grid = null,
-      wrapper = document.querySelector('.grid-wrapper'),
-      searchField = wrapper.querySelector('.search-field'),
-      filterField = wrapper.querySelector('.filter-field'),
-      sortField = wrapper.querySelector('.sort-field'),
-      gridElem = wrapper.querySelector('.grid'),
-      searchAttr = 'data-title',
-      filterAttr = 'data-color',
-      searchFieldValue,
-      filterFieldValue,
-      sortFieldValue,
-      dragOrder = [];
-
-  // Init the grid layout
-  grid = new Muuri(gridElem, {
-    dragEnabled: false,
-    layout: {
-      fillGaps: true
-    }
-  });
-  
-  // Filter field event binding
-  filterField.addEventListener('change', filter);
-  
-  // Sort field event binding
-  sortField.addEventListener('change', sort);
-
-  // Filtering
-  function filter() {
-    filterFieldValue = filterField.value;
-    grid.filter(function (item) {
-      var element = item.getElement(),
-          isSearchMatch = !searchFieldValue ? true : (element.getAttribute(searchAttr) || '').toLowerCase().indexOf(searchFieldValue) > -1,
-          isFilterMatch = !filterFieldValue ? true : (element.getAttribute(filterAttr) || '') === filterFieldValue;
-      return isSearchMatch && isFilterMatch;
-    });
-  }
-});
-
-</script>
-
-<script src="js/muuri.js"></script>
-<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-
-<!--Modal - Dialog Boxes -->
-<script type="text/javascript"> const modals = Array.from(document.querySelectorAll('.modal'));
-         const triggers = Array.from(document.querySelectorAll('.trigger'));
-         var closeButton = document.querySelector(".close-button"); 
-         
-         //if a trigger is clicked then...
-         for (const trigger of triggers) {
-           trigger.addEventListener('click', toggleModal);
-         }
-         
-         // .. then toggle it's modal
-         function toggleModal(event) { event.target.closest('.trigger').querySelector('.modal').classList.toggle("show-modal"); }
-         
-           // check if the clicked element is a modal, or in a modal
-         function windowOnClick(event) {
-           if (modals.some((modal) => modal.contains(event.target))) {
-             toggleModal();
-           }
-         }
-</script>
-
-<script>
-function closeButton() {
-  document.getElementByClass('id02').style.display='none'
-}
-
-</script>
-<!----- JS files ----->
-      <script type="text/javascript" src="js/scripts.js"></script> 
-      <script type="text/javascript" src="js/singlenav.js"></script>
-      <script type="text/javascript" src="js/scrollreveal.js"></script> 
-      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
-  <a href="#top" id="return-to-top"><i class="icon-chevron-up chevron"></i></a>  
-
-
-<!----- Lazy Load ----->
+    <!----- Muuri Filtering ----->
     <script>
-      (function() {
-        function logElementEvent(eventName, element) {
-          console.log(
-            Date.now(),
-            eventName,
-            element.getAttribute("data-src")
-          );
-        }
-        var callback_enter = function(element) {
-          logElementEvent("🔑 ENTERED", element);
-        };
-        var callback_exit = function(element) {
-          logElementEvent("🚪 EXITED", element);
-        };
-        var callback_reveal = function(element) {
-          logElementEvent("👁️ REVEALED", element);
-        };
-        var callback_loaded = function(element) {
-          logElementEvent("👍 LOADED", element);
-        };
-        var callback_error = function(element) {
-          logElementEvent("💀 ERROR", element);
-          element.src =
-            "https://via.placeholder.com/440x560/?text=Error+Placeholder";
-        };
-        var callback_finish = function() {
-          logElementEvent("✔️ FINISHED", document.documentElement);
-        };
-        ll = new LazyLoad({
-          elements_selector: ".lazy",
-          load_delay: 300,
-          threshold: 0,
-          // Assign the callbacks defined above
-          callback_enter: callback_enter,
-          callback_exit: callback_exit,
-          callback_reveal: callback_reveal,
-          callback_loaded: callback_loaded,
-          callback_error: callback_error,
-          callback_finish: callback_finish
+        document.addEventListener('DOMContentLoaded', function() {
+            var grid = null,
+                wrapper = document.querySelector('.grid-wrapper'),
+                searchField = wrapper.querySelector('.search-field'),
+                filterField = wrapper.querySelector('.filter-field'),
+                sortField = wrapper.querySelector('.sort-field'),
+                gridElem = wrapper.querySelector('.grid'),
+                searchAttr = 'data-title',
+                filterAttr = 'data-color',
+                searchFieldValue,
+                filterFieldValue,
+                sortFieldValue,
+                dragOrder = [];
+
+            // Init the grid layout
+            grid = new Muuri(gridElem, {
+                dragEnabled: false,
+                layout: {
+                    fillGaps: true
+                }
+            });
+
+            // Filter field event binding
+            filterField.addEventListener('change', filter);
+
+            // Sort field event binding
+            sortField.addEventListener('change', sort);
+
+            // Filtering
+            function filter() {
+                filterFieldValue = filterField.value;
+                grid.filter(function(item) {
+                    var element = item.getElement(),
+                        isSearchMatch = !searchFieldValue ? true : (element.getAttribute(searchAttr) || '').toLowerCase().indexOf(searchFieldValue) > -1,
+                        isFilterMatch = !filterFieldValue ? true : (element.getAttribute(filterAttr) || '') === filterFieldValue;
+                    return isSearchMatch && isFilterMatch;
+                });
+            }
         });
-
-
-      })();
     </script>
 
+    <script src="js/muuri.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 
-<!----- Scroll To Top ----->
-<script>
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 600) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
-</script>
+    <!--Modal - Dialog Boxes -->
+    <script type="text/javascript">
+        const modals = Array.from(document.querySelectorAll('.modal'));
+        const triggers = Array.from(document.querySelectorAll('.trigger'));
+        var closeButton = document.querySelector(".close-button");
+
+        //if a trigger is clicked then...
+        for (const trigger of triggers) {
+            trigger.addEventListener('click', toggleModal);
+        }
+
+        // .. then toggle it's modal
+        function toggleModal(event) {
+            event.target.closest('.trigger').querySelector('.modal').classList.toggle("show-modal");
+        }
+
+        // check if the clicked element is a modal, or in a modal
+        function windowOnClick(event) {
+            if (modals.some((modal) => modal.contains(event.target))) {
+                toggleModal();
+            }
+        }
+    </script>
+
+    <script>
+        function closeButton() {
+            document.getElementByClass('id02').style.display = 'none'
+        }
+    </script>
+    <!----- JS files ----->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/singlenav.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <a href="#top" id="return-to-top"><i class="icon-chevron-up chevron"></i></a>
+
+    <!----- Lazy Load ----->
+    <script>
+        (function() {
+            function logElementEvent(eventName, element) {
+                console.log(
+                    Date.now(),
+                    eventName,
+                    element.getAttribute("data-src")
+                );
+            }
+            var callback_enter = function(element) {
+                logElementEvent("🔑 ENTERED", element);
+            };
+            var callback_exit = function(element) {
+                logElementEvent("🚪 EXITED", element);
+            };
+            var callback_reveal = function(element) {
+                logElementEvent("👁️ REVEALED", element);
+            };
+            var callback_loaded = function(element) {
+                logElementEvent("👍 LOADED", element);
+            };
+            var callback_error = function(element) {
+                logElementEvent("💀 ERROR", element);
+                element.src =
+                    "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+            };
+            var callback_finish = function() {
+                logElementEvent("✔️ FINISHED", document.documentElement);
+            };
+            ll = new LazyLoad({
+                elements_selector: ".lazy",
+                load_delay: 300,
+                threshold: 0,
+                // Assign the callbacks defined above
+                callback_enter: callback_enter,
+                callback_exit: callback_exit,
+                callback_reveal: callback_reveal,
+                callback_loaded: callback_loaded,
+                callback_error: callback_error,
+                callback_finish: callback_finish
+            });
+
+        })();
+    </script>
+
+    <!----- Scroll To Top ----->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 600) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
 
 </body>
+
 </html>

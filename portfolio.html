@@ -6,18 +6,19 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <title>Art By Eylen | Portfolio</title>
     <meta name="description" content="Browse Eylen's art portfolio to view work created with 35mm photography, blockprinting, and acrylic.">
     <meta name="author" content="Eylen Kim">
 
-        <!--  data-src
+    <!--  data-src
       ––––––––––––––––––––––––––––––––––––––––––––––––––- -->
     <link href="subpage-stylesheet.css" rel=stylesheet type="text/css">
     <link href="StyleSheet.css" rel=stylesheet type="text/css">
     <link href="skeleton.css" rel=stylesheet type="text/css">
-    <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">  
+    <link href="otherCss/normalize.css" rel="stylesheet" type="text/css">
     <link href="otherCss/font-awesome.css" rel=stylesheet type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
@@ -31,923 +32,927 @@
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
     <link rel="icon" type="image/png" href="photo/favicon1.png" />
 
-  </head>
+</head>
 
-      <!--   Menu // Hamburger Bar  
+<!--   Menu // Hamburger Bar  
          ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-      <nav class="navigation">
-         <a href="#" class="menu-icon">
-          <i class="fa fa-bars"></i>
-         </a>
-         <ul class="main-navigation" role="navigation">
-          <div id="nav-x" class="menu-icon">&Cross;</div>
-            <li><div onclick="location.href='index.html';">Home</a></li> 
-            <li><div onclick="location.href='shop.html';">Shop</a></li>
-            <li>
-              <div data-toggle="modal" data-target="#aboutMeModalNav" style="height: 100%;padding: 10px 0 10px 10px;" >About</div> 
-            </li>
-            <!-- About nav -->
-            <div class="modal fade" id="aboutMeModalNav" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelNav" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
+<nav class="navigation">
+    <a href="#" class="menu-icon">
+        <i class="fa fa-bars"></i>
+    </a>
+    <ul class="main-navigation" role="navigation">
+        <div id="nav-x" class="menu-icon">&Cross;</div>
+        <li>
+            <div onclick="location.href='index.html';">Home</a>
+        </li>
+        <li>
+            <div onclick="location.href='shop.html';">Shop</a>
+        </li>
+        <li>
+            <div data-toggle="modal" data-target="#aboutMeModalNav" style="height: 100%;padding: 10px 0 10px 10px;">About</div>
+        </li>
+        <!-- About nav -->
+        <div class="modal fade" id="aboutMeModalNav" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelNav" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content" style="height: 600px;">
-                  <div class="modal-header" style="padding-top:20px;">
-                   <h5 class="modal-title" id="aboutMeLabelNav" style="color:black;">About Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="margin-top: -35px;">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                    <img src="photo/confettidrawing.png" id="confetti1">
-                      <img id="about-me-pic" src="photo/itme.JPG">
-                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
-                        <br><br> 
-                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
-                        <br><br>
-                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
-                      </p>
-                  </div>
+                    <div class="modal-header" style="padding-top:20px;">
+                        <h5 class="modal-title" id="aboutMeLabelNav" style="color:black;">About Me</h5>
+                        <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="margin-top: -35px;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="photo/confettidrawing.png" id="confetti1">
+                        <img id="about-me-pic" src="photo/itme.JPG">
+                        <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                            <br>
+                            <br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                            <br>
+                            <br> In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.
+                            <br>
+                            <br>
+                        </p>
+                    </div>
                 </div>
-             </div>
             </div>
+        </div>
 
-
-           <!-- Contact Nav -->
-            <li style="height: 100%;padding: 20px 0 10px 7px;">
-              <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModalNav">
-              Contact
+        <!-- Contact Nav -->
+        <li style="height: 100%;padding: 20px 0 10px 7px;">
+            <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModalNav">
+                Contact
             </p>
             <div class="modal fade" id="ContactModalNav" tabindex="-1" role="dialog" aria-labelledby="ContactLabelNav" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content" style="height: 430px;">
-                  <div class="modal-header" style="padding-top: 20px;">
-                   <h5 id="ContactLabelNav" style="color:black;" class="modal-title">Contact Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="    margin-top: -35px;">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                  <p>
-                  <div class="contact-us-form">
-                    <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
-                      <div class="row" style="z-index: 9999999;">
-                        <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" style="height: 430px;">
+                        <div class="modal-header" style="padding-top: 20px;">
+                            <h5 id="ContactLabelNav" style="color:black;" class="modal-title">Contact Me</h5>
+                            <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="    margin-top: -35px;">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                        <div class="modal-body">
+                            <p>
+                                <div class="contact-us-form">
+                                    <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
+                                        <div class="row" style="z-index: 9999999;">
+                                            <div class="six columns">
+                                                <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                                            </div>
+                                            <div class="six columns">
+                                                <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 23px;padding-top: 10px;"></textarea>
+                                        <br>
+                                        <br>
+                                        <input class="button u-pull-right subpage" type="submit" value="Send">
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </form>
+                                </div>
+                            </p>
                         </div>
-                      </div>
-                      <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 23px;padding-top: 10px;"></textarea>
-                      <br><br>
-                      <input class="button u-pull-right subpage" type="submit" value="Send"><br><br><br>
-                    </form>
-                  </div>
-                  </p>
-                  </div>
+                    </div>
                 </div>
-             </div>
             </div>
-          </li>
-            
-         </ul>
-      </nav>
+        </li>
 
-    <header>
-     <div class="container fade-in">
+    </ul>
+</nav>
+
+<header>
+    <div class="container fade-in">
         <div class="row">
-          <a href="index.html">
-          <h1 class="one-third column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
-      </a>
-          <h2 class="one-third column u-pull-left" id="portfolio-title-desktop">|  Portfolio</h2>
-          <h2 class="one-third column u-pull-left" id="portfolio-title-mobile">
+            <a href="index.html">
+                <h1 class="one-third column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
+            </a>
+            <h2 class="one-third column u-pull-left" id="portfolio-title-desktop">/Portfolio</h2>
+            <h2 class="one-third column u-pull-left" id="portfolio-title-mobile">
             <span>&boxh;&boxh;<br></span>Portfolio
           </h2>
 
-          <div class="about-contact-text" class="one-third column u-pull-right">
-          <a href="shop.html">
-            <p class="about-me-desktop">Shop</p>
-          </a>
+            <div class="about-contact-text" class="one-third column u-pull-right">
+                <a href="shop.html">
+                    <p class="about-me-desktop">Shop</p>
+                </a>
 
-            <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
-                About 
-            </p>
-            <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true" style="z-index: 5000;">
-              <div class="modal-dialog modal-dialog-centered modal-resize" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                   <h5 id="aboutMeLabel" style="color:black;">About</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                    <img src="photo/confettidrawing.png" id="confetti1">
-                      <img id="about-me-pic" src="photo/itme.JPG">
-                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
-                        <br><br> 
-                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
-                        <br><br>
-                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
-                      </p>
-                  </div>
+                <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
+                    About
+                </p>
+                <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true" style="z-index: 5000;">
+                    <div class="modal-dialog modal-dialog-centered modal-resize" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="aboutMeLabel" style="color:black;">About</h5>
+                                <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="photo/confettidrawing.png" id="confetti1">
+                                <img id="about-me-pic" src="photo/itme.JPG">
+                                <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                                    <br>
+                                    <br> The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                                    <br>
+                                    <br> In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-          </div>
-          
 
-            <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModal">
-              Contact
-            </p>
-            <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                   <h5 id="ContactLabel" style="color:black;">Contact Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                   </div>
-                  <div class="modal-body">
-                  <p>
-                  <div class="contact-us-form">
-                    <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
-                      <div class="overlap-text">
-                        <div class="overlap-text-base-contact">
-                          <h2 class="load two-thirds column">Contact</h2>
-                        </div>
-                      </div>
-                      <div class="row" style="z-index: 9999999;">
-                        <div class="six columns">
-                          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
-                        </div>
-                        <div class="six columns">
-                          <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
-                        </div>
-                      </div>
-                      <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
+                <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModal">
+                    Contact
+                </p>
+                <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="ContactLabel" style="color:black;">Contact Me</h5>
+                                <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <div class="contact-us-form">
+                                        <form action="https://formspree.io/eylenkim@gmail.com" method="POST">
+                                            <div class="overlap-text">
+                                                <div class="overlap-text-base-contact">
+                                                    <h2 class="load two-thirds column">Contact</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="z-index: 9999999;">
+                                                <div class="six columns">
+                                                    <input class="u-full-width" type="text" placeholder="Name" id="nameInput" name="Name" required>
+                                                </div>
+                                                <div class="six columns">
+                                                    <input class="u-full-width" type="email" placeholder="Email" id="emailInput" name="Email" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
                         margin-top: 10px;
                         line-height: 17px;
                         padding-top: 8px;
                         color: black;"></textarea>
-                      <br><br>
-                      <input class="button u-pull-right" type="submit" value="Send"><br><br><br>
-                    </form>
-                  </div>
-                  </p>
-                  </div>
+                                            <br>
+                                            <br>
+                                            <input class="button u-pull-right" type="submit" value="Send">
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </form>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-            </div>
 
-          </div>
+            </div>
         </div>
-    </header>
+</header>
 
 <body class="top" id="top">
 
-
-<section class="grid-wrapper">
-  <div class="filter-controls">
-
-    <div style="display:none;">
-      <div class="control">Search
-      <input class="search-field form-control" type="text" name="search" placeholder="Enter the fruit name">
-    </div><div class="control">Sort
-      <select class="sort-field form-control">
-        <option value="order">None</option>
-        <option value="title">Order by fruit name</option>
-        <option value="color">Order by color name</option>
-      </select>
-    </div>
-  </div>
-
-    <div class="control fade-in">Filter By:
-      <select class="filter-field form-control">
-        <option value="">None</option>
-        <option value="printmaking">Printmaking</option>
-        <option value="acrylic">Acrylic</option>
-        <option value="photography">Photography</option>
-        
-      </select>
-    </div>
-    
-  </div>
-
-<div id="gallery" class="gallery grid" itemscope itemtype="http://schema.org/ImageGallery">
-<!--Printmaking-->
-  <div class="item" data-color="printmaking" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="photo/printmaking/IMG_74601.JPG" data-caption="Assymetry" data-width="1200" data-height="900" itemprop="contentUrl">
-        <img class="crop lazy" data-src="photo/printmaking/IMG_74601.JPG" itemprop="thumbnail" alt="Image description">
-      </a>
-  </div>
-
-  <div class="item" data-color="printmaking" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="photo/printmaking/susieart.jpg" data-caption="Susie [Printmaking Commission]" data-width="1200" data-height="900" itemprop="contentUrl">
-        <img class="crop lazy" data-src="photo/printmaking/susieart.jpg" itemprop="thumbnail" alt="Image description">
-      </a>
-  </div>
-
-<!-- acrylic -->
-
-  <div class="item" data-color="acrylic" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="photo/acrylic/itsmeee.jpg" data-caption="It's Me" data-width="1200" data-height="900" itemprop="contentUrl">
-        <img class="crop lazy" data-src="photo/acrylic/itsmeee.jpg" itemprop="thumbnail" alt="Image description">
-      </a>
-  </div>
-
-    <div class="item" data-color="acrylic" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="photo/acrylic/angelaart.png" data-caption="Angela [Acrylic Commission]" data-width="1200" data-height="900" itemprop="contentUrl">
-        <img class="crop lazy" data-src="photo/acrylic/angelaart.png" itemprop="thumbnail" alt="Image description">
-      </a>
-  </div>
-
-<!--Photography-->
-  <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="photo/photography/top/baywatch.jpg" data-caption="Bay Watch [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
-        <img class="crop lazy" data-src="photo/photography/top/baywatch.jpg" itemprop="thumbnail" alt="Image description">
-      </a>
-  </div>
-
-  <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="photo/photography/top/peek.jpg" data-caption="I went through a neighborhood in New York, only to find that it was a neighborhood full of cats. Seriously, I saw around 7 cats in 1 block. These cats were also highly photogenic. [Williamsburg, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-        <img class="crop lazy" data-src="photo/photography/top/peek.jpg" itemprop="thumbnail" alt="Image description">
-      </a>  
-  </div>
-
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/deadleafszn.jpg" data-caption="Shy [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/deadleafszn.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/dinnertime.jpg" data-caption="Dinner Time [Williamsburg, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/dinnertime.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/lowtide.jpg" data-caption="Low Tides [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/lowtide.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/humanreflection.jpg" data-caption="Human Reflection [New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/humanreflection.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/filingcabinet.jpg" data-caption="World's Tallest Filing Cabinet [Burlington, Vermont]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/filingcabinet.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/doingtaxes.jpg" data-caption="Doing Taxes [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/doingtaxes.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/fml.jpg" data-caption="fml [Williamsburg, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/fml.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/galveston.jpg" data-caption="Southern Tip of Texas [Galveston, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/galveston.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/magazin.jpg" data-caption="Russian Grocery Store [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/magazin.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/wings.jpg" data-caption="Vampires of the City [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/wings.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/inadream.jpg" data-caption="In a Dream [Montreal, Quebec]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/inadream.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/stairs.jpg" data-caption="Stairs [Inside the Capitol, Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/stairs.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/deadman.jpg" data-caption="This man used to work for the Smithsonian. He stated that when he dies, his body shall be owned by the museum. Here it is. // Man in Diamonds [Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/deadman.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/bigfootsmansion.jpg" data-caption="Bigfoots Hideout [Chuckanuts, Bellingham]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/bigfootsmansion.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/muted.jpg" data-caption="Muted [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/muted.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/neworleansbuilding.jpg" data-caption="A building in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/neworleansbuilding.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/peacesigncropped.JPG" data-caption="Peace Out my dude [New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/peacesigncropped.JPG" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/bazaar.jpg" data-caption="I went to a bazaar in Russia. It was weird because you can hire people to steer shopping carts for you. They would follow you around the store and grab the grocery bags from the stand you just purchased vegetables from. Then they would help you load the groceries in the car. [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/bazaar.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/chicago.jpg" data-caption="Spirals in [Chicago, Illinois]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/chicago.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/everybodylovesmakeup.jpg" data-caption="Everybody loves makeup [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/everybodylovesmakeup.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/ceiling.jpg" data-caption="Ceiling in [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/ceiling.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/russiancourtyard.jpg" data-caption="[Tretyakov, Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/russiancourtyard.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/neworleansbuilding2.jpg" data-caption="A building in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/neworleansbuilding2.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/dancerinneworleans.jpg" data-caption="Dancer in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/dancerinneworleans.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/moscowsubway.jpg" data-caption="The Moscow subway station was really big and confusing. The had doors inside the station big enough to hide the entire government in case of a disaster, war, etc. [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/moscowsubway.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/feelingdizzy.jpg" data-caption="A building in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/feelingdizzy.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/top/soviettelephone.jpg" data-caption="A telephone from the Soviet Era [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/top/soviettelephone.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/wherethefenceislow.jpg" data-caption="Where the fence is low [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/wherethefenceislow.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/honey.jpg" data-caption="Honey [Santa Fe, New Mexico" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/honey.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/armswideforlotide.jpg" data-caption="Arms wide for Low Tide [Locust Beach, Bellingham]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/armswideforlotide.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/doubleexposure.jpg" data-caption="Double Exposure shot in [Fort Collins, Colorado]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/doubleexposure.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/thebean.jpg" data-caption="The Bean [Chicago, Illinois]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/thebean.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/dcstatue.jpg" data-caption="This statue represents the New Deal regulations on industries attempting to control market forces. [Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/dcstatue.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/prudencejusticetemperanceandcourage.jpg" data-caption="Prudence, Justice, Temperance, Courage [Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/prudencejusticetemperanceandcourage.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/redsquare.jpg" data-caption="Red Square [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/redsquare.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/hydroponics.jpg" data-caption="Hydroponics at WWU [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/hydroponics.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/racoon.jpg" data-caption="Funny Story: I went to Goodwill to buy a film camera. I guess the last owner of the camera forgot that they've left film inside. I developed it and out came this picture of a raccoon. [Somewhere in Federal Way, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/racoon.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/niagarafalls.jpg" data-caption="The falls were a lot of bigger in person than I thought. [Niagara Falls]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/niagarafalls.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/bouquet.jpg" data-caption="Stopped to smell the roses, I guess. [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/bouquet.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/justcranberry.jpg" data-caption="My friend Hannah and I were walking as she was drinking cranberry juice. Then this whole conversation spiraled about how cranberry juice is good for people with UTI's. I stopped to take a photo of the juice, to kind of commemorate a random conversation on a random day. [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/justcranberry.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/depthsofatree.jpg" data-caption="Depths of a Tree [Colorado]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/depthsofatree.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/grandmom.jpg" data-caption="Grandmom hosted us in Ponte Vedra. She remembers a lot of details about people and is a true southern woman. She's really fit and visits the UK every year. [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/grandmom.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/vancouver.jpg" data-caption="Does it count to take pictures of other people's art? [Vancouver, BC]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/vancouver.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/manvsman.aconversation.jpg" data-caption="Man vs Man: A Conversation [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/manvsman.aconversation.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/heldinhands.jpg" data-caption="Everyone loves being held [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/heldinhands.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/callhersavage.jpg" data-caption="Call her Savage (Double Exposure) [Bellingham, WA & Colorado]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/callhersavage.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/cracked.jpg" data-caption="Cracked [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/cracked.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/galveston2.jpg" data-caption="Relaxation [Galveston, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/galveston2.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/slightlypretentiousmorning.jpg" data-caption="It was Sunday morning. I went to the comic book store and purchased Persepolis. I drank coffee and read it in the sun. Downtown has its peaceful moments at times.. [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/slightlypretentiousmorning.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/chuckanuts.jpg" data-caption="Rowing in symmetry [Chuckanuts, Bellingham]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/chuckanuts.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/cafedumond.jpg" data-caption="A very popular cafe in New Orleans. The pastries were good but not worth the long wait. [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/cafedumond.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/newmexico.jpg" data-caption="Adobe House in [Santa Fe, New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/newmexico.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/guitarlessons.jpg" data-caption="Guitar lessons in [Santa Fe, New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/guitarlessons.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/gayvillage.jpg" data-caption="Looking up at the sky from Gay Village in [Montreal, Quebec]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/gayvillage.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/death.jpg" data-caption="I visited the graveyard of Samuel Adams & Ben Franklin's parents in [Boston, MA]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/death.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/nycterminal.jpg" data-caption="The Oculus in [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/nycterminal.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/texasceiling.jpg" data-caption="[Austin, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/texasceiling.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/IMG_2476.JPG" data-caption="Jazz n Cigarettes [Central Park, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/IMG_2476.JPG" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/newmexico2.jpg" data-caption="[Santa Fe, New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/newmexico2.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/casaloma.jpg" data-caption="We snuck inside this castle. [Toronto, Canada]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/casaloma.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/texasceiling2.jpg" data-caption="Ceiling above the Texas capitol building. I don't recommend going to Texas in the middle of summer. I nearly fainted walking from the parking lot to the capitol building. [Austin, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/texasceiling2.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/chinatownnyc.jpg" data-caption="Chinatown [Chinatown, NYC]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/chinatownnyc.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/kids.jpg" data-caption="These kids slapped the most gnarly beat ever. Many people gathered to watch them. They made beaucoup bucks after their little show. [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/kids.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/pinkfence.jpg" data-caption="I took a photo of this because I thought it was cute how this barbed wire fence was bubble gum pink. After developing my roll, I realized that it was shot in black and white :-( [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/pinkfence.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/paintingman.jpg" data-caption="Oil on Canvas [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/paintingman.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-<div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-       <a href="photo/photography/jazzatlanta.jpg" data-caption="I had a blast dancing to a bunch of upbeat jazz music in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
-          <img class="crop lazy" data-src="photo/photography/jazzatlanta.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-</div>
-
-
-
- <section id="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="columns">
-                  <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
-                  <br>
-                  <h3 id="footer-details">&copy; 2019 Eylen Kim <br> Art By Eylen
+    <section class="grid-wrapper">
+        <div class="filter-controls">
+
+            <div style="display:none;">
+                <div class="control">Search
+                    <input class="search-field form-control" type="text" name="search" placeholder="Enter the fruit name">
+                </div>
+                <div class="control">Sort
+                    <select class="sort-field form-control">
+                        <option value="order">None</option>
+                        <option value="title">Order by fruit name</option>
+                        <option value="color">Order by color name</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="control fade-in">Filter By:
+                <select class="filter-field form-control">
+                    <option value="">None</option>
+                    <option value="printmaking">Printmaking</option>
+                    <option value="acrylic">Acrylic</option>
+                    <option value="photography">Photography</option>
+
+                </select>
+            </div>
+
+        </div>
+
+        <div id="gallery" class="gallery grid" itemscope itemtype="http://schema.org/ImageGallery">
+            <!--Printmaking-->
+            <div class="item" data-color="printmaking" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/printmaking/IMG_74601.JPG" data-caption="Assymetry" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/printmaking/IMG_74601.JPG" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="printmaking" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/printmaking/susieart.jpg" data-caption="Susie [Printmaking Commission]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/printmaking/susieart.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <!-- acrylic -->
+
+            <div class="item" data-color="acrylic" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/acrylic/itsmeee.jpg" data-caption="It's Me" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/acrylic/itsmeee.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="acrylic" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/acrylic/angelaart.png" data-caption="Angela [Acrylic Commission]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/acrylic/angelaart.png" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <!--Photography-->
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/baywatch.jpg" data-caption="Bay Watch [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/baywatch.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/peek.jpg" data-caption="I went through a neighborhood in New York, only to find that it was a neighborhood full of cats. Seriously, I saw around 7 cats in 1 block. These cats were also highly photogenic. [Williamsburg, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/peek.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/deadleafszn.jpg" data-caption="Shy [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/deadleafszn.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/dinnertime.jpg" data-caption="Dinner Time [Williamsburg, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/dinnertime.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/lowtide.jpg" data-caption="Low Tides [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/lowtide.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/humanreflection.jpg" data-caption="Human Reflection [New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/humanreflection.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/filingcabinet.jpg" data-caption="World's Tallest Filing Cabinet [Burlington, Vermont]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/filingcabinet.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/doingtaxes.jpg" data-caption="Doing Taxes [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/doingtaxes.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/fml.jpg" data-caption="fml [Williamsburg, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/fml.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/galveston.jpg" data-caption="Southern Tip of Texas [Galveston, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/galveston.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/magazin.jpg" data-caption="Russian Grocery Store [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/magazin.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/wings.jpg" data-caption="Vampires of the City [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/wings.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/inadream.jpg" data-caption="In a Dream [Montreal, Quebec]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/inadream.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/stairs.jpg" data-caption="Stairs [Inside the Capitol, Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/stairs.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/deadman.jpg" data-caption="This man used to work for the Smithsonian. He stated that when he dies, his body shall be owned by the museum. Here it is. // Man in Diamonds [Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/deadman.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/bigfootsmansion.jpg" data-caption="Bigfoots Hideout [Chuckanuts, Bellingham]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/bigfootsmansion.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/muted.jpg" data-caption="Muted [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/muted.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/neworleansbuilding.jpg" data-caption="A building in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/neworleansbuilding.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/peacesigncropped.JPG" data-caption="Peace Out my dude [New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/peacesigncropped.JPG" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/bazaar.jpg" data-caption="I went to a bazaar in Russia. It was weird because you can hire people to steer shopping carts for you. They would follow you around the store and grab the grocery bags from the stand you just purchased vegetables from. Then they would help you load the groceries in the car. [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/bazaar.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/chicago.jpg" data-caption="Spirals in [Chicago, Illinois]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/chicago.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/everybodylovesmakeup.jpg" data-caption="Everybody loves makeup [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/everybodylovesmakeup.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/ceiling.jpg" data-caption="Ceiling in [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/ceiling.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/russiancourtyard.jpg" data-caption="[Tretyakov, Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/russiancourtyard.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/neworleansbuilding2.jpg" data-caption="A building in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/neworleansbuilding2.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/dancerinneworleans.jpg" data-caption="Dancer in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/dancerinneworleans.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/moscowsubway.jpg" data-caption="The Moscow subway station was really big and confusing. The had doors inside the station big enough to hide the entire government in case of a disaster, war, etc. [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/moscowsubway.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/feelingdizzy.jpg" data-caption="A building in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/feelingdizzy.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/top/soviettelephone.jpg" data-caption="A telephone from the Soviet Era [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/top/soviettelephone.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/wherethefenceislow.jpg" data-caption="Where the fence is low [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/wherethefenceislow.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/honey.jpg" data-caption="Honey [Santa Fe, New Mexico" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/honey.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/armswideforlotide.jpg" data-caption="Arms wide for Low Tide [Locust Beach, Bellingham]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/armswideforlotide.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/doubleexposure.jpg" data-caption="Double Exposure shot in [Fort Collins, Colorado]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/doubleexposure.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/thebean.jpg" data-caption="The Bean [Chicago, Illinois]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/thebean.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/dcstatue.jpg" data-caption="This statue represents the New Deal regulations on industries attempting to control market forces. [Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/dcstatue.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/prudencejusticetemperanceandcourage.jpg" data-caption="Prudence, Justice, Temperance, Courage [Washington DC]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/prudencejusticetemperanceandcourage.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/redsquare.jpg" data-caption="Red Square [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/redsquare.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/hydroponics.jpg" data-caption="Hydroponics at WWU [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/hydroponics.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/racoon.jpg" data-caption="Funny Story: I went to Goodwill to buy a film camera. I guess the last owner of the camera forgot that they've left film inside. I developed it and out came this picture of a raccoon. [Somewhere in Federal Way, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/racoon.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/niagarafalls.jpg" data-caption="The falls were a lot of bigger in person than I thought. [Niagara Falls]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/niagarafalls.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/bouquet.jpg" data-caption="Stopped to smell the roses, I guess. [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/bouquet.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/justcranberry.jpg" data-caption="My friend Hannah and I were walking as she was drinking cranberry juice. Then this whole conversation spiraled about how cranberry juice is good for people with UTI's. I stopped to take a photo of the juice, to kind of commemorate a random conversation on a random day. [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/justcranberry.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/depthsofatree.jpg" data-caption="Depths of a Tree [Colorado]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/depthsofatree.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/grandmom.jpg" data-caption="Grandmom hosted us in Ponte Vedra. She remembers a lot of details about people and is a true southern woman. She's really fit and visits the UK every year. [Ponte Vedra, Florida]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/grandmom.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/vancouver.jpg" data-caption="Does it count to take pictures of other people's art? [Vancouver, BC]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/vancouver.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/manvsman.aconversation.jpg" data-caption="Man vs Man: A Conversation [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/manvsman.aconversation.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/heldinhands.jpg" data-caption="Everyone loves being held [Moscow, Russia]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/heldinhands.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/callhersavage.jpg" data-caption="Call her Savage (Double Exposure) [Bellingham, WA & Colorado]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/callhersavage.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/cracked.jpg" data-caption="Cracked [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/cracked.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/galveston2.jpg" data-caption="Relaxation [Galveston, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/galveston2.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/slightlypretentiousmorning.jpg" data-caption="It was Sunday morning. I went to the comic book store and purchased Persepolis. I drank coffee and read it in the sun. Downtown has its peaceful moments at times.. [Bellingham, WA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/slightlypretentiousmorning.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/chuckanuts.jpg" data-caption="Rowing in symmetry [Chuckanuts, Bellingham]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/chuckanuts.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/cafedumond.jpg" data-caption="A very popular cafe in New Orleans. The pastries were good but not worth the long wait. [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/cafedumond.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/newmexico.jpg" data-caption="Adobe House in [Santa Fe, New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/newmexico.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/guitarlessons.jpg" data-caption="Guitar lessons in [Santa Fe, New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/guitarlessons.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/gayvillage.jpg" data-caption="Looking up at the sky from Gay Village in [Montreal, Quebec]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/gayvillage.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/death.jpg" data-caption="I visited the graveyard of Samuel Adams & Ben Franklin's parents in [Boston, MA]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/death.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/nycterminal.jpg" data-caption="The Oculus in [New York, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/nycterminal.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/texasceiling.jpg" data-caption="[Austin, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/texasceiling.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/IMG_2476.JPG" data-caption="Jazz n Cigarettes [Central Park, New York]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/IMG_2476.JPG" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/newmexico2.jpg" data-caption="[Santa Fe, New Mexico]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/newmexico2.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/casaloma.jpg" data-caption="We snuck inside this castle. [Toronto, Canada]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/casaloma.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/texasceiling2.jpg" data-caption="Ceiling above the Texas capitol building. I don't recommend going to Texas in the middle of summer. I nearly fainted walking from the parking lot to the capitol building. [Austin, Texas]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/texasceiling2.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/chinatownnyc.jpg" data-caption="Chinatown [Chinatown, NYC]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/chinatownnyc.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/kids.jpg" data-caption="These kids slapped the most gnarly beat ever. Many people gathered to watch them. They made beaucoup bucks after their little show. [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/kids.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/pinkfence.jpg" data-caption="I took a photo of this because I thought it was cute how this barbed wire fence was bubble gum pink. After developing my roll, I realized that it was shot in black and white :-( [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/pinkfence.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/paintingman.jpg" data-caption="Oil on Canvas [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/paintingman.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <div class="item" data-color="photography" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="photo/photography/jazzatlanta.jpg" data-caption="I had a blast dancing to a bunch of upbeat jazz music in [New Orleans, Louisiana]" data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img class="crop lazy" data-src="photo/photography/jazzatlanta.jpg" itemprop="thumbnail" alt="Image description">
+                </a>
+            </div>
+
+            <section id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="columns">
+                            <a href="index.html"><img src="photo/favicon1.png" id="footer-pic" title="Art By Eylen" alt="Art By Eylen"></a>
+                            <br>
+                            <h3 id="footer-details">&copy; 2019 Eylen Kim <br> Art By Eylen
                   </h3>
-               </div>
-            </div>
-            </div>
-         </section>
-  </div>
-</select>       
-</section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </select>
+    </section>
 
-
-
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <!-- Background of PhotoSwipe. 
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe. 
            It's a separate element as animating opacity is faster than rgba(). -->
-      <div class="pswp__bg"></div>
-      <!-- Slides wrapper with overflow:hidden. -->
-      <div class="pswp__scroll-wrap">
-          <!-- Container that holds slides. 
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. 
               PhotoSwipe keeps only 3 of them in the DOM to save memory.
               Don't modify these 3 pswp__item elements, data is added later on. -->
-          <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-          </div>
-          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-          <div class="pswp__ui pswp__ui--hidden">
-              <div class="pswp__top-bar">
-                  <!--  Controls are self-explanatory. Order can be changed. -->
-                  <div class="pswp__counter"></div>
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                  <button class="pswp__button pswp__button--share" title="Share"></button>
-                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                  
-                  <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                  <!-- element will get class pswp__preloader--active when preloader is running -->
-                  <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                          <div class="pswp__preloader__donut"></div>
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div> 
-              </div>
-              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-              </button>
-              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-              </button>
-              <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <!-- Import jQuery and PhotoSwipe Scripts -->
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
+    <!-- Import jQuery and PhotoSwipe Scripts -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
 
+    <!----- Image Pop up ----->
 
-<!----- Image Pop up ----->
-
-  <script>
-    'use strict';
-
-    /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
-
-    (function($){
-
-      // Init empty gallery array
-      var container = [];
-
-      // Loop over gallery items and push it to the array
-      $('#gallery').find('div.item').each(function(){
-        var $link = $(this).find('a'),
-            item = {
-              src: $link.attr('href'),
-              w: $link.data('width'),
-              h: $link.data('height'),
-              title: $link.data('caption')
-            };
-        container.push(item);
-      });
-
-      // Define click event on gallery item
-      $("a[href*='photo']").click(function(event){
-
-        // Prevent location change
-        event.preventDefault();
-
-        // Define object and gallery options
-        var $pswp = $('.pswp')[0],
-            options = {
-              index: $(this).parent('div.item').index(),
-              bgOpacity: 0.85,
-              showHideOpacity: true
-            };
-
-        // Initialize PhotoSwipe
-        var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
-        gallery.init();
-      });
-
-    }(jQuery));
-  </script>
-
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<!----- Muuri Filtering ----->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-  var grid = null,
-      wrapper = document.querySelector('.grid-wrapper'),
-      searchField = wrapper.querySelector('.search-field'),
-      filterField = wrapper.querySelector('.filter-field'),
-      sortField = wrapper.querySelector('.sort-field'),
-      gridElem = wrapper.querySelector('.grid'),
-      searchAttr = 'data-title',
-      filterAttr = 'data-color',
-      searchFieldValue,
-      filterFieldValue,
-      sortFieldValue,
-      dragOrder = [];
-
-  // Init the grid layout
-  grid = new Muuri(gridElem, {
-    dragEnabled: false,
-    layout: {
-      fillGaps: true
-    }
-  });
-  
-  // Filter field event binding
-  filterField.addEventListener('change', filter);
-  
-  // Sort field event binding
-  sortField.addEventListener('change', sort);
-
-  // Filtering
-  function filter() {
-    filterFieldValue = filterField.value;
-    grid.filter(function (item) {
-      var element = item.getElement(),
-          isSearchMatch = !searchFieldValue ? true : (element.getAttribute(searchAttr) || '').toLowerCase().indexOf(searchFieldValue) > -1,
-          isFilterMatch = !filterFieldValue ? true : (element.getAttribute(filterAttr) || '') === filterFieldValue;
-      return isSearchMatch && isFilterMatch;
-    });
-  }
-});
-
-</script>
-
-<script src="js/muuri.js"></script>
-<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-
-<!--Modal - Dialog Boxes -->
-<script type="text/javascript"> const modals = Array.from(document.querySelectorAll('.modal'));
-         const triggers = Array.from(document.querySelectorAll('.trigger'));
-         var closeButton = document.querySelector(".close-button"); 
-         
-         //if a trigger is clicked then...
-         for (const trigger of triggers) {
-           trigger.addEventListener('click', toggleModal);
-         }
-         
-         // .. then toggle it's modal
-         function toggleModal(event) { event.target.closest('.trigger').querySelector('.modal').classList.toggle("show-modal"); }
-         
-           // check if the clicked element is a modal, or in a modal
-         function windowOnClick(event) {
-           if (modals.some((modal) => modal.contains(event.target))) {
-             toggleModal();
-           }
-         }
-</script>
-
-<script>
-function closeButton() {
-  document.getElementByClass('id02').style.display='none'
-}
-
-</script>
-<!----- JS files ----->
-      <script type="text/javascript" src="js/scripts.js"></script> 
-      <script type="text/javascript" src="js/singlenav.js"></script>
-      <script type="text/javascript" src="js/scrollreveal.js"></script> 
-      <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
-      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
- 
-  <a href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>  
-
-
-<!----- Lazy Load ----->
     <script>
-      (function() {
-        function logElementEvent(eventName, element) {
-          console.log(
-            Date.now(),
-            eventName,
-            element.getAttribute("data-src")
-          );
-        }
-        var callback_enter = function(element) {
-          logElementEvent("🔑 ENTERED", element);
-        };
-        var callback_exit = function(element) {
-          logElementEvent("🚪 EXITED", element);
-        };
-        var callback_reveal = function(element) {
-          logElementEvent("👁️ REVEALED", element);
-        };
-        var callback_loaded = function(element) {
-          logElementEvent("👍 LOADED", element);
-        };
-        var callback_error = function(element) {
-          logElementEvent("💀 ERROR", element);
-          element.src =
-            "https://via.placeholder.com/440x560/?text=Error+Placeholder";
-        };
-        var callback_finish = function() {
-          logElementEvent("✔️ FINISHED", document.documentElement);
-        };
-        ll = new LazyLoad({
-          elements_selector: ".lazy",
-          load_delay: 300,
-          threshold: 0,
-          // Assign the callbacks defined above
-          callback_enter: callback_enter,
-          callback_exit: callback_exit,
-          callback_reveal: callback_reveal,
-          callback_loaded: callback_loaded,
-          callback_error: callback_error,
-          callback_finish: callback_finish
-        });
+        'use strict';
 
+        /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
 
-      })();
+        (function($) {
+
+            // Init empty gallery array
+            var container = [];
+
+            // Loop over gallery items and push it to the array
+            $('#gallery').find('div.item').each(function() {
+                var $link = $(this).find('a'),
+                    item = {
+                        src: $link.attr('href'),
+                        w: $link.data('width'),
+                        h: $link.data('height'),
+                        title: $link.data('caption')
+                    };
+                container.push(item);
+            });
+
+            // Define click event on gallery item
+            $("a[href*='photo']").click(function(event) {
+
+                // Prevent location change
+                event.preventDefault();
+
+                // Define object and gallery options
+                var $pswp = $('.pswp')[0],
+                    options = {
+                        index: $(this).parent('div.item').index(),
+                        bgOpacity: 0.85,
+                        showHideOpacity: true
+                    };
+
+                // Initialize PhotoSwipe
+                var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+                gallery.init();
+            });
+
+        }(jQuery));
     </script>
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!----- Scroll To Top ----->
-<script>
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 600) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
-</script>
+    <!----- Muuri Filtering ----->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var grid = null,
+                wrapper = document.querySelector('.grid-wrapper'),
+                searchField = wrapper.querySelector('.search-field'),
+                filterField = wrapper.querySelector('.filter-field'),
+                sortField = wrapper.querySelector('.sort-field'),
+                gridElem = wrapper.querySelector('.grid'),
+                searchAttr = 'data-title',
+                filterAttr = 'data-color',
+                searchFieldValue,
+                filterFieldValue,
+                sortFieldValue,
+                dragOrder = [];
+
+            // Init the grid layout
+            grid = new Muuri(gridElem, {
+                dragEnabled: false,
+                layout: {
+                    fillGaps: true
+                }
+            });
+
+            // Filter field event binding
+            filterField.addEventListener('change', filter);
+
+            // Sort field event binding
+            sortField.addEventListener('change', sort);
+
+            // Filtering
+            function filter() {
+                filterFieldValue = filterField.value;
+                grid.filter(function(item) {
+                    var element = item.getElement(),
+                        isSearchMatch = !searchFieldValue ? true : (element.getAttribute(searchAttr) || '').toLowerCase().indexOf(searchFieldValue) > -1,
+                        isFilterMatch = !filterFieldValue ? true : (element.getAttribute(filterAttr) || '') === filterFieldValue;
+                    return isSearchMatch && isFilterMatch;
+                });
+            }
+        });
+    </script>
+
+    <script src="js/muuri.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+
+    <!--Modal - Dialog Boxes -->
+    <script type="text/javascript">
+        const modals = Array.from(document.querySelectorAll('.modal'));
+        const triggers = Array.from(document.querySelectorAll('.trigger'));
+        var closeButton = document.querySelector(".close-button");
+
+        //if a trigger is clicked then...
+        for (const trigger of triggers) {
+            trigger.addEventListener('click', toggleModal);
+        }
+
+        // .. then toggle it's modal
+        function toggleModal(event) {
+            event.target.closest('.trigger').querySelector('.modal').classList.toggle("show-modal");
+        }
+
+        // check if the clicked element is a modal, or in a modal
+        function windowOnClick(event) {
+            if (modals.some((modal) => modal.contains(event.target))) {
+                toggleModal();
+            }
+        }
+    </script>
+
+    <script>
+        function closeButton() {
+            document.getElementByClass('id02').style.display = 'none'
+        }
+    </script>
+    <!----- JS files ----->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/singlenav.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+
+    <a href="#top" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+    <!----- Lazy Load ----->
+    <script>
+        (function() {
+            function logElementEvent(eventName, element) {
+                console.log(
+                    Date.now(),
+                    eventName,
+                    element.getAttribute("data-src")
+                );
+            }
+            var callback_enter = function(element) {
+                logElementEvent("🔑 ENTERED", element);
+            };
+            var callback_exit = function(element) {
+                logElementEvent("🚪 EXITED", element);
+            };
+            var callback_reveal = function(element) {
+                logElementEvent("👁️ REVEALED", element);
+            };
+            var callback_loaded = function(element) {
+                logElementEvent("👍 LOADED", element);
+            };
+            var callback_error = function(element) {
+                logElementEvent("💀 ERROR", element);
+                element.src =
+                    "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+            };
+            var callback_finish = function() {
+                logElementEvent("✔️ FINISHED", document.documentElement);
+            };
+            ll = new LazyLoad({
+                elements_selector: ".lazy",
+                load_delay: 300,
+                threshold: 0,
+                // Assign the callbacks defined above
+                callback_enter: callback_enter,
+                callback_exit: callback_exit,
+                callback_reveal: callback_reveal,
+                callback_loaded: callback_loaded,
+                callback_error: callback_error,
+                callback_finish: callback_finish
+            });
+
+        })();
+    </script>
+
+    <!----- Scroll To Top ----->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 600) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
 
 </body>
+
 </html>
