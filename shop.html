@@ -45,15 +45,16 @@
           <div id="nav-x" class="menu-icon">&Cross;</div>
             <li><div onclick="location.href='index.html';">Home</a></li> 
             <li><div onclick="location.href='portfolio.html';">Portfolio</a></li>
+              <!--Nav about -->
             <li>
-              <div data-toggle="modal" data-target="#aboutMeModalMain" style="height: 100%;padding: 10px 0 10px 10px;" >About</div> 
+              <div data-toggle="modal" data-target="#aboutMeModalNav" style="height: 100%;padding: 10px 0 10px 10px;" >About</div> 
             </li>
-            <div class="modal fade" id="aboutMeModalMain" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelMain" aria-hidden="true">
+            <div class="modal fade" id="aboutMeModalNav" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabelNav" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content" style="height:630px;">
-                  <div class="modal-header">
-                   <h5 class="modal-title" id="aboutMeLabelMain" style="color:black;">About Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                <div class="modal-content" style="height: 600px;">
+                  <div class="modal-header" style="padding-top:20px;">
+                   <h5 class="modal-title" id="aboutMeLabelNav" style="color:black;">About Me</h5>
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="margin-top: -35px;">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
@@ -72,17 +73,17 @@
             </div>
 
 
-           
+           <!-- nav contact -->
             <li style="height: 100%;padding: 20px 0 10px 7px;">
               <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModalNav">
               Contact
             </p>
             <div class="modal fade" id="ContactModalNav" tabindex="-1" role="dialog" aria-labelledby="ContactLabelNav" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
+                <div class="modal-content" style="height: 430px;">
+                  <div class="modal-header" style="padding-top: 20px;">
                    <h5 id="ContactLabelNav" style="color:black;" class="modal-title">Contact Me</h5>
-                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close" style="    margin-top: -35px;">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
@@ -99,7 +100,7 @@
                         </div>
                       </div>
                       <br>
-                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 17px;padding-top: 10px;"></textarea>
+                      <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="height: 170px; margin-top: -25px;line-height: 23px;padding-top: 10px;"></textarea>
                       <br><br>
                       <input class="button u-pull-right subpage" type="submit" value="Send"><br><br><br>
                     </form>
@@ -116,44 +117,52 @@
     <header>
      <div class="container fade-in">
         <div class="row">
+          <!-- art by eylen header-->
           <a href="index.html">
           <h1 class="one-third column u-pull-left">Art By <span><br></span><span id="h1-title-span"> Eylen</span></h1>
       </a>
+      <!-- shop header -->
           <h2 class="one-third column u-pull-left" id="portfolio-title-desktop">|  Shop</h2>
           <h2 class="one-third column u-pull-left" id="portfolio-title-mobile">
             <span>&boxh;&boxh;<br></span>Shop
           </h2>
+
+          <!-- portfolio header -->
           <div class="about-contact-text" class="one-third column u-pull-right">
           <a href="portfolio.html">
             <p class="about-me-desktop">Portfolio</p>
           </a>
-            
+            <!-- about header -->
               <p class="about-me-desktop" data-toggle="modal" data-target="#aboutMeModal">
                 About 
             </p>
-            <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true" style="z-index: 5000;">
+
+            <!-- about modal -->
+      <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMelLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-resize" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                   <h5 id="aboutMeLabel" style="color:black; margin-top: 15px;">About</h5>
+                   <h5 id="aboutMeLabel" style="color:black;">About</h5>
                       <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                       </button>
                    </div>
                   <div class="modal-body">
+                      <img src="photo/confettidrawing.png" id="confetti1">
                       <img id="about-me-pic" src="photo/itme.JPG">
-                       <p>This art website is my passion project. I have coded my own platform to showcase & sell my art. What a treat to have you here on this site!
+                       <p>I am stoked to share my creations with y'all. This site is my coding passion project and I'm excited to utilize it as an art platform. 
                         <br><br> 
-                       The mediums I work with: 35mm film photography, acrylic (canvas & glass), polymer clay (earrings), and printmaking.
+                       Art medias I work with: acrylic painting (canvas & glass), earrings (polymer clay), printmaking, film photography, and music.
                         <br><br>
-                       In my free time I like petting my cat, tickling some gnarly tunes on the bass/electric guitar, coding, playing video games, and doing art stuff.<br><br>
+                       In my free time I like petting my cat, tickling some tunes on the bass & electric guitar, coding, playing video games, and doing art stuff.
+                       <br><br>
                       </p>
                   </div>
                 </div>
              </div>
-          </div>
+            </div>
           
-
+            <!--contact header -->
             <p class="about-me-desktop" data-toggle="modal" data-target="#ContactModal">
               Contact
             </p>
