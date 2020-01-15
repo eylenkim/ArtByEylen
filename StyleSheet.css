@@ -801,7 +801,13 @@ a {
   transform: rotate(265deg);
 }
 
-
+.form-message {
+    height: 100px;
+    margin-top: 10px;
+    line-height: 17px;
+    padding-top: 8px;
+    color: black;
+}
 
 /************************************ Media Query: Max 549px; ************************************/
 
