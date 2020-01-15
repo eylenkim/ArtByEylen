@@ -794,12 +794,12 @@ a {
 }
 
 #confetti1{
-    width: 40px;
-    position: absolute;
-    left: -15px;
-    top: 10px;
+  width: 50px;
+  position: absolute;
+  left: 175px;
+  top: -105px;
+  transform: rotate(265deg);
 }
-
 
 
 
@@ -1058,10 +1058,11 @@ header{
 }
 
 #confetti1 {
-    width: 40px;
+    width: 20px;
     position: absolute;
-    left: 25px;
-    top: 10px;
+    left: 133px;
+    transform: rotate(86deg);
+    top: 504px;
 }
 
 .subpage {

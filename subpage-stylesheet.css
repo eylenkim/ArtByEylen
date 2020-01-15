@@ -412,10 +412,77 @@ img:not([src]) {
     z-index: 5;
 }
 
+.form-message {
+    height: 100px;
+    margin-top: 10px;
+    line-height: 17px;
+    padding-top: 8px;
+    color: black;
+}
+
 @media (min-width: 576px) {
   .modal-wide{
     max-width: 850px !important;
   }
+}
+
+.buy-button-style {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 0px 45px;
+    border: 1px black solid;
+    border-radius: 31px !important;
+    margin-top: 15px !important;
+    font-size: 23px !important;
+    line-height: 9px !important;
+        width: 50%;
+    height: 50px;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shop-modal-height{
+  height: 410px !important;
+}
+
+.shop-modal-close {
+    font-size: 40px;
+    position: relative;
+    top: -5px;
+    right: -5px;
+    border: 0px solid #bbb !important;
+}
+
+.shop-modal-close:hover {
+  color: #f6f933e0;
+}
+
+.shop-modal-pic {
+  max-width: 313px !important;
+  overflow: hidden;
+  width: 80%;
+}
+
+.shop-modal-text {
+  width: 50%;
+  text-align: left;
+  margin-left: 40px;
+}
+
+
+.header-padding{
+  margin-bottom: 10px;
+}
+
+.text-viewport {
+  height: 18vw;
+  overflow: scroll;
 }
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
@@ -661,6 +728,7 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
     right: -35px;
     top: 5px;
     -webkit-text-stroke: 1.4px black;
+    left: -15px;
 
 }
 
@@ -680,7 +748,44 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 }
 
+.shop-modal-height {
+    height: 85vh !important;
+}
 
+.shop-modal-text {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+   
+    margin-left: 0px;
+}
+
+.buy-button-style {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 15px 45px;
+    border: 1px black solid;
+    border-radius: 31px !important;
+    font-size: 23px !important;
+    line-height: 9px !important;
+
+}
+
+#modal1 > div > div > div.modal-body.d-flex.flex-wrap.bootstrap-on > div > img {
+  margin-left: 20px;
+}
+
+.header-padding {
+    margin-bottom: 3vw;
+    margin-top: 4vw;
+}
+
+.text-viewport {
+  height: 67vw;
+  overflow: scroll;
+}
 
 }
 

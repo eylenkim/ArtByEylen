@@ -1,8 +1,6 @@
 <!--
-    -- navigation doesn't work..
-    --fix "exit" for contact pop up (mobile)
-    -- center the Contact dialog box on viewport in mobile
-    -- fix nav (missing portfolio)
+    -- Fixthe Contact dialog box  in mobile
+
 -->
 
 <!DOCTYPE html>
@@ -62,7 +60,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                       <img src="photo/confettidrawing.png" id="confetti1">
+                       <img src="photo/dots.PNG" id="confetti1">
                        <img id="about-me-pic" src="photo/itme.JPG">
                        <p>I am stoked to share my creations with y'all. This site is my coding passion project and I'm excited to utilize it as an art platform.
                         <br> <br> 
@@ -203,11 +201,7 @@
                                                 </div>
                                             </div>
                                             <br>
-                                            <textarea class="u-full-width" placeholder="Message" id="messageInput" name="Message" required style="  height: 100px;
-                        margin-top: 10px;
-                        line-height: 17px;
-                        padding-top: 8px;
-                        color: black;"></textarea>
+                                            <textarea class="u-full-width form-message" placeholder="Message" id="messageInput" name="Message" required></textarea>
                                             <br>
                                             <br>
                                             <input class="button u-pull-right" type="submit" value="Send">
@@ -239,7 +233,7 @@
             </div>
         </div>
 
-        <div class="grid bootstrap-on fade-in" style="flex-direction: row !important;">
+        <div class="grid bootstrap-on fade-in">
 
             <div class="card item" data-color="earrings">
                 <div class="price-tag">$10</div>
@@ -263,17 +257,17 @@
                     </a>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Cute Earring</h5>
-                    <p class="card-text">People WILL declare you artsy once you wear them.</p>
+                    <h5 class="card-title">Shape Earrings</h5>
+                    <p class="card-text">Know your polygons (and non-polygons)</p>
                 </div>
             </div>
 
-            <div class="card item" data-color="prints" data-toggle="modal" data-target="#exampleModal">
+            <div class="card item" data-color="prints" data-toggle="modal" data-target="#modal1">
                 <div class="price-tag">$10</div>
                 <img src="photo/earrings/IMG_4215.jpg" class="card-img-top crop-shop" alt="Print">
                 <div class="card-body">
                     <h5 class="card-title">Questionable Earrings</h5>
-                    <p class="card-text">Made this print for the website but thought it was cool to put on a wall. </p>
+                    <p class="card-text">Wear these when you have many questions about life</p>
                 </div>
             </div>
 
@@ -281,8 +275,8 @@
                 <div class="price-tag">$10</div>
                 <img src="photo/earrings/IMG_4211.jpg" class="card-img-top crop-shop" alt="Print">
                 <div class="card-body">
-                    <h5 class="card-title">Half Crescent Earrings</h5>
-                    <p class="card-text">People WILL declare you artsy once you wear them.</p>
+                    <h5 class="card-title">Half Crescent Earrings (Wine)</h5>
+                    <p class="card-text">This is my favorite earring variation. Wear it only on half cresent type of nights.</p>
                 </div>
             </div>
 
@@ -298,33 +292,31 @@
         </div>
 
         <!-- Sample Product Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-wide" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel" style="color:black">Cute Earrings</h5>
-                        <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div style="display: flex;flex-direction: row;">
-                            <div>
-                                <img src="photo/earrings/IMG_4215.jpg" class="crop-shop" alt="Earrings">
-                            </div>
-                            <div style="width: 400px;text-align: left; margin-left: 50px;">
-                                Lorem Ipsum, these are earrings I made! Made with 100% polymer clay and love!
-                                <br> Made this print for the website but thought it was cool to put on a wall. Made this print for the website but thought it was cool to put on a wall. Made this print for the website but thought it was cool to put on a wall.
-                                <br>
-                                <br>
-                                <button class="btn-primary">Buy</button>
+            <div class="modal-content shop-modal-height">
+                                <div class="modal-header header-padding">
+                                    <h5 class="modal-title" id="label1">Cute Earrings</h5>
+                                    <button type="button" class="close shop-modal-close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex flex-wrap bootstrap-on">
+                                    <div class="d-flex flex-wrap">
+                                        <img src="photo/earrings/IMG_4215.jpg" class="shop-modal-pic" alt="Earrings">
+                                        <div class="shop-modal-text center-flex ">  
+                                            <div class="text-viewport">                              
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tempor magna non pharetra. Sed mollis dapibus blandit. Donec egestas dui diam, et facilisis orci semper in. Proin magna dolor, lacinia sed est sed, pharetra efficitur tortor. <br><br>Nulla nunc libero, rhoncus eget nisl a, elementum imperdiet diam.
+                                        </div>
+                                            <br>
+                                            <br>
+                                            <button class="buy-button-style">Buy</button>
+                                        </div>
+                                    </div>
+
+                                </div>
 
                             </div>
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
         </div>
 
