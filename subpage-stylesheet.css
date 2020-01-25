@@ -502,7 +502,7 @@ img:not([src]) {
     display: -ms-flexbox;
     -ms-flex-direction: column;
     -ms-flex-wrap: wrap;
-    flex-direction: column;
+
     flex-wrap: wrap;
     column-count: 1;
     height: auto !important;
@@ -569,7 +569,8 @@ position: relative;
 }
 
 #nav-x:hover{
-color:#f6f933e0;;
+color:#f6f933e0;
+transition: 0.3s;
 }
 
 
@@ -734,6 +735,7 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 .close:hover {
   color: black;
+  transition: 0.3s;
 }
  
 .modal-content-contact-portfolio {
