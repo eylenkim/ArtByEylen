@@ -777,6 +777,8 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
     border-radius: 31px !important;
     font-size: 23px !important;
     line-height: 9px !important;
+    position: relative;
+    top: -6%;
 
 }
 
@@ -792,6 +794,10 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 .text-viewport {
   height: 67vw;
   overflow: scroll;
+}
+
+.modal-text-responsive {
+  height: 55% !important;
 }
 
 }
