@@ -480,11 +480,6 @@ img:not([src]) {
   margin-bottom: 10px;
 }
 
-.text-viewport {
-  height: 18vw;
-  overflow: scroll;
-}
-
 .contact-modal {
   display:block !important;
 }
