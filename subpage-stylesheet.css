@@ -484,6 +484,11 @@ img:not([src]) {
   height: 18vw;
   overflow: scroll;
 }
+
+.contact-modal {
+  display:block !important;
+}
+
 /*************** Media Query: Mobile; *******************/
 @media only screen and (max-width: 549px) {
 #portfolio-title-desktop{

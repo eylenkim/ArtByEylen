@@ -809,6 +809,10 @@ a {
     color: black;
 }
 
+.contact-modal {
+  display:block !important;
+}
+
 /************************************ Media Query: Max 549px; ************************************/
 
 @media only screen and (max-width: 549px) {
