@@ -803,5 +803,9 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
   height: 600px !important;
 }
 
+.form-height {
+  margin-bottom: -2.9rem;
+}
+
 }
 
