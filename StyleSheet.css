@@ -1080,4 +1080,9 @@ header{
     border-color: black !important;
     margin-top: -15px !important;
 }
+
+#aboutMeModalMain > div > div {
+  height: 600px !important;
+}
+
 }
