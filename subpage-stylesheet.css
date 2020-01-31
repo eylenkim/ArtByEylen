@@ -795,5 +795,13 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
   height: 55% !important;
 }
 
+#aboutMeModalMain > div > div {
+  height: 600px !important;
+}
+
+#aboutMeModalNav > div > div {
+  height: 600px !important;
+}
+
 }
 
