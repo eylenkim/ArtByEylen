@@ -758,7 +758,6 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
     width: 100%;
     text-align: left;
     margin-top: 20px;
-   
     margin-left: 0px;
 }
 
@@ -805,6 +804,18 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 .form-height {
   margin-bottom: -2.9rem;
+}
+
+.close-style2 {
+  top: -28px;
+  right: 1px !important;
+  border: none;
+  position: relative;
+}
+
+.close-style2:hover {
+  color: yellow;
+  transition: 0.3s;
 }
 
 }
