@@ -807,10 +807,11 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 }
 
 .close-style2 {
-  top: -28px;
-  right: 1px !important;
-  border: none;
-  position: relative;
+    top: -28px;
+    /* right: 1px !important; */
+    border: none;
+    position: relative;
+    float: right;
 }
 
 .close-style2:hover {
