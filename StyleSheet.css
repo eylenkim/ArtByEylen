@@ -240,7 +240,7 @@ section {
   font-weight: 800;
   font-style: normal;
   color: transparent;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1.5px #fff;
   z-index: 7;
   font-size: calc(5em + 1vw);
   letter-spacing: -.8rem;
