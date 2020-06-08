@@ -3,7 +3,7 @@ Eylen's Art Space [UNDER MAINTENANCE]
 <br>
 This is a website created for my art portfolio!
 <br><br>
-Website was designed and coded by me.<br>
+Website was designed and coded by me!<br>
 <br>
 Design: Sketch, InVision<br>
 Code: HTML, CSS, JS (Jquery)<br>
