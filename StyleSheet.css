@@ -714,7 +714,7 @@ h3{
   cursor: pointer;
  }
 
-  #header-pic{
+  img#header-pic{
   width:auto; 
   height: 50px;
   margin-bottom: 15px;
